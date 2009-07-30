@@ -1,3 +1,5 @@
+config/initializers/rpx.rb
+
 log/*.log
 tmp/*
 *~
