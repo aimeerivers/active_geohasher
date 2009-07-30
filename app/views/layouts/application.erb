@@ -19,6 +19,10 @@
         <h1>Active geohasher</h1>
       </div>
       
+      <div class='span-24'>
+        <%= render :partial => 'layouts/authentication' %>
+      </div>
+      
       <% if flash[:notice] %><div class='flash notice span-24'><%= flash[:notice] %></div><% end %>
       <% if flash[:error] %><div class='flash error span-24'><%= flash[:error] %></div><% end %>
 
