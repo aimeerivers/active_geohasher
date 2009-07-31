@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/geokit-rails"]
+	path = vendor/plugins/geokit-rails
+	url = git://github.com/andre/geokit-rails.git
