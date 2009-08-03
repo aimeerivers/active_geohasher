@@ -1,1 +1,6 @@
 <p>Welcome to Active geohasher!</p>
+
+<% if logged_in? -%>
+  <%= render :partial => 'subscriptions/new' %>
+  <%= render :partial => 'graticules/show', :collection => current_user.graticules.by_latitude_and_longitude %>
+<% end -%>

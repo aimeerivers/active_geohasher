@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   
+  has_many :subscriptions, :dependent => :destroy
+  has_many :graticules, :through => :subscriptions
+  
   def self.create_with_rpx(rpx_data)
     User.create!({
       :identifier => rpx_data['identifier'],

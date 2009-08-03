@@ -14,4 +14,12 @@ class ApplicationController < ActionController::Base
   def logged_in?
     !session[:current_user].nil?
   end
+  
+  def login_required
+    if !logged_in?
+      flash[:error] = 'Please sign in first'
+      redirect_to root_path
+    end
+  end
+  
 end
