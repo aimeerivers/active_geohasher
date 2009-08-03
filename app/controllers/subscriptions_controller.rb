@@ -3,7 +3,7 @@ class SubscriptionsController < ApplicationController
   
   def create
     graticule = Graticule.find_or_create_by_latitude_and_longitude(params[:latitude], params[:longitude])
-    current_user.graticules << graticule
+    current_user.graticules << graticule unless graticule.nil?
     redirect_to root_path
   end
 end
