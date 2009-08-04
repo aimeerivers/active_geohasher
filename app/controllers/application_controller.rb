@@ -8,11 +8,12 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
   
   def current_user
-    session[:current_user]
+    return nil if !logged_in?
+    User.find(session[:current_user_id])
   end
   
   def logged_in?
-    !session[:current_user].nil?
+    !session[:current_user_id].nil?
   end
   
   def login_required

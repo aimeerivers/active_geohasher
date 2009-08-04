@@ -10,12 +10,12 @@ class SessionsController < ApplicationController
     http_resp, response_data = rpx.post(path, args)
 
     rpx_data = JSON.parse(response_data)
-    session[:current_user] = User.find_or_create_with_rpx(rpx_data['profile'])
+    session[:current_user_id] = User.find_or_create_with_rpx(rpx_data['profile']).id
     redirect_to root_path
   end
   
   def destroy
-    session[:current_user] = nil
+    session[:current_user_id] = nil
     redirect_to root_path
   end
   
