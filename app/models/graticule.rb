@@ -5,6 +5,10 @@ class Graticule < ActiveRecord::Base
   
   named_scope :by_latitude_and_longitude, :order => 'latitude, longitude'
   
+  def w30?
+    longitude.to_i > -30
+  end
+  
   def self.find_or_create_by_latitude_and_longitude(latitude, longitude)
     graticule = self.find_by_latitude_and_longitude(latitude, longitude)
     return graticule unless graticule.nil?
