@@ -1,6 +1,6 @@
 class History < ActiveRecord::Base
   
-  include Geohash
+  include GeohashCalculator
   
   belongs_to :dow
   
@@ -9,7 +9,7 @@ class History < ActiveRecord::Base
     return nil if dow.nil?
     key = "#{date.strftime('%Y-%m-%d')}-#{dow.dow}"
     md5 = Digest::MD5.hexdigest(key)
-    lat, lng = Geohash::coordinates_for(md5)
+    lat, lng = GeohashCalculator::coordinates_for(md5)
     self.create!({
       :date => date,
       :w30 => w30,

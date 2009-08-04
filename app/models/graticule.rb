@@ -16,3 +16,4 @@ class Graticule < ActiveRecord::Base
   end
   
 end
+

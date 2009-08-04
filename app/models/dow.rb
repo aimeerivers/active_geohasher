@@ -1,9 +1,9 @@
 class Dow < ActiveRecord::Base
   
-  include Geohash
+  include GeohashCalculator
   
   def self.create_for_date(date)
-    dow = Geohash::dow_for(date)
+    dow = GeohashCalculator::dow_for(date)
     return nil if dow.nil?
     self.create!(:date => date, :dow => dow)
   end

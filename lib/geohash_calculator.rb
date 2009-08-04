@@ -1,4 +1,4 @@
-module Geohash
+module GeohashCalculator
 
   require 'digest/md5'
   require 'date'
