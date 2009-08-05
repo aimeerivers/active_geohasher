@@ -22,13 +22,7 @@ module GeohashCalculator
   end
 
   def self.hex_fraction_to_decimal(hex_fraction)
-    power = 0
-    hex_fraction.each_char.inject(0) {|sum, char| sum + (char.to_i(16) * (1.0/(16**(power+=1)))) }
-  end
-
-  def self.hex_fraction_to_super_accurate_decimal(hex_fraction)
-    power = 0
-    hex_fraction.each_char.inject(0) {|sum, char| sum + (char.to_i(16) * (BigDecimal.new('1')/BigDecimal.new((16**(power+=1)).to_s))) }
+    hex_fraction.to_i(16) / BigDecimal.new((16**(hex_fraction.length)).to_s)
   end
   
 end
