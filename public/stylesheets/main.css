@@ -12,8 +12,12 @@
   float: left;
 }
 
+.graticule h3.name {
+  margin-left: 220px;
+}
+
 .graticule ul.links {
-  margin-left: 250px;
+  margin-left: 220px;
   list-style: none;
 }
 

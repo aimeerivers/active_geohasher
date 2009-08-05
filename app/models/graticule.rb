@@ -15,6 +15,7 @@ class Graticule < ActiveRecord::Base
   end
   
   named_scope :by_latitude_and_longitude, :order => 'latitude, longitude'
+  named_scope :without_names, :conditions => {:name => nil}
   
   def wiki_link
     "http://wiki.xkcd.com/geohashing/#{latitude}%2C#{longitude}"
@@ -22,6 +23,10 @@ class Graticule < ActiveRecord::Base
   
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
+  end
+  
+  def find_name
+    
   end
     
   def w30?

@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), '../config/environment.rb')
+
+require 'hpricot'
+require 'open-uri'
+
+Graticule.without_names.each do |graticule|
+  puts "Processing #{graticule.latitude}, #{graticule.longitude} ... "
+  doc = Hpricot(open(graticule.wiki_link))
+  title = doc.search('h1.firstHeading').first.inner_html
+  graticule.update_attribute(:name, title)
+  puts title
+end
+
