@@ -9,7 +9,7 @@ class SubscriptionsController < ApplicationController
   
   def destroy
     subscription = Subscription.find(params[:id])
-    subscription.destroy
+    current_user.unsubscribe_from_graticule(subscription.graticule)
     redirect_to root_path
   end
 end

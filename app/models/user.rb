@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
     graticules << graticule unless graticules.include?(graticule)
   end
   
+  def unsubscribe_from_graticule(graticule)
+    return if graticule.nil?
+    graticules.delete(graticule) if graticules.include?(graticule)
+  end
+  
   def self.create_with_rpx(rpx_data)
     User.create!({
       :identifier => rpx_data['identifier'],
@@ -21,3 +26,4 @@ class User < ActiveRecord::Base
   end
   
 end
+
