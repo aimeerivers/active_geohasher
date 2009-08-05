@@ -1,0 +1,28 @@
+.graticule {
+  border: 3px solid #bbb;
+  padding: 1em;
+  background-color: #eee;
+  margin: 1em 0;
+}
+
+.graticule .coordinates {
+  font-size: 3em;
+  font-weight: bold;
+  color: #444;
+  float: left;
+}
+
+.graticule ul.links {
+  margin-left: 250px;
+  list-style: none;
+}
+
+a {
+  font-weight: bold;
+  color: #666;
+}
+
+a:visited {
+  color: #888;
+}
+

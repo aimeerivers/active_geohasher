@@ -1,3 +1,10 @@
 <div class='graticule' id='<%= dom_id(show) %>'>
-  <%= show.latitude %>, <%= show.longitude %>
+  <span class='coordinates'>
+    <%= show.latitude %>, <%= show.longitude %>
+  </span>
+  <ul class='links'>
+    <li><%= link_to('xkcd geohashing wiki', show.wiki_link) %></li>
+    <li><%= link_to('peeron map lookup tool', show.peeron_link) %></li>
+  </ul>
 </div>
+

@@ -3,8 +3,27 @@ class Graticule < ActiveRecord::Base
   validates_format_of :latitude, :with => /^-?\d{1,2}$/
   validates_format_of :longitude, :with => /^-?\d{1,3}$/
   
+  validate :legitimate_latitude
+  validate :legitimate_longitude
+  
+  def legitimate_latitude
+    errors.add_to_base("Latitude is invalid") unless latitude.to_i.abs <= 90
+  end
+  
+  def legitimate_longitude
+    errors.add_to_base("Longitude is invalid") unless longitude.to_i.abs <= 180
+  end
+  
   named_scope :by_latitude_and_longitude, :order => 'latitude, longitude'
   
+  def wiki_link
+    "http://wiki.xkcd.com/geohashing/#{latitude}%2C#{longitude}"
+  end
+  
+  def peeron_link
+    "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
+  end
+    
   def w30?
     longitude.to_i > -30
   end
