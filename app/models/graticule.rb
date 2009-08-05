@@ -24,10 +24,6 @@ class Graticule < ActiveRecord::Base
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
   end
-  
-  def find_name
-    
-  end
     
   def w30?
     longitude.to_i > -30
