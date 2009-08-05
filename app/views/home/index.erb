@@ -2,5 +2,7 @@
 
 <% if logged_in? -%>
   <%= render :partial => 'subscriptions/new' %>
-  <%= render :partial => 'graticules/show', :collection => current_user.graticules.by_latitude_and_longitude %>
+  <% current_user.subscriptions.by_graticule_latitude_and_longitude.each do |subscription| -%>
+    <%= render :partial => 'graticules/show', :locals => {:graticule => subscription.graticule, :subscription => subscription} %>
+  <% end -%>
 <% end -%>

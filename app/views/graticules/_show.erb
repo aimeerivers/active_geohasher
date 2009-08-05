@@ -1,10 +1,13 @@
-<div class='graticule' id='<%= dom_id(show) %>'>
+<div class='graticule' id='<%= dom_id(graticule) %>'>
   <span class='coordinates'>
-    <%= show.latitude %>, <%= show.longitude %>
+    <%= graticule.latitude %>, <%= graticule.longitude %>
+  </span>
+  <span class='unsubscribe'>
+    <%= link_to('unsubscribe', subscription_path(subscription), :method => :delete) %>
   </span>
   <ul class='links'>
-    <li><%= link_to('xkcd geohashing wiki', show.wiki_link) %></li>
-    <li><%= link_to('peeron map lookup tool', show.peeron_link) %></li>
+    <li><%= link_to('xkcd geohashing wiki', graticule.wiki_link) %></li>
+    <li><%= link_to('peeron map lookup tool', graticule.peeron_link) %></li>
   </ul>
 </div>
 
