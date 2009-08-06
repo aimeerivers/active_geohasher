@@ -24,6 +24,15 @@ class Graticule < ActiveRecord::Base
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
   end
+  
+  def get_name_from_geohashing_wiki
+    require 'open-uri'
+    require 'hpricot'
+    doc = Hpricot(open(wiki_link))
+    title = doc.search('h1.firstHeading').first.inner_html
+    self.update_attribute(:name, title)
+    title
+  end
     
   def w30?
     longitude.to_i > -30
