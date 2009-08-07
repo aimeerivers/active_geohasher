@@ -12,6 +12,9 @@ class SessionsController < ApplicationController
     rpx_data = JSON.parse(response_data)
     session[:current_user_id] = User.find_or_create_with_rpx(rpx_data['profile']).id
     redirect_to root_path
+  rescue
+    flash[:error] = "FAIL!! Something went wrong and you could not be signed in, sorry."
+    redirect_to root_path
   end
   
   def destroy
