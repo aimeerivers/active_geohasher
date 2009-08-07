@@ -11,6 +11,7 @@
       <%= stylesheet_link_tag 'blueprint/ie.css', :media => 'screen, projection' %>
     <![endif]-->
     <%= javascript_include_tag :defaults %>
+    <%= yield(:javascript) %>
     <title>Active geohasher</title>
   </head>
   

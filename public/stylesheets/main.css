@@ -25,6 +25,12 @@
   float: right;
 }
 
+#map_canvas {
+  background-color: #9CB2C9;
+  height: 300px;
+  margin: 1em 0;
+}
+
 a {
   font-weight: bold;
   color: #666;
