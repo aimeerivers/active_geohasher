@@ -14,6 +14,8 @@ class Graticule < ActiveRecord::Base
     errors.add_to_base("Longitude is invalid") unless longitude.to_i.abs <= 180
   end
   
+  has_many :geohashes
+  
   named_scope :by_latitude_and_longitude, :order => 'latitude, longitude'
   named_scope :without_names, :conditions => {:name => nil}
   

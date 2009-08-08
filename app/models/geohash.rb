@@ -3,6 +3,8 @@ class Geohash < ActiveRecord::Base
   belongs_to :graticule
   belongs_to :history
   
+  named_scope :on_or_after, lambda {|date| {:conditions => ["date >= ?", date.strftime('%Y-%m-%d')]}}
+  
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?date=#{date.strftime('%Y-%m-%d')}&lat=#{graticule.latitude}&long=#{graticule.longitude}&zoom=8"
   end
@@ -13,6 +15,19 @@ class Geohash < ActiveRecord::Base
   
   def google_link
     "http://maps.google.com/?ie=UTF8&ll=#{lat},#{lng}&z=8&q=loc:#{lat},#{lng}"
+  end
+  
+  def place_name_display
+    return '(unknown location)' if place_name.blank?
+    place_name
+  end
+  
+  def latitude_display
+    lat.round(5).to_s
+  end
+  
+  def longitude_display
+    lng.round(5).to_s
   end
   
   def self.create_for_date_and_graticule(date, graticule)

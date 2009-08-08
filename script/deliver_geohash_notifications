@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), '../config/environment.rb')
+
+User.all.each do |user|
+  Notifier.deliver_upcoming_geohashes(user, Time.now)
+end
