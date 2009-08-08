@@ -18,11 +18,13 @@
   <body>
     <div class='container'>
       <div class='span-24'>
-        <h1>Active geohasher</h1>
-      </div>
+        <div class='span-12'>
+          <h1>Active geohasher</h1>
+        </div>
       
-      <div class='span-24'>
-        <%= render :partial => 'layouts/authentication' %>
+        <div class='span-12 last' style='text-align:right;'>
+          <%= render :partial => 'layouts/authentication' %>
+        </div>
       </div>
       
       <% if logged_in? -%>
