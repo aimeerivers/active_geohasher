@@ -3,6 +3,10 @@ class User < ActiveRecord::Base
   has_many :subscriptions, :dependent => :destroy
   has_many :graticules, :through => :subscriptions
   
+  def location_set?
+    !(lat == 0 || lng == 0)
+  end
+  
   def subscribe_to_graticule(graticule)
     return if graticule.nil?
     graticules << graticule unless graticules.include?(graticule)

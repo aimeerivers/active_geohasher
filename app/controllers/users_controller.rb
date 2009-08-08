@@ -8,4 +8,7 @@ class UsersController < ApplicationController
     current_user.update_attributes(:lat => params[:lat], :lng => params[:lng])
   end
   
+  def subscribe
+  end
+  
 end

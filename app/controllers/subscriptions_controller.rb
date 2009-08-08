@@ -4,13 +4,12 @@ class SubscriptionsController < ApplicationController
   def create
     graticule = Graticule.find_or_create_by_latitude_and_longitude(params[:latitude], params[:longitude])
     current_user.subscribe_to_graticule(graticule)
-    redirect_to root_path
+    redirect_to subscribe_path
   end
   
   def destroy
     subscription = Subscription.find(params[:id])
     current_user.unsubscribe_from_graticule(subscription.graticule)
-    redirect_to root_path
+    redirect_to subscribe_path
   end
 end
-
