@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_many :graticules, :through => :subscriptions
   
   def location_set?
-    !(lat == 0 || lng == 0)
+    !(lat.nil? || lng.nil? || lat == 0 || lng == 0)
   end
   
   def subscribe_to_graticule(graticule)
