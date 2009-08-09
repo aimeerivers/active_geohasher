@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     rpx = Net::HTTP.new('rpxnow.com', 443)
     rpx.use_ssl = true
     path = "/api/v2/auth_info"
-    args = "apiKey=#{RPX_API_KEY}&token=#{rpx_token}"
+    args = "apiKey=#{ENV['RPX_API_KEY']}&token=#{rpx_token}"
     http_resp, response_data = rpx.post(path, args)
 
     rpx_data = JSON.parse(response_data)

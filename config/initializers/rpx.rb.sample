@@ -1,2 +1,2 @@
-RPX_REALM = 'active-geohasher'
-RPX_API_KEY = 'api-key'
+ENV['RPX_REALM'] = 'active-geohasher'
+ENV['RPX_API_KEY'] = 'api-key'
