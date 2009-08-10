@@ -1,5 +1,4 @@
 config/initializers/rpx.rb
-config/initializers/google.rb
 
 log/*.log
 tmp/*

@@ -1,5 +1,5 @@
 <% content_for(:javascript) do %>
-  <script type="text/javascript" src="http://www.google.com/jsapi?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>"></script>
+  <script type="text/javascript" src="http://www.google.com/jsapi?key=<%= GOOGLE_MAPS_API_KEY[request.host] %>"></script>
   <script type="text/javascript">
     google.load("maps", "2");
     
