@@ -10,5 +10,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :subscriptions
   
+  map.privacy '/privacy', :controller => :home, :action => :privacy
+  
   map.root :controller => 'home'
 end
+
