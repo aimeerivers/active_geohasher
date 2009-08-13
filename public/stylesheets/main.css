@@ -1,3 +1,18 @@
+div.header_area {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.header_logo {
+  float: left;
+}
+
+.header_text {
+  margin-top: 65px;
+  letter-spacing: -3px;
+  font-weight: bold;
+}
+
 .graticule {
   border: 3px solid #bbb;
   padding: 1em;

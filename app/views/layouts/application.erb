@@ -17,12 +17,13 @@
   
   <body>
     <div class='container'>
-      <div class='span-24'>
-        <div class='span-12'>
-          <h1>Active geohasher</h1>
+      <div class='span-24 header_area'>
+        <div class='span-16'>
+          <%= image_tag('geohashing_logo.gif', :class => 'header_logo') %>
+          <h1 class='header_text'>Active geohasher</h1>
         </div>
       
-        <div class='span-12 last' style='text-align:right;'>
+        <div class='span-8 last' style='text-align:right;'>
           <%= render :partial => 'layouts/authentication' %>
         </div>
       </div>
