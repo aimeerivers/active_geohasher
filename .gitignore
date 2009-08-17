@@ -1,4 +1,5 @@
 config/initializers/rpx.rb
+public/stylesheets/*.css
 
 log/*.log
 tmp/*

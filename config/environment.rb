@@ -10,6 +10,7 @@ Rails::Initializer.run do |config|
   config.gem 'json'
   config.gem 'geokit'
   config.gem 'hpricot'
+  config.gem 'haml'
   
   config.time_zone = 'UTC'
 end
