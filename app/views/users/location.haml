@@ -3,8 +3,6 @@
   
   :javascript
     google.load("maps", "2");
-    
-    var AUTH_TOKEN = #{form_authenticity_token.inspect}
 
     var map = null;
    
@@ -27,7 +25,7 @@
           map.clearOverlays();
           map.addOverlay(new GMarker(latlng));
           map.zoomIn(latlng, true, true);
-          update_home_location(latlng.lat(), latlng.lng());
+          update_home_location_fields(latlng.lat(), latlng.lng());
         }
       });
     }
@@ -36,6 +34,11 @@
 
 %h2 Choose your location
 #map_canvas.span-24
+  
+- remote_form_for current_user, :url => update_location_path, :method => :put do |f|
+  = f.hidden_field :lat
+  = f.hidden_field :lng
+  = f.submit('Save location', :id => 'save_location_button', :style => 'display:none;')
 
 %p#location_saved{:style => "display:none;"}
   Your location has been saved.

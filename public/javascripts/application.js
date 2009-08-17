@@ -1,13 +1,9 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
-function update_home_location(lat, lng) {
-  new Ajax.Request('/update_location/', {
-    method: 'put',
-    parameters: {
-      lat: lat,
-      lng: lng,
-      authenticity_token: AUTH_TOKEN
-    }
-  });
+function update_home_location_fields(lat, lng) {
+  $('user_lat').value = lat;
+  $('user_lng').value = lng;
+  $('save_location_button').show();
 }
+

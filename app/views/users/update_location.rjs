@@ -1,1 +1,3 @@
+page.hide(:save_location_button)
 page.visual_effect(:appear, :location_saved, {:duration => 0.3})
+
