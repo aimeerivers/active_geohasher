@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif; }
+
+a {
+  font-weight: bold;
+  color: #666666; }
+  a:visited {
+    color: #888888; }
+
+div.header_area {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #cccccc; }
+
+.header_logo {
+  float: left; }
+
+.header_text {
+  margin-top: 65px;
+  letter-spacing: -3px;
+  font-weight: bold; }
+
+.graticule {
+  border: 3px solid #bbbbbb;
+  padding: 1em;
+  background-color: #eeeeee;
+  margin: 1em 0; }
+  .graticule .coordinates {
+    font-size: 3em;
+    font-weight: bold;
+    color: #444444;
+    float: left; }
+  .graticule h3.name {
+    margin-left: 220px; }
+  .graticule ul.links {
+    margin-left: 220px;
+    list-style: none; }
+  .graticule .unsubscribe {
+    float: right; }
+
+#map_canvas {
+  background-color: #9CB2C9;
+  height: 300px;
+  margin: 1em 0; }
+
+ul.navigator li {
+  display: inline;
+  list-style: none;
+  padding: 0.5em;
+  background-color: #efefef;
+  border-top: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
+  margin-right: 2px;
+  font-weight: bold;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px; }
+  ul.navigator li a {
+    text-decoration: none; }
