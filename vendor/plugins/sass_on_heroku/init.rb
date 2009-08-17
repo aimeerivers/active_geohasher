@@ -1,0 +1,1 @@
+ActionController::Dispatcher.middleware.use SassOnHeroku
