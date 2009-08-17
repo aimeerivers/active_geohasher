@@ -9,74 +9,15 @@
 body
   font-family: Arial, sans-serif
 
-
-div.header_area
-  margin-bottom: 1em
-  border-bottom = "1px solid #{!paler}"
-
-
-.header_logo
-  float: left
-
-
-.header_text
-  margin-top: 65px
-  letter-spacing: -3px
-  font-weight: bold
-
-
-.graticule
-  border = "3px solid #{!pale}"
-  padding: 1em
-  background-color = !palest
-  margin: 1em 0
-
-  .coordinates
-    font-size: 3em
-    font-weight: bold
-    color = !darker
-    float: left
-
-  h3.name
-    margin-left: 220px
-
-  ul.links
-    margin-left: 220px
-    list-style: none
-
-  .unsubscribe
-    float: right
-
-
-#map_canvas
-  background-color: #9CB2C9
-  height: 300px
-  margin: 1em 0
-
-
-ul.navigator li
-  display: inline
-  list-style: none
-  padding: 0.5em
-  background-color: #efefef
-  border-top = "1px solid #{!pale}"
-  border-right = "1px solid #{!pale}"
-  border-left = "1px solid #{!pale}"
-  margin-right: 2px
-  font-weight: bold
-  -moz-border-radius-topleft: 6px
-  -moz-border-radius-topright: 6px
-  -webkit-border-top-left-radius: 6px
-  -webkit-border-top-right-radius: 6px
-
-  a
-    text-decoration: none
-
-
 a
   font-weight: bold
   color = !dark
 
   &:visited
     color = !med
+    
+@import header.sass
+@import subscribe.sass
+@import googlemaps.sass
+@import navigation.sass
 
