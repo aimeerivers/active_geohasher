@@ -1,0 +1,11 @@
+%h2 Subscribe to a graticule
+- form_for(Subscription.new) do |f|
+
+  = label_tag :latitude
+  = text_field_tag :latitude
+  
+  = label_tag :longitude
+  = text_field_tag :longitude
+  
+  = f.submit :subscribe
+

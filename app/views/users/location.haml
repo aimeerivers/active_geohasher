@@ -1,0 +1,42 @@
+- content_for(:javascript) do
+  %script{:src => "http://www.google.com/jsapi?key=#{GOOGLE_MAPS_API_KEY[request.host]}", :type => "text/javascript"}
+  
+  :javascript
+    google.load("maps", "2");
+    
+    var AUTH_TOKEN = #{form_authenticity_token.inspect}
+
+    var map = null;
+   
+    function initialize() {
+    
+      var latlng = new google.maps.LatLng(#{current_user.location_set? ? current_user.lat : 'google.loader.ClientLocation.latitude'}, #{current_user.location_set? ? current_user.lng : 'google.loader.ClientLocation.longitude'});
+      var zoomlevel = #{current_user.location_set? ? 9 : 5};
+      var show_pin = #{current_user.location_set?};
+      
+      var map = new google.maps.Map2(document.getElementById("map_canvas"));
+      map.setCenter(latlng, zoomlevel);
+      if(show_pin) {
+        map.addOverlay(new GMarker(latlng));
+      }
+      map.setUIToDefault();
+      
+      GEvent.addListener(map, "click", function(overlay, latlng) {
+        if (latlng) {
+          $('location_saved').hide();
+          map.clearOverlays();
+          map.addOverlay(new GMarker(latlng));
+          map.zoomIn(latlng, true, true);
+          update_home_location(latlng.lat(), latlng.lng());
+        }
+      });
+    }
+    
+    google.setOnLoadCallback(initialize);
+
+%h2 Choose your location
+#map_canvas.span-24
+
+%p#location_saved{:style => "display:none;"}
+  Your location has been saved.
+
