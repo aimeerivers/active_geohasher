@@ -1,6 +1,18 @@
+
+!darker = #444
+!dark = #666
+!med = #888
+!pale = #BBB
+!paler = #CCC
+!palest = #EEE
+  
+body
+  font-family: Arial, sans-serif
+
+
 div.header_area
   margin-bottom: 1em
-  border-bottom: 1px solid #ccc
+  border-bottom = "1px solid #{!paler}"
 
 
 .header_logo
@@ -14,15 +26,15 @@ div.header_area
 
 
 .graticule
-  border: 3px solid #bbb
+  border = "3px solid #{!pale}"
   padding: 1em
-  background-color: #eee
+  background-color = !palest
   margin: 1em 0
 
   .coordinates
     font-size: 3em
     font-weight: bold
-    color: #444
+    color = !darker
     float: left
 
   h3.name
@@ -47,9 +59,9 @@ ul.navigator li
   list-style: none
   padding: 0.5em
   background-color: #efefef
-  border-top: 1px solid #bbb
-  border-right: 1px solid #bbb
-  border-left: 1px solid #bbb
+  border-top = "1px solid #{!pale}"
+  border-right = "1px solid #{!pale}"
+  border-left = "1px solid #{!pale}"
   margin-right: 2px
   font-weight: bold
   -moz-border-radius-topleft: 6px
@@ -63,7 +75,8 @@ ul.navigator li
 
 a
   font-weight: bold
-  color: #666
+  color = !dark
 
   &:visited
-    color: #888
+    color = !med
+
