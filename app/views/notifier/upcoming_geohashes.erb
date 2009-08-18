@@ -3,8 +3,8 @@ Hi <%= @user.name %>
 Here are your upcoming geohash locations:
 
 <% @user.graticules.by_latitude_and_longitude.each do |graticule| -%>
-  <%= graticule.name %>
-  <% graticule.geohashes.on_or_after(@date).each do |geohash| -%>
+  <%= graticule.display_name %>
+  <% graticule.geohashes.new_since(@start_time).each do |geohash| -%>
     <%= geohash.date %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %>
   <% end -%>
   

@@ -27,6 +27,10 @@ class Graticule < ActiveRecord::Base
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
   end
   
+  def display_name
+    "#{latitude}, #{longitude} #{name}"
+  end
+  
   def get_name_from_geohashing_wiki
     require 'open-uri'
     require 'hpricot'
