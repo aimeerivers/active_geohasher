@@ -26,3 +26,14 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+config.action_mailer.delivery_method = :smtp
+
+ActionMailer::Base.smtp_settings = {
+  :address  => ENV[:SMTP_ADDRESS],
+  :port  => 25,
+  :user_name  => ENV[:SMTP_USERNAME],
+  :password  => ENV[:SMTP_PASSWORD],
+  :authentication  => :login
+}
+
