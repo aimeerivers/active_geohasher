@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-require File.join(File.dirname(__FILE__), '../config/environment.rb')
-
-Graticule.without_names.each do |graticule|
-  puts "Processing #{graticule.latitude}, #{graticule.longitude} ... "
-  name = graticule.get_name_from_geohashing_wiki
-  puts name
-end
-
