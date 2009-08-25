@@ -13,5 +13,9 @@ Rails::Initializer.run do |config|
   config.gem 'haml'
   
   config.time_zone = 'UTC'
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_charset = "utf-8"
+
 end
 

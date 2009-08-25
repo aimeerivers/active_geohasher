@@ -11,7 +11,7 @@ class Dow < ActiveRecord::Base
   def self.create_for_date(date)
     dow = GeohashCalculator::dow_for(date)
     return nil if dow.nil?
-    self.create!(:date => date, :dow => dow)
+    self.create!(:date => date.strftime('%Y-%m-%d'), :dow => dow)
   end
   
 end
