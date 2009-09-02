@@ -1,6 +1,6 @@
 Active geohasher
 
-this will provide useful tools for geohashers, most notably the option to subscribe to graticules and receive email/rss notifications of current locations. it will include a geokit lookup for the location name and distance from your home location.
+Work is coming along well! You can now log into http://activegeohasher.com (using RPX), set your home location and subscribe to graticules. You will receive a daily email containing the forthcoming geohash locations, distance from your home location, and useful links (peeron, google, the geohashing wiki page, and even driving directions provided by google).
 
-currently work in progress; nothing to see yet except an implementation of rpx login! :)
+Contributions will always be welcome!
 
