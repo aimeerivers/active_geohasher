@@ -13,5 +13,8 @@ ActionController::Routing::Routes.draw do |map|
   map.privacy '/privacy', :controller => :home, :action => :privacy
   
   map.root :controller => 'home'
+  
+  map.upcoming_geohashes '/static/upcoming_geohashes/:format', :controller => :static, :action => :upcoming_geohashes, :format => 'html'
+  
 end
 

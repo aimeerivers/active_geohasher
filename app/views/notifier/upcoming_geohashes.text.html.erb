@@ -1,0 +1,30 @@
+<p>Hi <%= @user.name %></p>
+
+<p>Here are your upcoming geohash locations:</p>
+
+<ul>
+<% @user.graticules.by_latitude_and_longitude.each do |graticule| -%>
+  <li><strong><%= graticule.display_name %></strong>
+  <ul>
+  <% graticule.geohashes.new_since(@start_time).each do |geohash| -%>
+    <li><%= geohash.date.strftime('%A') %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %>
+      <ul>
+        <li>
+          Links:
+          <%= link_to('peeron', geohash.peeron_link) %>
+          | <%= link_to('google', geohash.google_link) %>
+          | <%= link_to('wiki', geohash.wiki_link) %>
+        </li>
+        <br />
+      </ul>
+    </li>
+  <% end -%>
+  </ul>
+  <br /></li>
+  
+<% end -%>
+</ul>
+
+<p>Happy geohashing!</p>
+<p><%= link_to('Active Geohasher', 'http://activegeohasher.com') %></p>
+
