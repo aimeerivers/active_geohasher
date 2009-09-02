@@ -2,10 +2,15 @@ Hi <%= @user.name %>
 
 Here are your upcoming geohash locations:
 
+<% if @user.location_set? -%>
+  <% show_locations = true -%>
+  <% home_location = Geokit::LatLng.new(@user.lat, @user.lng) -%>
+<% end -%>
+
 <% @user.graticules.by_latitude_and_longitude.each do |graticule| -%>
   <%= graticule.display_name %>
   <% graticule.geohashes.new_since(@start_time).each do |geohash| -%>
-    <%= geohash.date.strftime('%A') %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %>
+    <%= geohash.date.strftime('%A') %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %><%= " (#{home_location.distance_to(Geokit::LatLng.new(geohash.lat, geohash.lng)).round(1)} miles)" if show_locations %>
   <% end -%>
   
 <% end -%>
