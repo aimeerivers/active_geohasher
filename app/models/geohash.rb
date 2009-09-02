@@ -17,6 +17,10 @@ class Geohash < ActiveRecord::Base
     "http://maps.google.com/?ie=UTF8&ll=#{lat},#{lng}&z=8&q=loc:#{lat},#{lng}"
   end
   
+  def directions_link(latitude, longitude)
+      "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
+  end
+  
   def place_name_display
     return '(unknown location)' if place_name.blank?
     place_name

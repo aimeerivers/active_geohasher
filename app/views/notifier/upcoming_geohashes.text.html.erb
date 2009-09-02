@@ -21,6 +21,9 @@
           Links:
           <%= link_to('peeron', geohash.peeron_link) %>
           | <%= link_to('google', geohash.google_link) %>
+          <% if show_locations %>
+            | <%= link_to('directions', geohash.directions_link(@user.lat, @user.lng)) %>
+          <% end %>
           | <%= link_to('wiki', geohash.wiki_link) %>
         </li>
         <br />
@@ -32,6 +35,10 @@
   
 <% end -%>
 </ul>
+
+<% if show_locations %>
+  <p>Please note that distances are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out!</p>
+<% end %>
 
 <p>Happy geohashing!</p>
 <p><%= link_to('Active Geohasher', 'http://activegeohasher.com') %></p>
