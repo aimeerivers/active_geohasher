@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.subscribe '/subscribe', :controller => :users, :action => :subscribe
   
   map.resources :subscriptions
+  map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
   

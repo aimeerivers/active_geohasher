@@ -34,6 +34,10 @@ class Geohash < ActiveRecord::Base
     lng.round(5).to_s
   end
   
+  def description
+    "#{date.strftime('%A')} #{date}: #{latitude_display}, #{longitude_display}: #{place_name_display}"
+  end
+  
   def self.find_or_create(date, latitude, longitude)
     graticule = Graticule.find_or_create_by_latitude_and_longitude(latitude, longitude)
     return nil if graticule.nil?
