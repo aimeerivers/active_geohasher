@@ -1,7 +1,7 @@
 xml.instruct!
 xml.kml(:xmlns => "http://earth.google.com/kml/2.2") {
   xml.Document {
-    xml.name "#{@graticule.name} geohashes"
+    xml.name "#{@graticule.display_name} geohashes"
     xml.open(1)
     xml.visible(1)
     xml.NetworkLink {
