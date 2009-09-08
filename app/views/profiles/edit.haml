@@ -1,0 +1,23 @@
+%h2 Your profile
+
+-form_for(@user, :url => profile_path, :html => {:method => :put}) do |f|
+  =f.error_messages :header_message => nil
+    
+  %p
+    =label_tag 'identifying url'
+    %br/
+    =h @user.identifier
+    
+  %p
+    =f.label :name
+    %br/
+    =f.text_field :name
+    
+  %p
+    =f.label :email
+    %br/
+    =f.text_field :email
+
+  %p
+    =f.submit 'Update profile'
+

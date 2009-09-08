@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   
+  validates_presence_of :name, :on => :update
+  
   has_many :subscriptions, :dependent => :destroy
   has_many :graticules, :through => :subscriptions
   

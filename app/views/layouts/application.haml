@@ -23,14 +23,14 @@
             
         .span-8.last{:style => "text-align:right;"}
           = render :partial => 'layouts/authentication'
-          
-      - if logged_in?
-        = render :partial => 'layouts/navigation'
         
       - if flash[:notice]
         .flash.notice.span-24= flash[:notice]
       - if flash[:error]
         .flash.error.span-24= flash[:error]
+          
+      - if logged_in?
+        = render :partial => 'layouts/navigation'
         
       .span-24
         = yield

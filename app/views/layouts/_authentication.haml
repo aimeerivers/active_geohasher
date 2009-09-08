@@ -1,6 +1,6 @@
 - if logged_in?
   %p
-    = "Hey #{current_user.name}!"
+    = "Hey #{link_to(current_user.name, edit_profile_path)}!"
     = link_to 'Sign out', signout_path
 - else
   %p

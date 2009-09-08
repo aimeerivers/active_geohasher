@@ -2,10 +2,10 @@
 - form_for(Subscription.new) do |f|
 
   = label_tag :latitude
-  = text_field_tag :latitude
+  = text_field_tag :latitude, '', :style => "width: 100px;"
   
   = label_tag :longitude
-  = text_field_tag :longitude
+  = text_field_tag :longitude, '', :style => "width: 100px;"
   
   = f.submit :subscribe
 

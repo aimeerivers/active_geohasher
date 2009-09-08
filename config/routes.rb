@@ -8,6 +8,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.subscribe '/subscribe', :controller => :users, :action => :subscribe
   
+  map.resource :profile, :only => [:edit, :update]
+  
   map.resources :subscriptions
   map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   
