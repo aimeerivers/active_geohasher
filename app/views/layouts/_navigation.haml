@@ -1,4 +1,7 @@
+%br{:style => 'clear:left;'}/
 %ul.navigator
-  %li= link_to_unless_current('Your home location', location_path)
-  %li= link_to_unless_current('Your subscriptions', subscribe_path)
+  %li{:class => controller.request.path == location_path ? 'active' : ''}
+    =link_to('Your home location', location_path)
+  %li{:class => controller.request.path == subscribe_path ? 'active' : ''}
+    =link_to('Your subscriptions', subscribe_path)
 
