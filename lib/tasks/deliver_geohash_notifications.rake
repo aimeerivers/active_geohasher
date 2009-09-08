@@ -52,7 +52,7 @@ namespace :geohashing do
     end
 
     # Send emails
-    User.all.each do |user|
+    User.receiving_email.each do |user|
       next if user.graticules.size == 0
       puts "Delivering email to #{user.name}"
       Notifier.deliver_upcoming_geohashes(user, start_time)
