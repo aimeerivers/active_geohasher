@@ -20,8 +20,8 @@ namespace :geohashing do
       puts "Looking for dow for #{date.strftime('%Y-%m-%d')}"
       dow = Dow.find_or_create_for_date(date)
       if dow.nil?
-        puts 'Waiting 15 minutes'
-        sleep 15*60
+        puts 'Waiting 10 minutes'
+        sleep 10*60
       else
         dow_found = true
       end

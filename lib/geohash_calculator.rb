@@ -4,13 +4,18 @@ module GeohashCalculator
   require 'date'
   require 'net/http'
   require 'bigdecimal'
+  require 'timeout'
   
   def self.dow_for(date)
-    dow = Net::HTTP.start('irc.peeron.com', 80) do |http|
-      http.get("/xkcd/map/data/#{date.strftime('%Y/%m/%d')}").body
+    timeout(10) do
+      dow = Net::HTTP.start('irc.peeron.com', 80) do |http|
+        http.get("/xkcd/map/data/#{date.strftime('%Y/%m/%d')}").body
+      end
     end
     return nil if dow =~ /Not Found/
-    dow
+    return dow
+  rescue Timeout::Error
+    return nil
   end
   
   def self.md5_for(date, dow)
