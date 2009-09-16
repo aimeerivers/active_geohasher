@@ -7,6 +7,7 @@ module GeohashCalculator
   require 'timeout'
   
   def self.dow_for(date)
+    dow = nil
     timeout(10) do
       dow = Net::HTTP.start('irc.peeron.com', 80) do |http|
         http.get("/xkcd/map/data/#{date.strftime('%Y/%m/%d')}").body
