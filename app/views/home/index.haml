@@ -7,4 +7,23 @@
   This project is open source. See
   = link_to('active_geohasher', 'http://github.com/sermoa/active_geohasher')
   on github. Contributions are welcome!
+  
+%h2 Latest on twitter
+
+%div#twtr-profile-widget
+
+%script{:src => "http://widgets.twimg.com/j/1/widget.js", :type => "text/javascript"}
+%link{:href => "http://widgets.twimg.com/j/1/widget.css" :type => "text/css" :rel => "stylesheet"}
+:javascript
+  new TWTR.Widget({
+    profile: true,
+    id: 'twtr-profile-widget',
+    loop: true,
+    width: 800,
+    height: 200,
+    theme: {
+      shell: { background: '#eeeeee', color: '#888888' },
+      tweets: { background: '#ffffff', color: '#444444', links: '#111111' }
+    }
+  }).render().setProfile('activegeohasher').start();
 
