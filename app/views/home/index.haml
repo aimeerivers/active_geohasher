@@ -1,29 +1,42 @@
-%p Welcome to Active geohasher! Providing resources for geohashers.
+%h2 Welcome to Active geohasher
+%h3 Resources for geohashers
+
+%ul
+  %li Subscribe to graticules
+  %li Receive a free daily geohashing email
+  %li See distance from your home location in miles or kilometres
+  %li With useful links to peeron, geohashing wiki, google maps and route calculations
+  %li Automatically updating Google earth feeds for your graticules
+  %li
+    It's open source!
+    %a{:href => 'http://github.com/sermoa/active_geohasher'}Contributions welcome
 
 - unless logged_in?
-  %p You can sign in using your Google account, Flickr, Twitter, Facebook, or OpenID.
-  
-%p
-  This project is open source. See
-  = link_to('active_geohasher', 'http://github.com/sermoa/active_geohasher')
-  on github. Contributions are welcome!
+  %h2 Sign in
+  %p
+    = sign_in_link
+    using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID.
   
 %h2 Latest on twitter
-
 %div#twtr-profile-widget
 
-%script{:src => "http://widgets.twimg.com/j/1/widget.js", :type => "text/javascript"}
-%link{:href => "http://widgets.twimg.com/j/1/widget.css" :type => "text/css" :rel => "stylesheet"}
-:javascript
-  new TWTR.Widget({
-    profile: true,
-    id: 'twtr-profile-widget',
-    loop: true,
-    width: 800,
-    height: 200,
-    theme: {
-      shell: { background: '#eeeeee', color: '#888888' },
-      tweets: { background: '#ffffff', color: '#444444', links: '#111111' }
-    }
-  }).render().setProfile('activegeohasher').start();
+%br/
+
+-content_for(:page_specific_stylesheets) do
+  %link{:href => "http://widgets.twimg.com/j/1/widget.css" :type => "text/css" :rel => "stylesheet"}
+
+-content_for :post_page_load_javascript do
+  %script{:src => "http://widgets.twimg.com/j/1/widget.js", :type => "text/javascript"}
+  :javascript
+    new TWTR.Widget({
+      profile: true,
+      id: 'twtr-profile-widget',
+      loop: true,
+      width: 800,
+      height: 200,
+      theme: {
+        shell: { background: '#eeeeee', color: '#888888' },
+        tweets: { background: '#ffffff', color: '#444444', links: '#111111' }
+      }
+    }).render().setProfile('activegeohasher').start();
 
