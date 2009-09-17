@@ -1,5 +1,7 @@
 %br{:style => 'clear:left;'}/
 %ul.navigator
+  %li{:class => controller.request.path == edit_profile_path ? 'active' : ''}
+    =link_to('Your profile', edit_profile_path)
   %li{:class => controller.request.path == location_path ? 'active' : ''}
     =link_to('Your home location', location_path)
   %li{:class => controller.request.path == subscribe_path ? 'active' : ''}
