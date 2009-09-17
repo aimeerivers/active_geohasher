@@ -22,6 +22,11 @@
     =f.label :receive_email
     %br/
     =f.check_box :receive_email
+    
+  %p
+    =f.label :distance_units, 'Measure distances in'
+    %br/
+    =f.select(:distance_units, User::DISTANCE_UNITS.map{|unit| [I18n.t(unit), unit]})
 
   %p
     =f.submit 'Update profile'

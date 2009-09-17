@@ -4,7 +4,6 @@
 
 <% if @user.location_set? -%>
   <% show_locations = true -%>
-  <% home_location = Geokit::LatLng.new(@user.lat, @user.lng) -%>
 <% end -%>
 
 <ul>
@@ -14,7 +13,7 @@
   <% graticule.geohashes.new_since(@start_time).each do |geohash| -%>
     <li><%= geohash.date.strftime('%A') %>: <em><%= geohash.latitude_display %>, <%= geohash.longitude_display %></em>: <%= geohash.place_name_display %>
       <% if show_locations -%>
-        (<%= home_location.distance_to(Geokit::LatLng.new(geohash.lat, geohash.lng)).round(1) %> miles)
+        (<%= @user.distance_to(geohash.lat, geohash.lng) %>)
       <% end -%>
       <ul>
         <li>
@@ -41,7 +40,7 @@
       <li>
         <%= globalhash.date.strftime('%A') %>: <em><%= globalhash.latitude_display %>, <%= globalhash.longitude_display %></em>: <%= globalhash.place_name_display %>
         <% if show_locations -%>
-          (<%= home_location.distance_to(Geokit::LatLng.new(globalhash.lat, globalhash.lng)).round(1) %> miles)
+          (<%= @user.distance_to(globalhash.lat, globalhash.lng) %>)
         <% end -%>
         <ul>
           <li>

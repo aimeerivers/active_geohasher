@@ -4,20 +4,19 @@ Here are your upcoming geohash locations:
 
 <% if @user.location_set? -%>
   <% show_locations = true -%>
-  <% home_location = Geokit::LatLng.new(@user.lat, @user.lng) -%>
 <% end -%>
 
 <% @user.graticules.by_latitude_and_longitude.each do |graticule| -%>
   <%= graticule.display_name %>
   <% graticule.geohashes.new_since(@start_time).each do |geohash| -%>
-    <%= geohash.date.strftime('%A') %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %><%= " (#{home_location.distance_to(Geokit::LatLng.new(geohash.lat, geohash.lng)).round(1)} miles)" if show_locations %>
+    <%= geohash.date.strftime('%A') %>: <%= geohash.latitude_display %>, <%= geohash.longitude_display %>: <%= geohash.place_name_display %><%= " (#{@user.distance_to(geohash.lat, geohash.lng)})" if show_locations %>
   <% end -%>
   
 <% end -%>
 
   Globalhash
 <% Globalhash.new_since(@start_time).each do |globalhash| -%>
-    <%= globalhash.date.strftime('%A') %>: <%= globalhash.latitude_display %>, <%= globalhash.longitude_display %>: <%= globalhash.place_name_display %><%= " (#{home_location.distance_to(Geokit::LatLng.new(globalhash.lat, globalhash.lng)).round(1)} miles)" if show_locations %>
+    <%= globalhash.date.strftime('%A') %>: <%= globalhash.latitude_display %>, <%= globalhash.longitude_display %>: <%= globalhash.place_name_display %><%= " (#{@user.distance_to(globalhash.lat, globalhash.lng)})" if show_locations %>
 <% end -%>
 
 Happy geohashing!
