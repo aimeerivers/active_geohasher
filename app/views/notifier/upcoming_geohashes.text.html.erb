@@ -34,6 +34,25 @@
   <br /></li>
   
 <% end -%>
+
+  <li><strong>Globalhash</strong>
+    <ul>
+    <% Globalhash.new_since(@start_time).each do |globalhash| -%>
+      <li>
+        <%= globalhash.date.strftime('%A') %>: <em><%= globalhash.latitude_display %>, <%= globalhash.longitude_display %></em>: <%= globalhash.place_name_display %>
+        <% if show_locations -%>
+          (<%= home_location.distance_to(Geokit::LatLng.new(globalhash.lat, globalhash.lng)).round(1) %> miles)
+        <% end -%>
+        <ul>
+          <li>
+            Links:
+            <%= link_to('google', globalhash.google_link) %>
+          </li>
+        </ul>
+      </li>
+    <% end -%>
+    </ul>
+  </li>
 </ul>
 
 <% if show_locations %>

@@ -15,6 +15,11 @@ Here are your upcoming geohash locations:
   
 <% end -%>
 
+  Globalhash
+<% Globalhash.new_since(@start_time).each do |globalhash| -%>
+    <%= globalhash.date.strftime('%A') %>: <%= globalhash.latitude_display %>, <%= globalhash.longitude_display %>: <%= globalhash.place_name_display %><%= " (#{home_location.distance_to(Geokit::LatLng.new(globalhash.lat, globalhash.lng)).round(1)} miles)" if show_locations %>
+<% end -%>
+
 Happy geohashing!
 http://activegeohasher.com
 

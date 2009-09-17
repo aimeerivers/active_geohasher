@@ -49,6 +49,10 @@ namespace :geohashing do
         puts "* #{graticule.display_name}"
         Geohash.find_or_create(date, graticule.latitude, graticule.longitude)
       end
+      
+      # Look up the globalhash
+      puts "Looking up the globalhash for #{date.strftime('%Y-%m-%d')}"
+      Globalhash.find_or_create(date)
     end
 
     # Send emails

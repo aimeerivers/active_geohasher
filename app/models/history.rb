@@ -4,6 +4,12 @@ class History < ActiveRecord::Base
   
   belongs_to :dow
   
+  def self.for(date, w30)
+    self.find_by_date_and_w30(date.strftime('%Y-%m-%d'), w30) || self.create_for_date(date, w30)
+  end
+  
+  private
+  
   def self.create_for_date(date, w30)
     dow = Dow.find_or_create_for_date(w30 ? date-1.day : date)
     return nil if dow.nil?
@@ -19,10 +25,6 @@ class History < ActiveRecord::Base
       :lat => lat,
       :lng => lng
     })
-  end
-  
-  def self.for(date, w30)
-    self.find_by_date_and_w30(date.strftime('%Y-%m-%d'), w30) || self.create_for_date(date, w30)
   end
   
 end

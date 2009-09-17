@@ -18,7 +18,7 @@ class Geohash < ActiveRecord::Base
   end
   
   def directions_link(latitude, longitude)
-      "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
+    "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
   end
   
   def place_name_display
