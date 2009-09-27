@@ -4,6 +4,7 @@ class Geohash < ActiveRecord::Base
   belongs_to :history
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
+  named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
   
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?date=#{date.strftime('%Y-%m-%d')}&lat=#{graticule.latitude}&long=#{graticule.longitude}&zoom=8"
