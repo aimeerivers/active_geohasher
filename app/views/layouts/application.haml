@@ -16,7 +16,8 @@
     
     %title Active geohasher
     
-  %body
+  - @body_attributes ||= {}
+  %body{@body_attributes}
     .container
       .span-24.header_area
         .span-16
