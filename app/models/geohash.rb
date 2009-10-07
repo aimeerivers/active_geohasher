@@ -22,6 +22,10 @@ class Geohash < ActiveRecord::Base
     "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
   end
   
+  def tjum_link(for_user=nil)
+    graticule.tjum_link(for_user, date)
+  end
+  
   def place_name_display
     return '(unknown location)' if place_name.blank?
     place_name

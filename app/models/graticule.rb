@@ -27,6 +27,17 @@ class Graticule < ActiveRecord::Base
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
   end
   
+  def tjum_link(for_user=nil, date=nil)
+    latitude_to_use = "#{latitude}.5"
+    longitude_to_use = "#{longitude}.5"
+    if (for_user && for_user.lives_in?(self))
+      latitude_to_use = for_user.latitude_display
+      longitude_to_use = for_user.longitude_display
+    end
+    date_to_use = date.nil? ? '' : date.strftime('%Y-%m-%d')
+    "http://tjum.anthill.de/cgi-bin/geohash.cgi?lat=#{latitude_to_use}&lon=#{longitude_to_use}&nr=o&map=g&size=300x200&t=&date=#{date_to_use}"
+  end
+  
   def display_name
     "#{latitude}, #{longitude} #{name}"
   end
