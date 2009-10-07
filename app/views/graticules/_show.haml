@@ -6,5 +6,6 @@
   %ul.links
     %li= link_to('xkcd geohashing wiki', graticule.wiki_link)
     %li= link_to('peeron map lookup tool', graticule.peeron_link)
+    %li= link_to('anthill visualisation tool', graticule.anthill_link(current_user))
     %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
 

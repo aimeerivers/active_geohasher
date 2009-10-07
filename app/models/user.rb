@@ -28,6 +28,19 @@ class User < ActiveRecord::Base
     Geokit::LatLng.new(lat, lng)
   end
   
+  def lives_in?(graticule)
+    return false if !location_set?
+    graticule.latitude.to_i == lat.to_i && graticule.longitude.to_i == lng.to_i
+  end
+  
+  def latitude_display
+    lat.round(5).to_s
+  end
+  
+  def longitude_display
+    lng.round(5).to_s
+  end
+  
   def distance_to(lat, lng)
     return '' if !location_set?
     "#{home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => distance_units.to_sym).round(1)} #{I18n.t(distance_units)}"
