@@ -18,13 +18,13 @@
       <ul>
         <li>
           Links:
-          <%= link_to('peeron', geohash.peeron_link) %>
-          | <%= link_to('google', geohash.google_link) %>
+          <%= link_to('google', geohash.google_link) %>
+          | <%= link_to('<abbr title="Open Street Map">osm</abbr>', geohash.osm_link) %>
           <% if show_locations %>
             | <%= link_to('directions', geohash.directions_link(@user.latitude_display, @user.longitude_display)) %>
           <% end %>
+          | <%= link_to('peeron', geohash.peeron_link) %>
           | <%= link_to('anthill', geohash.anthill_link(@user)) %>
-          | <%= link_to('<abbr title="Open Street Map">osm</abbr>', geohash.osm_link) %>
           | <%= link_to('wiki', geohash.wiki_link) %>
         </li>
         <br />
