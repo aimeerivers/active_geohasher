@@ -27,7 +27,7 @@ class Graticule < ActiveRecord::Base
     "http://irc.peeron.com/xkcd/map/map.html?lat=#{latitude}&long=#{longitude}&zoom=8"
   end
   
-  def tjum_link(for_user=nil, date=nil)
+  def anthill_link(for_user=nil, date=nil)
     latitude_to_use = "#{latitude}.5"
     longitude_to_use = "#{longitude}.5"
     if (for_user && for_user.lives_in?(self))
