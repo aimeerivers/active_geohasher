@@ -4,6 +4,5 @@
 function update_home_location_fields(lat, lng) {
   $('user_lat').value = lat;
   $('user_lng').value = lng;
-  $('save_location_button').show();
 }
 
