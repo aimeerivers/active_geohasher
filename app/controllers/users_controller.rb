@@ -7,7 +7,7 @@ class UsersController < ApplicationController
       @lng = current_user.lng
       @location_set = true
     else
-      location = Geokit::Geocoders::MultiGeocoder.geocode(request.headers['REMOTE_ADDR'])
+      location = Geokit::Geocoders::MultiGeocoder.geocode(request.headers['REMOTE_ADDR'].split(',').first)
       @lat = location.lat || 49
       @lng = location.lng || 14
       @location_set = false
