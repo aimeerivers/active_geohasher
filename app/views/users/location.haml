@@ -1,16 +1,16 @@
 - content_for(:javascript) do
-  %script{:src => "http://maps.google.com/maps?file=api&v=2&key=#{GOOGLE_MAPS_API_KEY[request.host]}&sensor=false", :type => "text/javascript"}
+  %script{:src => "http://maps.google.com/maps?file=api&v=2&key=#{GOOGLE_MAPS_API_KEY[request.host]}&sensor=true", :type => "text/javascript"}
   
   :javascript
-    var map = null;
+    var map;
    
     function initialize() {
     
-      var latlng = new google.maps.LatLng(#{current_user.location_set? ? current_user.lat : 'google.loader.ClientLocation.latitude'}, #{current_user.location_set? ? current_user.lng : 'google.loader.ClientLocation.longitude'});
-      var zoomlevel = #{current_user.location_set? ? 9 : 5};
-      var show_pin = #{current_user.location_set?};
+      var latlng = new google.maps.LatLng(#{@lat}, #{@lng});
+      var zoomlevel = #{@location_set ? 9 : 5};
+      var show_pin = #{@location_set};
       
-      map = new google.maps.Map2(document.getElementById("map_canvas"));
+      map = new GMap2($("map_canvas"));
       map.setCenter(latlng, zoomlevel);
       if(show_pin) {
         map.addOverlay(new GMarker(latlng));
@@ -19,7 +19,6 @@
       
       GEvent.addListener(map, "click", function(overlay, latlng) {
         if (latlng) {
-          $('location_saved').hide();
           map.clearOverlays();
           map.addOverlay(new GMarker(latlng));
           map.zoomIn(latlng, true, true);
@@ -33,11 +32,17 @@
 %h2 Choose your location
 #map_canvas.span-24
   
-- remote_form_for current_user, :url => update_location_path, :method => :put do |f|
-  = f.hidden_field :lat
-  = f.hidden_field :lng
-  = f.submit('Save location', :id => 'save_location_button', :style => 'display:none;')
+- form_for current_user, :url => update_location_path, :method => :put do |f|
+  %p If the map doesn't work for you, feel free to enter your latitude and longitude here.
+  
+  = f.label :lat, 'Latitude'
+  = f.text_field :lat, :style => "width: 200px;"
+  
+  = f.label :lng, 'Longitude'
+  = f.text_field :lng, :style => "width: 200px;"
+  
+  = f.submit('Save location', :id => 'save_location_button')
+  or
+  = link_to('Cancel', subscribe_path)
 
-%p#location_saved{:style => "display:none;"}
-  Your location has been saved.
 
