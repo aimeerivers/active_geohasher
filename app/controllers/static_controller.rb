@@ -9,5 +9,9 @@ class StaticController < ApplicationController
     render :template => "notifier/upcoming_geohashes.text.#{params[:format]}"
   end
   
+  def debug
+    render :text => request.headers.inspect
+  end
+  
 end
 

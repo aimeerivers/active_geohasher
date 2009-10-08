@@ -18,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'home'
   
   map.upcoming_geohashes '/static/upcoming_geohashes/:format', :controller => :static, :action => :upcoming_geohashes, :format => 'html'
+  map.debug '/static/debug', :controller => :static, :action => :debug
   
 end
 
