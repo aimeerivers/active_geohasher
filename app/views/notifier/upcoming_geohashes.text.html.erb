@@ -19,6 +19,7 @@
         <li>
           Links:
           <%= link_to('google', geohash.google_link) %>
+          | <%= link_to('bing', geohash.bing_link) %>
           | <%= link_to('<abbr title="Open Street Map">osm</abbr>', geohash.osm_link) %>
           <% if show_locations %>
             | <%= link_to('directions', geohash.directions_link(@user.latitude_display, @user.longitude_display)) %>
@@ -48,6 +49,7 @@
           <li>
             Links:
             <%= link_to('google', globalhash.google_link) %>
+            | <%= link_to('bing', globalhash.bing_link) %>
             | <%= link_to('<abbr title="Open Street Map">osm</abbr>', globalhash.osm_link) %>
           </li>
         </ul>

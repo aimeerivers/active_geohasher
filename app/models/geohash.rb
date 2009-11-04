@@ -22,6 +22,10 @@ class Geohash < ActiveRecord::Base
     "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
   end
   
+  def bing_link
+    "http://www.bing.com/maps/?v=2&where1=#{lat}%2C%20#{lng}&encType=1"
+  end
+  
   def anthill_link(for_user=nil)
     graticule.anthill_link(for_user, date)
   end
