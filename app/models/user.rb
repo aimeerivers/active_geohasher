@@ -45,6 +45,12 @@ class User < ActiveRecord::Base
     return '' if !location_set?
     "#{home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => distance_units.to_sym).round(1)} #{I18n.t(distance_units)}"
   end
+
+  def new_geohashes_since(start_time)
+    graticules.by_latitude_and_longitude.map do |graticule|
+      graticule.geohashes.new_since(start_time)
+    end.flatten.group_by(&:date)
+  end
   
   def self.create_with_rpx(rpx_data)
     User.create!({
