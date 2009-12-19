@@ -3,6 +3,8 @@
     %h1= @graticule.latitude + ', ' + @graticule.longitude
     %h2= @graticule.name
 
+    %h3 Useful links
+
     %p.graticule_link
       = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => 'Wiki')
       = link_to('xkcd geohashing wiki', @graticule.wiki_link)
@@ -19,9 +21,20 @@
       = image_tag('google_earth.jpg', :size => '60x60', :alt => 'Google Earth')
       = link_to('google earth feed', graticule_path(@graticule, :format => :kml))
 
+    %br/
+    %h3 Social media links
+
     %p.graticule_link
-      = image_tag('twitter.png', :size => '60x60', :alt => 'Google Earth')
+      = image_tag('twitter.png', :size => '60x60', :alt => 'Twitter')
       = link_to("twitter: ##{@graticule.tag}", @graticule.twitter_hashtag_link)
+
+    %p.graticule_link
+      = image_tag('flickr.png', :size => '60x60', :alt => 'Flickr')
+      = link_to("flickr: #{@graticule.tag}", @graticule.flickr_link)
+
+    %p.graticule_link
+      = image_tag('youtube.png', :size => '60x60', :alt => 'Youtube')
+      = link_to("youtube: #{@graticule.tag}", @graticule.youtube_link)
 
   .span-8.last
     = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')

@@ -45,6 +45,14 @@ class Graticule < ActiveRecord::Base
   def twitter_hashtag_link
     "http://twitter.com/#search?q=%23#{tag}"
   end
+
+  def flickr_link
+    "http://www.flickr.com/photos/tags/#{tag}/"
+  end
+
+  def youtube_link
+    "http://www.youtube.com/results?search_query=#{tag}&search=tag"
+  end
   
   def display_name
     "#{latitude}, #{longitude} #{name}"
