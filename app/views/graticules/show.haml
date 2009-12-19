@@ -1,0 +1,10 @@
+.span-24
+  .span-16.first
+    %h1= @graticule.latitude + ', ' + @graticule.longitude
+    %h2= @graticule.name
+
+  .span-8.last
+    = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
+
+.span-24
+  pictures here

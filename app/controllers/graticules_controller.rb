@@ -4,6 +4,7 @@ class GraticulesController < ApplicationController
     @graticule = Graticule.find(params[:id])
     respond_to do |format|
       format.kml { render :layout => false }
+      format.html
     end
   end
   

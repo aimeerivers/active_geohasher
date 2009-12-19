@@ -42,6 +42,21 @@ class Graticule < ActiveRecord::Base
     "#{latitude}, #{longitude} #{name}"
   end
   
+  def google_map(request)
+    returning String.new do |str|
+      str << "http://maps.google.com/staticmap"
+      str << "?size=300x400"
+      str << "&center=#{latitude}.500000,#{longitude}.500000"
+      str << "&zoom=8"
+      str << "&path=rgba:0xff000080,weight:2|#{south_east}|#{south_west}|#{north_west}|#{north_east}|#{south_east}"
+      geohashes.latest.each do |geohash|
+        str << "&markers=#{geohash.lat},#{geohash.lng}"
+      end
+      str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
+      str << "&sensor=false"
+    end
+  end
+  
   def get_name_from_geohashing_wiki
     require 'open-uri'
     require 'hpricot'
@@ -64,6 +79,41 @@ class Graticule < ActiveRecord::Base
     
     graticule
   end
+
+  private
+
+  def north_east
+    "#{north},#{east}"
+  end
+
+  def south_east
+    "#{south},#{east}"
+  end
+
+  def south_west
+    "#{south},#{west}"
+  end
+
+  def north_west
+    "#{north},#{west}"
+  end
+
+  def south
+    @south ||= latitude.include?('-') ? (latitude.to_i - 1).to_s : latitude
+  end
+
+  def north
+    @north ||= latitude.include?('-') ? latitude : (latitude.to_i + 1).to_s
+  end
+
+  def east
+    @east ||= longitude.include?('-') ? longitude : (longitude.to_i + 1).to_s
+  end
+
+  def west
+    @west ||= longitude.include?('-') ? (longitude.to_i - 1).to_s : longitude
+  end
+
   
 end
 
