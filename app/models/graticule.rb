@@ -37,6 +37,14 @@ class Graticule < ActiveRecord::Base
     date_to_use = date.nil? ? '' : date.strftime('%Y-%m-%d')
     "http://tjum.anthill.de/cgi-bin/geohash.cgi?lat=#{latitude_to_use}&lon=#{longitude_to_use}&nr=o&map=g&size=300x200&t=&date=#{date_to_use}"
   end
+
+  def tag
+    @tag ||= "geohashing#{n_or_s}#{latitude.to_i.abs}#{w_or_e}#{longitude.to_i.abs}"
+  end
+
+  def twitter_hashtag_link
+    "http://twitter.com/#search?q=%23#{tag}"
+  end
   
   def display_name
     "#{latitude}, #{longitude} #{name}"
@@ -114,6 +122,13 @@ class Graticule < ActiveRecord::Base
     @west ||= longitude.include?('-') ? (longitude.to_i - 1).to_s : longitude
   end
 
+  def n_or_s
+    @n_or_s ||= latitude.include?('-') ? 'S' : 'N'
+  end
+
+  def w_or_e
+    @w_or_e ||= longitude.include?('-') ? 'W' : 'E'
+  end
   
 end
 

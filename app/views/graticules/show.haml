@@ -19,6 +19,10 @@
       = image_tag('google_earth.jpg', :size => '60x60', :alt => 'Google Earth')
       = link_to('google earth feed', graticule_path(@graticule, :format => :kml))
 
+    %p.graticule_link
+      = image_tag('twitter.png', :size => '60x60', :alt => 'Google Earth')
+      = link_to("twitter: ##{@graticule.tag}", @graticule.twitter_hashtag_link)
+
   .span-8.last
     = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
 
