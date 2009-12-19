@@ -11,7 +11,7 @@
       %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
 
   .span-7
-    %h3 Upcoming geohashes
+    %h3 Latest geohashes
     - geohashes = graticule.geohashes.latest
     - if geohashes.empty?
       %p Check back later for geohashes in this graticule.
