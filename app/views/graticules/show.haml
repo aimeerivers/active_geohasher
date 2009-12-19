@@ -37,7 +37,12 @@
       = link_to("youtube: #{@graticule.tag}", @graticule.youtube_link)
 
   .span-8.last
-    = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
+    .google_map_container
+      = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
+
+    %br/
+    = render :partial => 'latest_geohashes', :locals => {:graticule => @graticule}
+
 
 .span-24
   pictures here

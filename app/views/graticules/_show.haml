@@ -11,17 +11,7 @@
       %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
 
   .span-7
-    %h3 Latest geohashes
-    - geohashes = graticule.geohashes.latest
-    - if geohashes.empty?
-      %p Check back later for geohashes in this graticule.
-
-    - geohashes.each do |geohash|
-      %h4= friendly_date(geohash.date)
-      %p
-        = geohash.place_name_display
-        %br/
-        = geohash.latitude_longitude_display
+    = render :partial => 'graticules/latest_geohashes', :locals => {:graticule => graticule}
 
   .span-4.last{:style => "text-align:right;"}
     = link_to('unsubscribe', subscription_path(subscription), :method => :delete)
