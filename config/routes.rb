@@ -15,7 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
 
-  map.connect '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
+  map.pretty_graticule '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
   
   map.root :controller => 'home'
   

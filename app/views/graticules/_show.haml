@@ -3,7 +3,7 @@
     %span.coordinates= "#{graticule.latitude}, #{graticule.longitude}"
 
   .span-7
-    %h3.name= graticule.name || '[Awaiting graticule name]'
+    %h3.name= link_to(graticule.name || '[Awaiting graticule name]', pretty_graticule_path(graticule.latitude, graticule.longitude))
     %ul.links
       %li= link_to('xkcd geohashing wiki', graticule.wiki_link)
       %li= link_to('peeron map lookup tool', graticule.peeron_link)
