@@ -14,6 +14,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
+
+  map.connect '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
   
   map.root :controller => 'home'
   

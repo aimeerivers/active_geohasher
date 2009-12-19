@@ -1,7 +1,7 @@
 .span-24
   .span-16.first
     %h1= @graticule.latitude + ', ' + @graticule.longitude
-    %h2= @graticule.name
+    %h2= @graticule.name || "[Awaiting graticule name]"
 
     %h3 Useful links
 
