@@ -1,11 +1,29 @@
-.graticule{:id => dom_id(graticule)}
-  %span.coordinates= "#{graticule.latitude}, #{graticule.longitude}"
-  %span.unsubscribe= link_to('unsubscribe', subscription_path(subscription), :method => :delete)
+.graticule.span-23{:id => dom_id(graticule)}
+  .span-5.first
+    %span.coordinates= "#{graticule.latitude}, #{graticule.longitude}"
 
-  %h3.name= graticule.name
-  %ul.links
-    %li= link_to('xkcd geohashing wiki', graticule.wiki_link)
-    %li= link_to('peeron map lookup tool', graticule.peeron_link)
-    %li= link_to('anthill visualisation tool', graticule.anthill_link(current_user))
-    %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
+  .span-7
+    %h3.name= graticule.name || '[Awaiting graticule name]'
+    %ul.links
+      %li= link_to('xkcd geohashing wiki', graticule.wiki_link)
+      %li= link_to('peeron map lookup tool', graticule.peeron_link)
+      %li= link_to('anthill visualisation tool', graticule.anthill_link(current_user))
+      %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
+
+  .span-7
+    %h3 Upcoming geohashes
+    - geohashes = graticule.geohashes.latest
+    - if geohashes.empty?
+      %p Check back later for geohashes in this graticule.
+
+    - geohashes.each do |geohash|
+      %h4= friendly_date(geohash.date)
+      %p
+        = geohash.place_name_display
+        %br/
+        = geohash.latitude_longitude_display
+
+  .span-4.last{:style => "text-align:right;"}
+    = link_to('unsubscribe', subscription_path(subscription), :method => :delete)
+    
 
