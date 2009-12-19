@@ -10,7 +10,7 @@
   <hr />
   <h2><%= friendly_date(date) %></h2>
   <% geohashes.each do |geohash| -%>
-    <h3><%= geohash.graticule.display_name %></h3>
+    <h3><%= geohash.graticule_display_name %></h3>
     <ul>
       <li>
         <strong><%= geohash.place_name_display %></strong>
@@ -34,7 +34,7 @@
     <%# <br />%>
   <% end -%>
 
-  <% globalhash = Globalhash.find_or_create(date) -%>
+  <% globalhash = Globalhash.find_by_date(date) -%>
   <% if globalhash -%>
     <h3>Globalhash</h3>
     <ul>
