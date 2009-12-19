@@ -1,4 +1,4 @@
-
+!darkest = #222
 !darker = #444
 !dark = #666
 !med = #888
@@ -12,9 +12,13 @@ body
 a
   font-weight: bold
   color = !dark
-
   &:visited
     color = !med
+
+h3 a
+  color = !darkest
+  &:visited
+    color = !darkest
     
 @import header.sass
 @import subscribe.sass
