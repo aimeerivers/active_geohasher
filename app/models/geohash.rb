@@ -47,6 +47,10 @@ class Geohash < ActiveRecord::Base
     lng.round(5).to_s
   end
 
+  def latitude_longitude_display
+    "#{latitude_display}, #{longitude_display}"
+  end
+
   def graticule_display_name
     return '' if graticule.nil?
     graticule.display_name

@@ -13,12 +13,12 @@ Here are your upcoming geohash locations, brought to you by Active geohasher.
   <% geohashes.each do |geohash| -%>
 
   <%= geohash.graticule_display_name %>
-  <%= geohash.place_name_display %> (<%= geohash.latitude_display %>, <%= geohash.longitude_display %>) <%= "#{@user.distance_to(geohash.lat, geohash.lng)} away" if show_locations %>
+  <%= geohash.place_name_display %> (<%= geohash.latitude_longitude_display %>) <%= "#{@user.distance_to(geohash.lat, geohash.lng)} away" if show_locations %>
   <% end -%>
   <% if (globalhash = Globalhash.find_by_date(date)) -%>
 
   Globalhash
-  <%= globalhash.place_name_display %> (<%= globalhash.latitude_display %>, <%= globalhash.longitude_display %>) <%= "#{@user.distance_to(globalhash.lat, globalhash.lng)} away" if show_locations %>
+  <%= globalhash.place_name_display %> (<%= globalhash.latitude_longitude_display %>) <%= "#{@user.distance_to(globalhash.lat, globalhash.lng)} away" if show_locations %>
   <% end -%>
 
 

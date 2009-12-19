@@ -14,7 +14,7 @@
     <ul>
       <li>
         <strong><%= geohash.place_name_display %></strong>
-        <em>(<%= geohash.latitude_display %>, <%= geohash.longitude_display %>)</em>
+        <em>(<%= geohash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
           <strong><%= @user.distance_to(geohash.lat, geohash.lng) %> away</strong>
         <% end -%>
@@ -40,7 +40,7 @@
     <ul>
       <li>
         <strong><%= globalhash.place_name_display %></strong>
-        <em>(<%= globalhash.latitude_display %>, <%= globalhash.longitude_display %>)</em>
+        <em>(<%= globalhash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
           <strong><%= @user.distance_to(globalhash.lat, globalhash.lng) %> away</strong>
         <% end -%>

@@ -28,6 +28,10 @@ class Globalhash < ActiveRecord::Base
   def longitude_display
     lng.round(5).to_s
   end
+
+  def latitude_longitude_display
+    "#{latitude_display}, #{longitude_display}"
+  end
   
   def self.find_or_create(date)
     self.find_by_date(date.strftime('%Y-%m-%d')) || self.create_for_date(date)
