@@ -76,3 +76,11 @@
       }
     }).render().start();
   %br/
+
+  %h3 Pictures from flickr
+  .flickr_photos
+    %script{:type => 'text/javascript', :src => "http://www.flickr.com/badge_code_v2.gne?show_name=1&count=8&display=latest&size=t&layout=h&source=all_tag&tag=#{@graticule.tag}&user=89953410%40N00"}
+    %p
+      Look for
+      %a{:href => "http://www.flickr.com/photos/tags/#{@graticule.tag}"}photos or videos tagged with #{@graticule.tag}
+      on Flickr
