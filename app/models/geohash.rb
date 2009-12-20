@@ -35,7 +35,7 @@ class Geohash < ActiveRecord::Base
   end
   
   def place_name_display
-    return '(unknown location)' if place_name.blank?
+    return '[unknown location]' if place_name.blank?
     place_name
   end
   
