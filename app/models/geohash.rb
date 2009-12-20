@@ -75,6 +75,19 @@ class Geohash < ActiveRecord::Base
     end
   end
   
+  def google_map(request, zoomlevel=12, maptype='roadmap')
+    returning String.new do |str|
+      str << "http://maps.google.com/staticmap"
+      str << "?size=300x200"
+      str << "&center=#{lat},#{lng}"
+      str << "&markers=#{lat},#{lng}"
+      str << "&zoom=#{zoomlevel}"
+      str << "&maptype=#{maptype}"
+      str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
+      str << "&sensor=false"
+    end
+  end
+
   def self.find_or_create(date, latitude, longitude)
     graticule = Graticule.find_or_create_by_latitude_and_longitude(latitude, longitude)
     return nil if graticule.nil?

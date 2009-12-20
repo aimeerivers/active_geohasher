@@ -48,4 +48,15 @@
 
   .span-8.last
     .google_map_container
-      = image_tag(@geohash.google_map_with_graticule(request), :alt => "Geohash in #{@geohash.place_name_display}", :size => "300x400", :class => 'google_map')
+      %p
+        = image_tag(@geohash.google_map_with_graticule(request), :alt => "Geohash in #{@geohash.place_name_display}", :size => "300x400", :class => 'google_map')
+      %p
+        = image_tag(@geohash.google_map(request, 12), :alt => "City view", :size => "300x200", :class => 'google_map')
+      %p
+        = image_tag(@geohash.google_map(request, 14), :alt => "Street view", :size => "300x200", :class => 'google_map')
+      -if @geohash.place_name?
+        %p
+          = image_tag(@geohash.google_map(request, 15, 'hybrid'), :alt => "Hybrid view", :size => "300x200", :class => 'google_map')
+        %p
+          = image_tag(@geohash.google_map(request, 19, 'hybrid'), :alt => "Satellite view", :size => "300x200", :class => 'google_map')
+
