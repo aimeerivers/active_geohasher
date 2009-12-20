@@ -31,6 +31,10 @@
       = link_to('peeron', @geohash.peeron_link)
 
     %p.geohash_link
+      = image_tag('anthill.png', :size => '60x60', :alt => 'Anthill')
+      = link_to('anthill lookup tool', @geohash.anthill_link)
+
+    %p.geohash_link
       = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
       = link_to('google maps', @geohash.google_link)
 
