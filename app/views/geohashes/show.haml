@@ -20,6 +20,12 @@
       %strong Coordinates:
       = @geohash.latitude_longitude_display
 
+    -if logged_in? && current_user.location_set?
+      %p
+        %strong Distance:
+        = current_user.distance_to(@geohash.lat, @geohash.lng)
+        from your home location
+
     %h2 Useful links
 
     %p.geohash_link
@@ -37,6 +43,11 @@
     %p.geohash_link
       = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
       = link_to('google maps', @geohash.google_link)
+
+    - if logged_in? && current_user.location_set?
+      %p.geohash_link
+        = image_tag('google_directions.png', :size => '60x60', :alt => 'Google route')
+        = link_to('google directions', @geohash.directions_link(current_user.latitude_display, current_user.longitude_display))
 
     %p.geohash_link
       = image_tag('bing.png', :size => '60x60', :alt => 'Bing')
