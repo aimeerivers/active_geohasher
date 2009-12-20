@@ -38,7 +38,7 @@
 
   .span-8.last
     .google_map_container
-      = image_tag(@graticule.google_map(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
+      = image_tag(@graticule.google_map_with_latest_geohashes(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
 
     %br/
     = render :partial => 'latest_geohashes', :locals => {:graticule => @graticule}

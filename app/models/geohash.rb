@@ -5,6 +5,10 @@ class Geohash < ActiveRecord::Base
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
+
+  def to_param
+    id.to_s(36)
+  end
   
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?date=#{date.strftime('%Y-%m-%d')}&lat=#{graticule.latitude}&long=#{graticule.longitude}&zoom=8"
@@ -58,6 +62,13 @@ class Geohash < ActiveRecord::Base
   
   def description
     "#{date.strftime('%A')} #{date}: #{latitude_display}, #{longitude_display}: #{place_name_display}"
+  end
+
+  def google_map_with_graticule(request)
+    returning String.new do |str|
+      str << graticule.google_map(request)
+      str << "&markers=#{lat},#{lng}"
+    end
   end
   
   def self.find_or_create(date, latitude, longitude)

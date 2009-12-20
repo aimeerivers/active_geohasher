@@ -7,6 +7,6 @@
   - geohashes.each do |geohash|
     %h4= friendly_date(geohash.date)
     %p
-      = geohash.place_name_display
+      = link_to(geohash.place_name_display, geohash_path(geohash))
       %br/
       = geohash.latitude_longitude_display

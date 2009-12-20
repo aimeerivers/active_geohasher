@@ -53,9 +53,13 @@ class Graticule < ActiveRecord::Base
   def youtube_link
     "http://www.youtube.com/results?search_query=#{tag}&search=tag"
   end
+
+  def latitude_longitude_display
+    "#{latitude}, #{longitude}"
+  end
   
   def display_name
-    "#{latitude}, #{longitude} #{name}"
+    "#{latitude_longitude_display}: #{name}"
   end
   
   def google_map(request)
@@ -65,11 +69,17 @@ class Graticule < ActiveRecord::Base
       str << "&center=#{latitude}.500000,#{longitude}.500000"
       str << "&zoom=8"
       str << "&path=rgba:0xff000080,weight:2|#{south_east}|#{south_west}|#{north_west}|#{north_east}|#{south_east}"
+      str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
+      str << "&sensor=false"
+    end
+  end
+
+  def google_map_with_latest_geohashes(request)
+    returning String.new do |str|
+      str << google_map(request)
       geohashes.latest.each do |geohash|
         str << "&markers=#{geohash.lat},#{geohash.lng}"
       end
-      str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
-      str << "&sensor=false"
     end
   end
   

@@ -1,0 +1,25 @@
+.span-24
+  .span-16.first
+    %h1
+      Geohash in
+      = @graticule.latitude_longitude_display
+      on
+      = @geohash.date.strftime('%Y-%m-%d')
+    %h2 Details
+    %p
+      %strong Location:
+      = @geohash.place_name_display
+    %p
+      %strong Date:
+      = friendly_date(@geohash.date)
+    %p
+      %strong Graticule:
+      = link_to(@graticule.display_name, pretty_graticule_path(@graticule.latitude, @graticule.longitude))
+    %p
+      %strong Coordinates:
+      = @geohash.latitude_longitude_display
+
+
+  .span-8.last
+    .google_map_container
+      = image_tag(@geohash.google_map_with_graticule(request), :alt => "Geohash in #{@geohash.place_name_display}", :size => "300x400", :class => 'google_map')
