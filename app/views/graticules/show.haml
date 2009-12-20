@@ -45,4 +45,34 @@
 
 
 .span-24
-  -# pictures here
+  %h3 Live from twitter
+  %p
+    Latest tweets tagged
+    = '#' + @graticule.tag
+    will show up here.
+  %script{:src => "http://widgets.twimg.com/j/2/widget.js", :type => "text/javascript"}
+  :javascript
+    new TWTR.Widget({
+      version: 2,
+      type: 'search',
+      search: '##{@graticule.tag}',
+      interval: 6000,
+      title: 'tweets tagged',
+      subject: '##{@graticule.tag}',
+      width: 'auto',
+      height: 200,
+      theme: {
+        shell: { background: '#eeeeee', color: '#888888' },
+        tweets: { background: '#ffffff', color: '#444444', links: '#111111' }
+      },
+      features: {
+        scrollbar: true,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'default'
+      }
+    }).render().start();
+  %br/
