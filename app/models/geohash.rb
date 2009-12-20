@@ -37,6 +37,10 @@ class Geohash < ActiveRecord::Base
   def osm_link
     "http://www.openstreetmap.org/index.html?mlat=#{lat}&mlon=#{lng}"
   end
+
+  def geocaching_link
+    "http://www.geocaching.com/seek/nearest.aspx?origin_lat=#{lat}&origin_long=#{lng}&dist=3"
+  end
   
   def place_name_display
     return '[unknown location]' if place_name.blank?

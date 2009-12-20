@@ -1,10 +1,11 @@
 .span-24
   .span-16.first
     %h1
-      Geohash in
-      = @graticule.latitude_longitude_display
-      on
+      Geohash on
       = @geohash.date.strftime('%Y-%m-%d')
+      in
+      = @graticule.latitude_longitude_display
+
     %h2 Details
     %p
       %strong Location:
@@ -19,6 +20,31 @@
       %strong Coordinates:
       = @geohash.latitude_longitude_display
 
+    %h2 Useful links
+
+    %p.geohash_link
+      = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => 'Wiki')
+      = link_to('geohashing wiki expedition page', @geohash.wiki_link)
+
+    %p.geohash_link
+      = image_tag('peeron.png', :size => '60x60', :alt => 'Peeron')
+      = link_to('peeron', @geohash.peeron_link)
+
+    %p.geohash_link
+      = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
+      = link_to('google maps', @geohash.google_link)
+
+    %p.geohash_link
+      = image_tag('bing.png', :size => '60x60', :alt => 'Bing')
+      = link_to('bing maps', @geohash.bing_link)
+
+    %p.geohash_link
+      = image_tag('osm_logo_60.png', :size => '60x60', :alt => 'Open street map')
+      = link_to('open street map', @geohash.osm_link)
+
+    %p.geohash_link
+      = image_tag('geocaching_logo_60.gif', :size => '60x60', :alt => 'Geocaching')
+      = link_to('nearby geocaches', @geohash.geocaching_link)
 
   .span-8.last
     .google_map_container
