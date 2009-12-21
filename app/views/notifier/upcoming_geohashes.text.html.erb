@@ -8,7 +8,7 @@
 
 <% @user.new_geohashes_since(@start_time).each do |date, geohashes| -%>
   <hr />
-  <h2><%= friendly_date(date) %></h2>
+  <h2><%= date.strftime('%A, %d %B %Y') %></h2>
   <% geohashes.each do |geohash| -%>
     <h3><%= geohash.graticule_display_name %></h3>
     <ul>

@@ -7,8 +7,8 @@ Here are your upcoming geohash locations, brought to you by Active geohasher.
 <% end -%>
 
 <% @user.new_geohashes_since(@start_time).each do |date, geohashes| -%>
-<%= friendly_date(date) %>
-<% friendly_date(date).length.times do -%><%= '-' %><% end -%>
+<%= date.strftime('%A, %d %B %Y') %>
+<% date.strftime('%A, %d %B %Y').length.times do -%><%= '-' %><% end -%>
 
   <% geohashes.each do |geohash| -%>
 
