@@ -20,7 +20,8 @@
         <% end -%>
       </li>
       <li>
-        <%= link_to('google', geohash.google_link) %>
+        <%= link_to('active geohasher', geohash_url(geohash, :host => 'activegeohasher.com')) %>
+        | <%= link_to('google', geohash.google_link) %>
         | <%= link_to('bing', geohash.bing_link) %>
         | <%= link_to('<abbr title="Open Street Map">osm</abbr>', geohash.osm_link) %>
         <% if show_locations %>
