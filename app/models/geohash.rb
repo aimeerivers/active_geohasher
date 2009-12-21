@@ -43,7 +43,7 @@ class Geohash < ActiveRecord::Base
   end
 
   def coordinate_calculation_image
-    "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}&lon=#{graticule.longitude}"
+    "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}.0&lon=#{graticule.longitude}.0"
   end
   
   def place_name_display
