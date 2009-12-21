@@ -61,6 +61,13 @@
       = image_tag('geocaching_logo_60.gif', :size => '60x60', :alt => 'Geocaching')
       = link_to('nearby geocaches', @geohash.geocaching_link)
 
+
+    %br/
+    %hr/
+    %h3 How the geohash is calculated
+    %p
+      = link_to(image_tag(@geohash.coordinate_calculation_image, :alt => "How the geohash is calculated", :size => '616x343'), @geohash.coordinate_calculation_image)
+
   .span-8.last
     .google_map_container
       %p

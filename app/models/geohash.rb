@@ -41,6 +41,10 @@ class Geohash < ActiveRecord::Base
   def geocaching_link
     "http://www.geocaching.com/seek/nearest.aspx?origin_lat=#{lat}&origin_long=#{lng}&dist=3"
   end
+
+  def coordinate_calculation_image
+    "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}&lon=#{graticule.longitude}"
+  end
   
   def place_name_display
     return '[unknown location]' if place_name.blank?
