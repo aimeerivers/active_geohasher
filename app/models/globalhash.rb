@@ -3,6 +3,7 @@ class Globalhash < ActiveRecord::Base
   belongs_to :history
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
+  named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
   
   def google_link
     "http://maps.google.com/?ie=UTF8&ll=#{lat},#{lng}&z=8&q=loc:#{lat},#{lng}"

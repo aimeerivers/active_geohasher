@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :subscriptions
   map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   map.resources :geohashes, :only => [:show]
+  map.resources :globalhashes, :only => [:index]
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
 
