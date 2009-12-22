@@ -1,38 +1,10 @@
 class Globalhash < ActiveRecord::Base
+  include GenericGeohash
   
   belongs_to :history
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
-  
-  def google_link
-    "http://maps.google.com/?ie=UTF8&ll=#{lat},#{lng}&z=8&q=loc:#{lat},#{lng}"
-  end
-  
-  def bing_link
-    "http://www.bing.com/maps/?v=2&where1=#{lat}%2C%20#{lng}&encType=1"
-  end
-  
-  def osm_link
-    "http://www.openstreetmap.org/index.html?mlat=#{lat}&mlon=#{lng}"
-  end
-  
-  def place_name_display
-    return '[unknown location]' if place_name.blank?
-    place_name
-  end
-  
-  def latitude_display
-    lat.round(5).to_s
-  end
-  
-  def longitude_display
-    lng.round(5).to_s
-  end
-
-  def latitude_longitude_display
-    "#{latitude_display}, #{longitude_display}"
-  end
   
   def self.find_or_create(date)
     self.find_by_date(date.strftime('%Y-%m-%d')) || self.create_for_date(date)
