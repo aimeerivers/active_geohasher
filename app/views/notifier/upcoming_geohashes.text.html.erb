@@ -8,15 +8,15 @@
 
 <% @user.new_geohashes_since(@start_time).each do |date, geohashes| -%>
   <hr />
-  <h2><%= date.strftime('%A, %d %B %Y') %></h2>
+  <h3><%= date.strftime('%A, %d %B %Y') %></h3>
   <% geohashes.each do |geohash| -%>
-    <h3><%= geohash.graticule_display_name %></h3>
+    <strong><%= geohash.graticule_display_name %></strong>
     <ul>
       <li>
-        <strong><%= geohash.place_name_display %></strong>
+        <%= geohash.place_name_display %>
         <em>(<%= geohash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <strong><%= @user.distance_to(geohash.lat, geohash.lng) %> away</strong>
+          <%= @user.distance_to(geohash.lat, geohash.lng) %> away
         <% end -%>
       </li>
       <li>
@@ -37,13 +37,13 @@
 
   <% globalhash = Globalhash.find_by_date(date) -%>
   <% if globalhash -%>
-    <h3>Globalhash</h3>
+    <strong>Globalhash</strong>
     <ul>
       <li>
-        <strong><%= globalhash.place_name_display %></strong>
+        <%= globalhash.place_name_display %>
         <em>(<%= globalhash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <strong><%= @user.distance_to(globalhash.lat, globalhash.lng) %> away</strong>
+          <%= @user.distance_to(globalhash.lat, globalhash.lng) %> away
         <% end -%>
       </li>
       <li>
