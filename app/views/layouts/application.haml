@@ -37,6 +37,13 @@
         
       .span-24
         = yield
+
+      .span-24.footer
+        Active geohasher
+        |
+        = link_to('privacy policy', privacy_path)
+        |
+        = link_to('source code', 'http://github.com/sermoa/active_geohasher')
  
     = yield(:post_page_load_javascript)
     
