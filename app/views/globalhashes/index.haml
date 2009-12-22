@@ -2,3 +2,26 @@
 
 - @globalhashes.each do |globalhash|
   %h2= friendly_date(globalhash.date)
+  .span-24
+    .span-9.first
+      = image_tag(globalhash.google_map(request, 0), :alt => "Globalhash on #{friendly_date(globalhash.date)} in #{globalhash.place_name_display}", :size => "300x200", :class => 'google_map')
+      %p
+        = globalhash.latitude_longitude_display
+        %br/
+        = globalhash.place_name_display
+
+    .span-15.last
+      
+      %p.globalhash_link
+        = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
+        = link_to('google maps', globalhash.google_link)
+
+      %p.globalhash_link
+        = image_tag('bing.png', :size => '60x60', :alt => 'Bing')
+        = link_to('bing maps', globalhash.bing_link)
+
+      %p.globalhash_link
+        = image_tag('osm_logo_60.png', :size => '60x60', :alt => 'Open street map')
+        = link_to('open street map', globalhash.osm_link)
+
+
