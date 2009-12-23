@@ -10,7 +10,7 @@
   <hr />
   <h3><%= date.strftime('%A, %d %B %Y') %></h3>
   <% geohashes.each do |geohash| -%>
-    <strong><%= link_to(geohash.graticule_display_name, pretty_graticule_path(geohash.graticule_latitude, geohash.graticule_longitude, :host => 'activegeohasher.com')) %></strong>
+    <strong><%= link_to(geohash.graticule_display_name, pretty_graticule_url(geohash.graticule_latitude, geohash.graticule_longitude, :host => 'activegeohasher.com')) %></strong>
     <ul>
       <li>
         <span style="background-color:#aaffaa;"><%= geohash.place_name_display %></span>
@@ -37,7 +37,7 @@
 
   <% globalhash = Globalhash.find_by_date(date) -%>
   <% if globalhash -%>
-    <strong><%= link_to('Globalhash', globalhashes_path(:host => 'activegeohasher.com')) %></strong>
+    <strong><%= link_to('Globalhash', globalhashes_url(:host => 'activegeohasher.com')) %></strong>
     <ul>
       <li>
         <span style="background-color:#aaffaa;"><%= globalhash.place_name_display %></span>
