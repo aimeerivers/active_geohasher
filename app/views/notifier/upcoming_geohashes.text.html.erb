@@ -13,10 +13,10 @@
     <strong><%= geohash.graticule_display_name %></strong>
     <ul>
       <li>
-        <%= geohash.place_name_display %>
+        <span style="background-color:#aaffaa;"><%= geohash.place_name_display %></span>
         <em>(<%= geohash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <%= @user.distance_to(geohash.lat, geohash.lng) %> away
+          <span style="background-color:#ffffaa;"><%= @user.distance_to(geohash.lat, geohash.lng) %> away</span>
         <% end -%>
       </li>
       <li>
@@ -40,10 +40,10 @@
     <strong>Globalhash</strong>
     <ul>
       <li>
-        <%= globalhash.place_name_display %>
+        <span style="background-color:#aaffaa;"><%= globalhash.place_name_display %></span>
         <em>(<%= globalhash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <%= @user.distance_to(globalhash.lat, globalhash.lng) %> away
+          <span style="background-color:#ffffaa;"><%= @user.distance_to(globalhash.lat, globalhash.lng) %> away</span>
         <% end -%>
       </li>
       <li>
