@@ -13,10 +13,10 @@
     <strong><%= link_to(geohash.graticule_display_name, pretty_graticule_url(geohash.graticule_latitude, geohash.graticule_longitude, :host => 'activegeohasher.com')) %></strong>
     <ul>
       <li>
-        <span style="background-color:#aaffaa;"><%= geohash.place_name_display %></span>
+        <span style="background-color:#c8ffc8;"><%= geohash.place_name_display %></span>
         <em>(<%= geohash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <span style="background-color:#ffffaa;"><%= @user.distance_to(geohash.lat, geohash.lng) %> away</span>
+          <span style="background-color:#ffffc8;"><%= @user.distance_to(geohash.lat, geohash.lng) %> away</span>
         <% end -%>
       </li>
       <li>
@@ -40,10 +40,10 @@
     <strong><%= link_to('Globalhash', globalhashes_url(:host => 'activegeohasher.com')) %></strong>
     <ul>
       <li>
-        <span style="background-color:#aaffaa;"><%= globalhash.place_name_display %></span>
+        <span style="background-color:#c8ffc8;"><%= globalhash.place_name_display %></span>
         <em>(<%= globalhash.latitude_longitude_display %>)</em>
         <% if show_locations -%>
-          <span style="background-color:#ffffaa;"><%= @user.distance_to(globalhash.lat, globalhash.lng) %> away</span>
+          <span style="background-color:#ffffc8;"><%= @user.distance_to(globalhash.lat, globalhash.lng) %> away</span>
         <% end -%>
       </li>
       <li>
