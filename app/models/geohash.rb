@@ -31,6 +31,16 @@ class Geohash < ActiveRecord::Base
     "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}.0&lon=#{graticule.longitude}.0"
   end
   
+  def graticule_latitude
+    return '' if graticule.nil?
+    graticule.latitude
+  end
+  
+  def graticule_longitude
+    return '' if graticule.nil?
+    graticule.longitude
+  end
+  
   def graticule_display_name
     return '' if graticule.nil?
     graticule.display_name
