@@ -1,6 +1,6 @@
-%h1 Custom links
+%h2 Custom links
 
-%p Add your own map links here.
+%p Add links here and they will will be provided in your email for each geohash.
 %p
   Use
   %code
@@ -8,10 +8,14 @@
   and
   %code
     [LONGITUDE]
-  as placeholders which will be filled in for each geohash. For example:
-%p
-  %code
-    http://kart.finn.no/?lat=[LATITUDE]&lng=[LONGITUDE]
+  as placeholders to be replaced with the relevant values. Here are some example links you could use: 
+%ul
+  %li
+    %code http://kart.finn.no/?lat=[LATITUDE]&lng=[LONGITUDE]
+  %li
+    %code http://search.twitter.com/search?near=[LATITUDE],+[LONGITUDE]&within=2&units=mi
+
+%hr/
 
 - form_for(@new_custom_link) do |f|
   = f.error_messages
@@ -26,8 +30,8 @@
 
     - current_user.custom_links.newest_first.each do |custom_link|
       %tr
-        %td= custom_link.name
-        %td= custom_link.url
+        %td= h(custom_link.name)
+        %td= truncate(h(custom_link.url), :length => 120)
         %td
           = link_to('edit', edit_custom_link_path(custom_link))
           |
