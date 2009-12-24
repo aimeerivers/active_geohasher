@@ -6,6 +6,8 @@
   <% show_locations = true -%>
 <% end -%>
 
+<% custom_links = @user.custom_links -%>
+
 <% @user.new_geohashes_since(@start_time).each do |date, geohashes| -%>
   <hr />
   <h3><%= date.strftime('%A, %d %B %Y') %></h3>
@@ -31,6 +33,14 @@
         | <%= link_to('anthill', geohash.anthill_link(@user)) %>
         | <%= link_to('wiki', geohash.wiki_link) %>
       </li>
+      <% if custom_links.any? -%>
+        <li>
+        <% custom_links.each_with_index do |custom_link, index| -%>
+          <%= '| ' unless index == 0 %>
+          <%= link_to(custom_link.name, custom_link.magic_url({:latitude => geohash.lat, :longitude => geohash.lng})) %>
+        <% end -%>
+        </li>
+      <% end -%>
     </ul>
     <%# <br />%>
   <% end -%>
