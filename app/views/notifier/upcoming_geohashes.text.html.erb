@@ -61,6 +61,14 @@
         | <%= link_to('bing', globalhash.bing_link) %>
         | <%= link_to('<abbr title="Open Street Map">osm</abbr>', globalhash.osm_link) %>
       </li>
+      <% if custom_links.any? -%>
+        <li>
+        <% custom_links.each_with_index do |custom_link, index| -%>
+          <%= '| ' unless index == 0 %>
+          <%= link_to(custom_link.name, custom_link.magic_url({:latitude => globalhash.lat, :longitude => globalhash.lng})) %>
+        <% end -%>
+        </li>
+      <% end -%>
     </ul>
   <% end -%>
 <% end -%>
