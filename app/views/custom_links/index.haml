@@ -1,0 +1,31 @@
+%h1 Custom links
+
+%p Add your own map links here.
+%p
+  Use
+  %code
+    [LATITUDE]
+  and
+  %code
+    [LONGITUDE]
+  as placeholders which will be filled in for each geohash. For example:
+%p
+  %code
+    http://kart.finn.no/?lat=[LATITUDE]&lng=[LONGITUDE]
+
+- form_for(@new_custom_link) do |f|
+  = f.error_messages
+  %table#custom_links
+    %tr
+      %th Name
+      %th URL
+    %tr#new_custom_link_row
+      %td.span-5.first= f.text_field(:name, :style => 'width: 150px;')
+      %td.span-15= f.text_field(:url, :style => 'width: 550px;')
+      %td.span-4.last= f.submit('Add')
+
+    - current_user.custom_links.newest_first.each do |custom_link|
+      %tr
+        %td= custom_link.name
+        %td= custom_link.url
+        %td= link_to('Delete', custom_link_path(custom_link), :method => 'delete', :confirm => "Are you sure you wish to delete this custom link?")

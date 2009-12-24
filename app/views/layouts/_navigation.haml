@@ -6,6 +6,8 @@
     =link_to('Your home location', location_path)
   %li{:class => controller.request.path == subscribe_path ? 'active' : ''}
     =link_to('Your subscriptions', subscribe_path)
+  %li{:class => controller.request.path == custom_links_path ? 'active' : ''}
+    =link_to('Custom links', custom_links_path)
   %li{:class => controller.request.path == globalhashes_path ? 'active' : ''}
     =link_to('Globalhashes', globalhashes_path)
 

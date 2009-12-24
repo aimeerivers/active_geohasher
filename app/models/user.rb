@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   
   has_many :subscriptions, :dependent => :destroy
   has_many :graticules, :through => :subscriptions
+  has_many :custom_links
   
   named_scope :receiving_email, :conditions => "email IS NOT NULL AND email <> '' AND receive_email = true"
   
