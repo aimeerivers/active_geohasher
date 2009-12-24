@@ -1,0 +1,19 @@
+%h1 Edit custom link
+
+- form_for(@custom_link) do |f|
+  = f.error_messages
+
+  %p
+    = f.label(:name)
+    %br/
+    = f.text_field(:name)
+
+  %p
+    = f.label(:url, 'URL')
+    %br/
+    = f.text_field(:url)
+
+  %p
+    = f.submit('Update custom link')
+    or
+    = link_to('Cancel', custom_links_path)

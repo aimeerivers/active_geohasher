@@ -14,7 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   map.resources :geohashes, :only => [:show]
   map.resources :globalhashes, :only => [:index]
-  map.resources :custom_links, :only => [:index, :create, :destroy]
+  map.resources :custom_links, :only => [:index, :create, :edit, :update, :destroy]
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
 

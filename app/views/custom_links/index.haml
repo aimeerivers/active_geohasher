@@ -28,4 +28,7 @@
       %tr
         %td= custom_link.name
         %td= custom_link.url
-        %td= link_to('Delete', custom_link_path(custom_link), :method => 'delete', :confirm => "Are you sure you wish to delete this custom link?")
+        %td
+          = link_to('edit', edit_custom_link_path(custom_link))
+          |
+          = link_to('delete', custom_link_path(custom_link), :method => 'delete', :confirm => "Are you sure you wish to delete this custom link?")
