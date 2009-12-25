@@ -4,6 +4,10 @@
 %hr/
 
 %h2 Your subscriptions
-- current_user.subscriptions.by_graticule_latitude_and_longitude.each do |subscription|
+- if @subscriptions.empty?
+  .notice
+    You are not subscribed to any graticules. Enter your coordinates above, or
+    = link_to('set your home location', location_path)
+- @subscriptions.each do |subscription|
   = render :partial => 'graticules/show', :locals => {:graticule => subscription.graticule, :subscription => subscription}
 

@@ -29,6 +29,7 @@ class UsersController < ApplicationController
   end
   
   def subscribe
+    @subscriptions = current_user.subscriptions.by_graticule_latitude_and_longitude
   end
   
 end
