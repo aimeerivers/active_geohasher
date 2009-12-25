@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   named_scope :receiving_email, :conditions => "email IS NOT NULL AND email <> '' AND receive_email = true"
   
   DISTANCE_UNITS = ['miles', 'kms']
+  preference :distance_units, :string, :default => 'miles'
   
   def location_set?
     !(lat.nil? || lng.nil? || lat == 0 || lng == 0)
@@ -44,7 +45,7 @@ class User < ActiveRecord::Base
   
   def distance_to(lat, lng)
     return '' if !location_set?
-    "#{home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => distance_units.to_sym).round(1)} #{I18n.t(distance_units)}"
+    "#{home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => preferred_distance_units.to_sym).round(1)} #{I18n.t(preferred_distance_units)}"
   end
 
   def new_geohashes_since(start_time)
