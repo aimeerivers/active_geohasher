@@ -37,6 +37,14 @@
       = link_to("youtube: #{@graticule.tag}", @graticule.youtube_link)
 
   .span-8.last
+    - if logged_in?
+      .subscription_buttons
+        - if current_user.subscribed_to_graticule?(@graticule)
+          - subscription = Subscription.find_by_user_id_and_graticule_id(current_user, @graticule)
+          = link_to(image_tag('graticule_unsubscribe.png'), subscription_path(subscription), :method => :delete)
+        - else
+          = link_to(image_tag('graticule_subscribe.png'), subscriptions_path(:latitude => @graticule.latitude, :longitude => @graticule.longitude), :method => :post)
+
     .google_map_container
       = image_tag(@graticule.google_map_with_latest_geohashes(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
 

@@ -17,12 +17,16 @@ class User < ActiveRecord::Base
   
   def subscribe_to_graticule(graticule)
     return if graticule.nil?
-    graticules << graticule unless graticules.include?(graticule)
+    graticules << graticule unless subscribed_to_graticule?(graticule)
   end
   
   def unsubscribe_from_graticule(graticule)
     return if graticule.nil?
-    graticules.delete(graticule) if graticules.include?(graticule)
+    graticules.delete(graticule) if subscribed_to_graticule?(graticule)
+  end
+
+  def subscribed_to_graticule?(graticule)
+    graticules.include?(graticule)
   end
   
   def home_location
