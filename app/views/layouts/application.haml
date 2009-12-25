@@ -26,6 +26,8 @@
             
         .span-8.last{:style => "text-align:right;"}
           = render :partial => 'layouts/authentication'
+          - if !logged_in?
+            = link_to(image_tag('what_is_geohashing.png', :alt => "What is geohashing?", :size => '300x50'), what_is_geohashing_path)
         
       - if flash[:success]
         .flash.success.span-24= flash[:success]

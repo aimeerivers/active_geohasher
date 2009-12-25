@@ -17,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :custom_links, :only => [:index, :create, :edit, :update, :destroy]
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
+  map.what_is_geohashing '/what_is_geohashing', :controller => :home, :action => :what_is_geohashing
 
   map.pretty_graticule '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
   
