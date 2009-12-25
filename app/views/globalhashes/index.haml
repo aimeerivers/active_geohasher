@@ -1,7 +1,16 @@
-%h1 Recent and upcoming globalhash locations
+%h2 Recent and upcoming globalhash locations
+
+%p
+  A globalhash is the geohashing algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!
+
+%p
+  See
+  %a{:href => 'http://geohashing.org/Globalhash'}http://geohashing.org/Globalhash
+  for more information.
 
 - @globalhashes.each do |globalhash|
-  %h2= friendly_date(globalhash.date)
+  %hr/
+  %h3= friendly_date(globalhash.date)
   .span-24
     .span-9.first
       = image_tag(globalhash.google_map(request, 0), :alt => "Globalhash on #{friendly_date(globalhash.date)} in #{globalhash.place_name_display}", :size => "300x200", :class => 'google_map')

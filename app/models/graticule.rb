@@ -59,7 +59,7 @@ class Graticule < ActiveRecord::Base
   end
   
   def display_name
-    "#{latitude_longitude_display}: #{name}"
+    "#{latitude_longitude_display}: #{name || '[Awaiting graticule name]'}"
   end
   
   def google_map(request)

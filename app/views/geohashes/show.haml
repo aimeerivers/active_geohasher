@@ -1,12 +1,12 @@
 .span-24
   .span-16.first
-    %h1
+    %h2
       Geohash on
       = @geohash.date.strftime('%Y-%m-%d')
       in
       = @graticule.latitude_longitude_display
 
-    %h2 Details
+    %h3 Details
     %p
       %strong Location:
       = @geohash.place_name_display
@@ -27,7 +27,7 @@
         from your home location
 
     %hr/
-    %h2 Useful links
+    %h3 Useful links
 
     %p.geohash_link
       = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => 'Wiki')
@@ -67,7 +67,7 @@
       - if custom_links.any?
         %br/
         %hr/
-        %h2 Custom links
+        %h3 Custom links
         %ul
           - custom_links.each do |custom_link|
             %li= link_to(h(custom_link.name), custom_link.magic_url({:latitude => @geohash.lat, :longitude => @geohash.lng}))
@@ -75,7 +75,7 @@
 
     %br/
     %hr/
-    %h2 How the geohash is calculated
+    %h3 How the geohash is calculated
     %p
       = link_to(image_tag(@geohash.coordinate_calculation_image, :alt => "How the geohash is calculated", :size => '616x343'), @geohash.coordinate_calculation_image)
 
