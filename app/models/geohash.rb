@@ -67,7 +67,7 @@ class Geohash < ActiveRecord::Base
   private
   
   def self.create_for_date_and_graticule(date, graticule)
-    history = History.for(date, graticule.w30?)
+    history = History.for(date, (date >= Date.parse('2008-05-26') && graticule.w30?))
     return nil if history.nil?
     
     lat = "#{graticule.latitude}.#{history.lat.to_s.split('.').last}"
