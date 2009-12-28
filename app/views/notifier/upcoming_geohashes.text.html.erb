@@ -25,7 +25,7 @@
       <% if links.any? -%>
         <li>
           Links
-          <%= " | " + link_to(I18n.t('ag'), geohash_url(geohash, :host => 'activegeohasher.com')) if links.include?('ag') %>
+          <%= " | " + link_to(I18n.t('ag'), pretty_geohash_url(geohash.date, geohash.graticule_latitude, geohash.graticule_longitude, :host => 'activegeohasher.com')) if links.include?('ag') %>
           <%= " | " + link_to(I18n.t('wiki'), geohash.wiki_link) if links.include?('wiki') %>
           <%= " | " + link_to(I18n.t('google'), geohash.google_link) if links.include?('google') %>
           <%= " | " + link_to(I18n.t('bing'), geohash.bing_link) if links.include?('bing') %>
