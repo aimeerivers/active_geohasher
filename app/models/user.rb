@@ -10,6 +10,9 @@ class User < ActiveRecord::Base
   
   DISTANCE_UNITS = ['miles', 'kms']
   preference :distance_units, :string, :default => 'miles'
+
+  AVAILABLE_LINKS = ['ag', 'wiki', 'google', 'bing', 'osm', 'directions', 'peeron', 'anthill', 'geocaching']
+  preference :links, :string, :default => "ag,wiki,google,bing,osm,directions,peeron,anthill"
   
   def location_set?
     !(lat.nil? || lng.nil? || lat == 0 || lng == 0)

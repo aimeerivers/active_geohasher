@@ -19,10 +19,17 @@
     =f.text_field :email
     
   %p
-    =f.label :receive_email
+    =f.label :receive_email, "Receive emails"
     %br/
     =f.check_box :receive_email
     
+  %p
+    =label_tag "preferred_links", "Links you want in your emails"
+    %br/
+    =select_tag("preferred_links", options_for_select(User::AVAILABLE_LINKS.map{|link| [I18n.t(link), link]}, :selected => current_user.preferred_links.split(',')), :multiple => true)
+    %br/
+    Use Ctrl or Cmd to select multiple links.
+
   %p
     =f.label :preferred_distance_units, 'Measure distances in'
     %br/
