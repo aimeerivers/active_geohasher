@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.pretty_graticule '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
   map.pretty_geohash '/geohash/:date/:latitude/:longitude', :controller => :geohashes, :action => :show
+  map.pretty_globalhash '/globalhash/:date/', :controller => :globalhashes, :action => :show
   
   map.root :controller => 'home'
   
