@@ -6,9 +6,13 @@ namespace :geohashing do
   task :find_graticule_names do
     puts "Looking for graticules without names"
     Graticule.without_names.each do |graticule|
-      puts "Processing #{graticule.latitude}, #{graticule.longitude} ... "
-      name = graticule.get_name_from_geohashing_wiki
-      puts name
+      begin
+        puts "Processing #{graticule.latitude}, #{graticule.longitude} ... "
+        name = graticule.get_name_from_geohashing_wiki
+        puts name
+      rescue
+        puts "Could not find graticule name"
+      end
     end
   end
 end
