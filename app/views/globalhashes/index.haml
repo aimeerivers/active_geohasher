@@ -17,7 +17,7 @@
       %p
         = globalhash.latitude_longitude_display
         %br/
-        = globalhash.place_name_display
+        = link_to(globalhash.place_name_display, pretty_globalhash_path(globalhash.date))
 
     .span-15.last
       

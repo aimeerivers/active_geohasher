@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :subscriptions
   map.resources :graticules, :only => [:show], :member => {:geohashes => :get}
   map.resources :geohashes, :only => [:show]
-  map.resources :globalhashes, :only => [:index]
+  map.resources :globalhashes, :only => [:index, :show]
   map.resources :custom_links, :only => [:index, :create, :edit, :update, :destroy]
   
   map.privacy '/privacy', :controller => :home, :action => :privacy
@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.pretty_graticule '/graticule/:latitude/:longitude', :controller => :graticules, :action => :show
   map.pretty_geohash '/geohash/:date/:latitude/:longitude', :controller => :geohashes, :action => :show
+  map.pretty_globalhash '/globalhash/:date/', :controller => :globalhashes, :action => :show
   
   map.root :controller => 'home'
   

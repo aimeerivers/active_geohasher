@@ -1,0 +1,66 @@
+.span-24
+  .span-15.first
+    %h2
+      Globalhash on
+      = friendly_date(@globalhash.date)
+
+    %h3 Details
+    %p
+      %strong Location:
+      = @globalhash.place_name_display
+    %p
+      %strong Coordinates:
+      = @globalhash.latitude_longitude_display
+
+    -if logged_in? && current_user.location_set?
+      %p
+        %strong Distance:
+        = current_user.distance_to(@globalhash.lat, @globalhash.lng)
+        from your home location
+
+    %hr/
+    %h3 Useful links
+
+    %p.geohash_link
+      = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
+      = link_to('google maps', @globalhash.google_link)
+
+
+    %p.geohash_link
+      = image_tag('bing.png', :size => '60x60', :alt => 'Bing')
+      = link_to('bing maps', @globalhash.bing_link)
+
+    %p.geohash_link
+      = image_tag('osm_logo_60.png', :size => '60x60', :alt => 'Open street map')
+      = link_to('open street map', @globalhash.osm_link)
+
+    %p.geohash_link
+      = image_tag('geocaching_logo_60.gif', :size => '60x60', :alt => 'Geocaching')
+      = link_to('nearby geocaches', @globalhash.geocaching_link)
+
+    - if logged_in?
+      - custom_links = current_user.custom_links
+      - if custom_links.any?
+        %br/
+        %hr/
+        %h3 Custom links
+        %ul
+          - custom_links.each do |custom_link|
+            %li= link_to(h(custom_link.name), custom_link.magic_url({:latitude => @globalhash.lat, :longitude => @globalhash.lng}))
+
+
+
+  .span-8.last
+    .google_map_container
+      %p
+        = image_tag(@globalhash.google_map(request, 1), :alt => "World view", :size => "300x200", :class => 'google_map')
+      %p
+        = image_tag(@globalhash.google_map(request, 5), :alt => "Country view", :size => "300x200", :class => 'google_map')
+      %p
+        = image_tag(@globalhash.google_map(request, 8), :alt => "Area view", :size => "300x200", :class => 'google_map')
+
+      -if @globalhash.place_name?
+        %p
+          = image_tag(@globalhash.google_map(request, 12), :alt => "City view", :size => "300x200", :class => 'google_map')
+        %p
+          = image_tag(@globalhash.google_map(request, 13, 'hybrid'), :alt => "Hybrid view", :size => "300x200", :class => 'google_map')

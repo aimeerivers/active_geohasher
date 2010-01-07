@@ -62,6 +62,7 @@
       <% if links.any? -%>
         <li>
           Links
+          <%= " | " + link_to(I18n.t('ag'), pretty_globalhash_url(globalhash.date, :host => 'activegeohasher.com')) if links.include?('ag') %>
           <%= " | " + link_to(I18n.t('google'), globalhash.google_link) if links.include?('google') %>
           <%= " | " + link_to(I18n.t('bing'), globalhash.bing_link) if links.include?('bing') %>
           <%= " | " + link_to(I18n.t('osm'), globalhash.osm_link) if links.include?('osm') %>
