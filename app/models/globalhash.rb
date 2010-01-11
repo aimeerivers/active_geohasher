@@ -5,6 +5,10 @@ class Globalhash < ActiveRecord::Base
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
+
+  def google_maps_label
+    "Globalhash for #{date.strftime('%Y-%m-%d')}: #{place_name_display}"
+  end
   
   def self.find_or_create(date)
     self.find_by_date(date.strftime('%Y-%m-%d')) || self.create_for_date(date)

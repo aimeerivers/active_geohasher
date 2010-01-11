@@ -1,7 +1,7 @@
 module GenericGeohash
 
   def google_link
-    "http://maps.google.com/maps?q=loc:#{lat},#{lng}&z=8"
+    "http://maps.google.com/maps?q=loc:#{lat},#{lng}(#{CGI::escape(google_maps_label)})&z=8&iwloc=A"
   end
 
   def bing_link

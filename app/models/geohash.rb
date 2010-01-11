@@ -10,6 +10,10 @@ class Geohash < ActiveRecord::Base
   def to_param
     id.to_s(36)
   end
+
+  def google_maps_label
+    "Geohash on #{date.strftime('%Y-%m-%d')} in #{graticule_latitude_longitude_display}: #{place_name_display}"
+  end
   
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?date=#{date.strftime('%Y-%m-%d')}&lat=#{graticule.latitude}&long=#{graticule.longitude}&zoom=8"
@@ -44,6 +48,11 @@ class Geohash < ActiveRecord::Base
   def graticule_display_name
     return '' if graticule.nil?
     graticule.display_name
+  end
+
+  def graticule_latitude_longitude_display
+    return '' if graticule.nil?
+    graticule.latitude_longitude_display
   end
   
   def description
