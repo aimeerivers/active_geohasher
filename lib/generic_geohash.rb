@@ -1,7 +1,7 @@
 module GenericGeohash
 
   def google_link
-    "http://maps.google.com/?ie=UTF8&ll=#{lat},#{lng}&z=8&q=loc:#{lat},#{lng}"
+    "http://maps.google.com/maps?q=loc:#{lat},#{lng}&z=8"
   end
 
   def bing_link
