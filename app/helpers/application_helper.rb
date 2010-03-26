@@ -8,6 +8,10 @@ module ApplicationHelper
   def friendly_date(date)
     date.strftime('%A, %d %B %Y')
   end
+
+  def short_date(date)
+    date.strftime('%a %d %b')
+  end
   
 end
 
