@@ -11,6 +11,7 @@ Rails::Initializer.run do |config|
   config.gem 'geokit'
   config.gem 'hpricot'
   config.gem 'haml'
+  config.gem 'prawn'
   
   config.time_zone = 'UTC'
   
@@ -20,6 +21,7 @@ Rails::Initializer.run do |config|
 end
 
 Mime::Type.register "application/vnd.google-earth.kml+xml", :kml
+Mime::Type.register "application/pdf", :pdf
 
 ActionView::Base.field_error_proc = Proc.new{ |html_tag, instance| "<span class='field_with_errors'>#{html_tag}</span>" }
 

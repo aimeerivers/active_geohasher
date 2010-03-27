@@ -26,6 +26,10 @@
         = current_user.distance_to(@geohash.lat, @geohash.lng)
         from your home location
 
+    %p
+      = link_to(image_tag('pdf-icon.png', :size => '98x100', :alt => 'Print a poster'), geohash_path(@geohash, :format => :pdf))
+      = link_to('Print a poster for the geohash event!', geohash_path(@geohash, :format => :pdf))
+
     %hr/
     %h3 Useful links
 
