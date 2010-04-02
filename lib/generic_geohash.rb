@@ -31,6 +31,7 @@ module GenericGeohash
       str << "&maptype=#{maptype}"
       str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
       str << "&sensor=false"
+      str << "&format=png"
     end
   end
 
