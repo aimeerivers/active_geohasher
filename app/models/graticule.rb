@@ -20,7 +20,7 @@ class Graticule < ActiveRecord::Base
   named_scope :without_names, :conditions => {:name => nil}
   
   def wiki_link
-    "http://wiki.xkcd.com/geohashing/#{latitude}%2C#{longitude}"
+    "http://geohashing.org/#{latitude}%2C#{longitude}"
   end
   
   def peeron_link
@@ -71,6 +71,7 @@ class Graticule < ActiveRecord::Base
       str << "&path=rgba:0xff000080,weight:2|#{south_east}|#{south_west}|#{north_west}|#{north_east}|#{south_east}"
       str << "&key=#{GOOGLE_MAPS_API_KEY[request.host]}"
       str << "&sensor=false"
+      str << "&format=png"
     end
   end
 

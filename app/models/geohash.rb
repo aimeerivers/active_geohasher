@@ -22,7 +22,7 @@ class Geohash < ActiveRecord::Base
   end
   
   def wiki_link
-    "http://wiki.xkcd.com/geohashing/#{date.strftime('%Y-%m-%d')}_#{graticule.latitude}_#{graticule.longitude}"
+    "http://geohashing.org/#{date.strftime('%Y-%m-%d')}_#{graticule.latitude}_#{graticule.longitude}"
   end
   
   def directions_link(latitude, longitude)
