@@ -6,6 +6,11 @@
       in
       = @graticule.latitude_longitude_display
 
+    .span-3{:style => 'float:right;'}
+      = link_to(image_tag('pdf-poster.png', :size => '74x105', :alt => 'Marker poster'), geohash_path(@geohash, :format => :pdf))
+      %p
+        = link_to('Poster for this geohash event', geohash_path(@geohash, :format => :pdf))
+
     %h3 Details
     %p
       %strong Location:
@@ -25,10 +30,6 @@
         %strong Distance:
         = current_user.distance_to(@geohash.lat, @geohash.lng)
         from your home location
-
-    %p
-      = link_to(image_tag('pdf-icon.png', :size => '98x100', :alt => 'Print a poster'), geohash_path(@geohash, :format => :pdf))
-      = link_to('Print a poster for the geohash event!', geohash_path(@geohash, :format => :pdf))
 
     %hr/
     %h3 Useful links
