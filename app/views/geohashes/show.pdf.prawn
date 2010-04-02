@@ -1,8 +1,8 @@
 require 'open-uri'
 
-pdf.image open("http://qrcode.kaywa.com/img.php?s=6&d=#{@geohash.wiki_link}"), :width => 130, :position => :right
+pdf.image open("http://qrcode.kaywa.com/img.php?s=6&d=#{@geohash.wiki_link}"), :width => 140, :position => :right
 
-pdf.move_up 120
+pdf.move_up 125
 
 pdf.text "xkcd geohashing", :style => :bold, :size => 24
 pdf.move_down 5
