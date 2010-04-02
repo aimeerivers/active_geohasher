@@ -6,6 +6,8 @@ pdf.move_down(24)
 
 pdf.text "The internet was here!", :style => :italic, :size => 18
 
+pdf.image open("http://qrcode.kaywa.com/img.php?s=6&d=#{pretty_geohash_url(@geohash.date, @geohash.graticule_latitude, @geohash.graticule_longitude)}"), :width => 156
+
 pdf.move_down(24)
 
 pdf.font_size 12 do
