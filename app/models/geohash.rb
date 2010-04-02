@@ -3,6 +3,8 @@ class Geohash < ActiveRecord::Base
   
   belongs_to :graticule
   belongs_to :history
+
+  delegate :dow_value, :to => :history
   
   named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= ?", datetime.utc]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
@@ -32,7 +34,7 @@ class Geohash < ActiveRecord::Base
   end
   
   def coordinate_calculation_image
-    "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}.0&lon=#{graticule.longitude}.0"
+    "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}.0&lon=#{graticule.longitude}.0&dowjones=#{dow_value}"
   end
   
   def graticule_latitude

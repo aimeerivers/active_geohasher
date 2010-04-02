@@ -3,6 +3,10 @@ class History < ActiveRecord::Base
   include GeohashCalculator
   
   belongs_to :dow
+
+  def dow_value
+    dow.dow
+  end
   
   def self.for(date, w30)
     self.find_by_date_and_w30(date.strftime('%Y-%m-%d'), w30) || self.create_for_date(date, w30)
