@@ -9,11 +9,11 @@ module GeohashCalculator
   def self.dow_for(date)
     dow = nil
     timeout(10) do
-      dow = Net::HTTP.start('irc.peeron.com', 80) do |http|
-        http.get("/xkcd/map/data/#{date.strftime('%Y/%m/%d')}").body
+      dow = Net::HTTP.start('geo.crox.net', 80) do |http|
+        http.get("/djia/#{date.strftime('%Y/%m/%d')}").body
       end
     end
-    return nil if dow =~ /Not Found/
+    return nil if dow =~ /error/
     return dow
   rescue Timeout::Error
     return nil
