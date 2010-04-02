@@ -11,7 +11,7 @@ class GeohashesController < ApplicationController
       respond_to do |format|
         format.html
         format.pdf do
-          prawnto :inline => false, :prawn => prawn_options, :filename => 'test.pdf'
+          prawnto :inline => false, :prawn => prawn_options, :filename => "geohash-marker-#{@geohash.date}.pdf"
           render :layout => false
         end
       end
