@@ -48,6 +48,18 @@
       = image_tag(@graticule.google_map_with_latest_geohashes(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
 
     %br/
+    .span-6.prepend-1.append-1.last
+      .span-2.prepend-2.append-2.last
+        = link_to('Go North', pretty_graticule_path(@graticule.latitude_north, @graticule.longitude))
+      .span-2
+        = link_to('Go West', pretty_graticule_path(@graticule.latitude, @graticule.longitude_west))
+      .span-2.prepend-2.last
+        = link_to('Go East', pretty_graticule_path(@graticule.latitude, @graticule.longitude_east))
+      .span-2.prepend-2.append-2.last
+        = link_to('Go South', pretty_graticule_path(@graticule.latitude_south, @graticule.longitude))
+
+    %p &nbsp;
+
     = render :partial => 'latest_geohashes', :locals => {:graticule => @graticule}
 
 

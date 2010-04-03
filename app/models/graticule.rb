@@ -107,6 +107,40 @@ class Graticule < ActiveRecord::Base
     graticule
   end
 
+  def latitude_north
+    case self.latitude
+      when '-1' : '-0'
+      when '-0' : '0'
+      when '89' : '89'
+      else (self.latitude.to_i + 1).to_s
+    end
+  end
+
+  def latitude_south
+    case self.latitude
+      when '0' : '-0'
+      when '-89' : '-89'
+      else (self.latitude.to_i - 1).to_s
+    end
+  end
+
+  def longitude_east
+    case self.longitude
+      when '-1' : '-0'
+      when '-0' : '0'
+      when '179' : '-179'
+      else (self.longitude.to_i + 1).to_s
+    end
+  end
+
+  def longitude_west
+    case self.longitude
+      when '0' : '-0'
+      when '-179' : '179'
+      else (self.longitude.to_i - 1).to_s
+    end
+  end
+
   private
 
   def north_east
