@@ -7,11 +7,11 @@ class Graticule < ActiveRecord::Base
   validate :legitimate_longitude
   
   def legitimate_latitude
-    errors.add_to_base("Latitude is invalid") unless latitude.to_i.abs <= 90
+    errors.add_to_base("Latitude is invalid") unless latitude.to_i.abs <= 89
   end
   
   def legitimate_longitude
-    errors.add_to_base("Longitude is invalid") unless longitude.to_i.abs <= 180
+    errors.add_to_base("Longitude is invalid") unless longitude.to_i.abs <= 179
   end
   
   has_many :geohashes
