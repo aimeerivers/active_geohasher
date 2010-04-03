@@ -85,6 +85,8 @@
       = link_to(image_tag(@geohash.coordinate_calculation_image, :alt => "How the geohash is calculated", :size => '616x343'), @geohash.coordinate_calculation_image)
 
   .span-8.last
+    = render :partial => 'nsew'
+
     .google_map_container
       %p
         = image_tag(@geohash.google_map_with_graticule(request), :alt => "Geohash in #{@geohash.place_name_display}", :size => "300x400", :class => 'google_map')
