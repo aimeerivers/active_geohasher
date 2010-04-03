@@ -15,9 +15,9 @@ class GeohashesController < ApplicationController
           render :layout => false
         end
       end
-    # rescue
-    #   flash[:error] = "Geohash not found, or there was a problem looking it up."
-    #   redirect_to root_path
+    rescue
+      flash[:error] = "Geohash not found, or there was a problem looking it up."
+      redirect_to root_path
     end
   end
   
