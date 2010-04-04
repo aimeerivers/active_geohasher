@@ -20,6 +20,11 @@ module GenericGeohash
     return '[unknown location]' if place_name.blank?
     place_name
   end
+
+  def short_place_name_display
+    return '?' if place_name.blank?
+    place_name.squeeze.gsub(/,|\./, '')[0..24].strip
+  end
   
   def google_map(request, zoomlevel=12, maptype='roadmap')
     returning String.new do |str|
@@ -45,6 +50,10 @@ module GenericGeohash
 
   def latitude_longitude_display
     "#{latitude_display}, #{longitude_display}"
+  end
+
+  def short_coordinates
+    "#{lat.round(3)},#{lng.round(3)}"
   end
 
 end

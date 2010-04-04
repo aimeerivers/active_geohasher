@@ -61,6 +61,14 @@ namespace :geohashing do
       puts "Delivering email to #{user.name}"
       Notifier.deliver_upcoming_geohashes(user, start_time)
     end
+
+    # Send twitter direct messages
+    tweeter = Tweeter.new
+    User.receiving_direct_messages.each do |user|
+      next if user.graticules.size == 0
+      puts "Sending direct messages to #{user.twitter_username}"
+      tweeter.deliver_upcoming_geohashes(user, start_time)
+    end
   end
 end
 

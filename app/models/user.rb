@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :custom_links
   
   named_scope :receiving_email, :conditions => "email IS NOT NULL AND email <> '' AND receive_email = true"
+  named_scope :receiving_direct_messages, :conditions => "twitter_username IS NOT NULL AND twitter_username <> ''"
   
   DISTANCE_UNITS = ['miles', 'kms']
   preference :distance_units, :string, :default => 'miles'

@@ -1,1 +1,2 @@
 prawn --version 0.8.4
+twitter_oauth --version 0.3.3

@@ -1,0 +1,4 @@
+ENV['TWITTER_OAUTH_CONSUMER_KEY'] = 'application consumer key'
+ENV['TWITTER_OAUTH_CONSUMER_SECRET'] = 'application consumer secret'
+ENV['TWITTER_OAUTH_TOKEN'] = 'authorized user token'
+ENV['TWITTER_OAUTH_SECRET'] = 'authorized user secret token'

@@ -1,4 +1,5 @@
 config/initializers/rpx.rb
+config/initializers/twitter_oauth.rb
 
 log/*.log
 tmp/*
