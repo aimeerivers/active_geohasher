@@ -17,6 +17,13 @@
     =f.label :email
     %br/
     =f.text_field :email
+
+  %p
+    =f.label :preferred_distance_units, 'Measure distances in'
+    %br/
+    =f.select(:preferred_distance_units, User::DISTANCE_UNITS.map{|unit| [I18n.t(unit), unit]})
+
+  %h3 Email notification
     
   %p
     =f.label :receive_email, "Receive emails"
@@ -30,10 +37,16 @@
     %br/
     Use Ctrl or Cmd to select multiple links.
 
+  %h3 Twitter notification
+
   %p
-    =f.label :preferred_distance_units, 'Measure distances in'
+    =f.label :twitter_username, 'Enter your twitter username here if you wish to receive notification'
     %br/
-    =f.select(:preferred_distance_units, User::DISTANCE_UNITS.map{|unit| [I18n.t(unit), unit]})
+    =f.text_field :twitter_username
+    %br/
+    For this to work, you'll need to follow
+    %a{:href => 'http://twitter.com/activegeohasher', :target => '_blank'}activegeohasher
+    on twitter.
 
   %p
     =f.submit 'Update profile'
