@@ -1,7 +1,7 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+'en-GB':
   miles: miles
   kms: kilometres
 
@@ -15,3 +15,8 @@ en:
   anthill: Anthill
   geocaching: Nearby geocaches
 
+  locale:
+    'en-GB': English (UK)
+    'en-US': English (USA)
+    'eo-EO': Esperanto
+    language_set_to: "Language set to {{language}}."

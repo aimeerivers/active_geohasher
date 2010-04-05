@@ -23,6 +23,9 @@
         .span-16
           = image_tag('geohashing_logo.gif', :class => 'header_logo')
           %h1.header_text Active geohasher
+          %p.flags
+            - AVAILABLE_LOCALES.each do |locale|
+              = link_to(image_tag("flags/#{locale}.png", :class => I18n.locale.to_s == locale ? 'active' : '', :alt => t("locale.#{locale}"), :title => t("locale.#{locale}")), language_path(locale))
             
         .span-8.last{:style => "text-align:right;"}
           = render :partial => 'layouts/authentication'

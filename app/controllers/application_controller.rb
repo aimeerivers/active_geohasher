@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   helper_method :current_user, :logged_in?
+  before_filter :set_locale
   
   def current_user
     return nil if !logged_in?
@@ -21,6 +22,10 @@ class ApplicationController < ActionController::Base
       flash[:error] = 'Please sign in first'
       redirect_to root_path
     end
+  end
+
+  def set_locale
+    I18n.locale = session[:locale]
   end
   
 end

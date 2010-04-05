@@ -24,6 +24,8 @@ ActionController::Routing::Routes.draw do |map|
   map.pretty_globalhash '/globalhash/:date/', :controller => :globalhashes, :action => :show
   
   map.root :controller => 'home'
+
+  map.language '/language/:locale', :controller => :languages, :action => :set
   
   map.upcoming_geohashes '/static/upcoming_geohashes/:format', :controller => :static, :action => :upcoming_geohashes, :format => 'html'
   map.debug '/static/debug', :controller => :static, :action => :debug

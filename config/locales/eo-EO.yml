@@ -1,0 +1,19 @@
+'eo-EO':
+  miles: mejloj
+  kms: kilometroj
+
+  ag: Active geohasher
+  wiki: Geohaŝa vikio
+  google: mapoj (Google)
+  bing: mapoj (Bing)
+  osm: Open Street Map
+  directions: direktoj (Google)
+  peeron: Peeron
+  anthill: Anthill
+  geocaching: Geokaŝujoj proksimaj
+
+  locale:
+    'en-GB': la angla (brita)
+    'en-US': la angla (Usona)
+    'eo-EO': esperanto
+    language_set_to: "Lingvo ŝanĝiĝis al {{language}}."
