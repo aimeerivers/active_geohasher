@@ -1,13 +1,13 @@
 %br{:style => 'clear:left;'}/
 %ul.navigator
   %li{:class => controller.request.path == edit_profile_path ? 'active' : ''}
-    =link_to('Your profile', edit_profile_path)
+    =link_to(t('navigation.your_profile'), edit_profile_path)
   %li{:class => controller.request.path == location_path ? 'active' : ''}
-    =link_to('Your home location', location_path)
+    =link_to(t('navigation.your_home_location'), location_path)
   %li{:class => controller.request.path == subscribe_path ? 'active' : ''}
-    =link_to('Your subscriptions', subscribe_path)
+    =link_to(t('navigation.your_subscriptions'), subscribe_path)
   %li{:class => controller.request.path == custom_links_path ? 'active' : ''}
-    =link_to('Custom links', custom_links_path)
+    =link_to(t('navigation.custom_links'), custom_links_path)
   %li{:class => controller.request.path == globalhashes_path ? 'active' : ''}
     =link_to('Globalhashes', globalhashes_path)
 

@@ -12,12 +12,10 @@
     %a{:href => 'http://github.com/sermoa/active_geohasher'}= t('home.features.contributions_welcome')
 
 - unless logged_in?
-  %h2 Sign in
-  %p
-    = sign_in_link
-    using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID.
+  %h2= t('authentication.sign_in')
+  %p= t('authentication.sign_in_with', :sign_in => sign_in_link)
   
-%h2 Latest on twitter
+%h2= t('home.latest_on_twitter')
 %div#twtr-profile-widget
 
 %br/

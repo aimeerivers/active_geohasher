@@ -31,6 +31,20 @@
       open_source: Ĝi estas malfermita kodo!
       contributions_welcome: Kontribuoj bonvenigas!
 
+    latest_on_twitter: Novaĵo sur twitter
+
+  authentication:
+    sign_in: Ensaluti
+    sign_in_with: "{{sign_in}} kun Google, Yahoo, Flickr, Twitter, Facebook, aŭ OpenID. Estas senkosta!"
+    welcome: "Hola {{name}}!"
+    sign_out: Elsaluti
+
+  navigation:
+    your_profile: Via profilo
+    your_home_location: Via hejm lokalo
+    your_subscriptions: Viaj abonoj
+    custom_links: ???
+
   footer:
     privacy_policy: privateco-politiko
     what_is_geohashing: kio estas geohaŝado?

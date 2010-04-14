@@ -34,6 +34,20 @@
       open_source: "It's open source!"
       contributions_welcome: Contributions welcome!
 
+    latest_on_twitter: Latest on twitter
+
+  authentication:
+    sign_in: Sign in
+    sign_in_with: "{{sign_in}} using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
+    welcome: "Hey {{name}}!"
+    sign_out: Sign out
+
+  navigation:
+    your_profile: Your profile
+    your_home_location: Your home location
+    your_subscriptions: Your subscriptions
+    custom_links: Custom links
+
   footer:
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?
