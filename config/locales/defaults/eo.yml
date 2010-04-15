@@ -1,0 +1,29 @@
+eo:
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "1 eraro malpermesis ĉi tiun {{model}}n esti konservita"
+          other: "{{count}} eraroj malpermesis ĉi tiun {{model}}n esti konservita"
+        body: "Estis problemoj kun la sekvantaj kampoj:"
+      messages:
+        inclusion: "ne estas inkluzivita en la listo"
+        exclusion: "estas rezervita"
+        invalid: "ne estas valida"
+        confirmation: "ne konformas al la konfirmo"
+        accepted: "devas esti akceptita"
+        empty: "ne povas esti malplene"
+        blank: "ne povas esti malplene"
+        too_long: "estas tro longa (maksimumo estas {{count}} signoj)"
+        too_short: "estas tro mallonga (minimumo estas {{count}} signoj)"
+        wrong_length: "estas la malĝusta longeco (devus esti {{count}} signoj)"
+        taken: "estas jam en uzo"
+        not_a_number: "ne estas nombro"
+        greater_than: "devas esti pli grande ol {{count}}"
+        greater_than_or_equal_to: "devas esti pli grande aŭ egale al {{count}}"
+        equal_to: "devas esti egale al {{count}}"
+        less_than: "devas esti malpli ol {{count}}"
+        less_than_or_equal_to: "devas esti malpli aŭ egala al {{count}}"
+        odd: "devas esti nepara"
+        even: "devas esti para"
+        record_invalid: "La validumado malsukcesis: {{errors}}"

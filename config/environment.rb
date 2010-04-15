@@ -20,10 +20,10 @@ Rails::Initializer.run do |config|
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_charset = "utf-8"
 
+  config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '**', '*.{rb,yml}')]
 end
 
 Mime::Type.register "application/vnd.google-earth.kml+xml", :kml
 Mime::Type.register "application/pdf", :pdf
 
 ActionView::Base.field_error_proc = Proc.new{ |html_tag, instance| "<span class='field_with_errors'>#{html_tag}</span>" }
-

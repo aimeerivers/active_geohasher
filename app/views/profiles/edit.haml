@@ -1,55 +1,53 @@
-%h2 Your profile
+%h2= t('.your_profile')
 
 -form_for(@user, :url => profile_path, :html => {:method => :put}) do |f|
   =f.error_messages :header_message => nil
     
   %p
-    =label_tag 'identifying url'
+    =f.label :identifier, t('activerecord.attributes.user.identifier')
     %br/
     =h @user.identifier
     
   %p
-    =f.label :name
+    =f.label :name, t('activerecord.attributes.user.name')
     %br/
     =f.text_field :name
     
   %p
-    =f.label :email
+    =f.label :email, t('activerecord.attributes.user.email')
     %br/
     =f.text_field :email
 
   %p
-    =f.label :preferred_distance_units, 'Measure distances in'
+    =f.label :preferred_distance_units, t('activerecord.attributes.user.preferred_distance_units')
     %br/
     =f.select(:preferred_distance_units, User::DISTANCE_UNITS.map{|unit| [I18n.t(unit), unit]})
 
-  %h3 Email notification
+  %h3= t('.email_notification')
     
   %p
-    =f.label :receive_email, "Receive emails"
+    =f.label :receive_email, t('activerecord.attributes.user.email')
     %br/
     =f.check_box :receive_email
     
   %p
-    =label_tag "preferred_links", "Links you want in your emails"
+    =label_tag "preferred_links", t('activerecord.attributes.user.preferred_links')
     %br/
     =select_tag("preferred_links", options_for_select(User::AVAILABLE_LINKS.map{|link| [I18n.t(link), link]}, :selected => current_user.preferred_links.split(',')), :multiple => true)
     %br/
-    Use Ctrl or Cmd to select multiple links.
+    =t('.use_ctrl_or_command_to_select_multiple_links')
 
-  %h3 Twitter notification
+  %h3= t('.twitter_notification')
 
   %p
-    =f.label :twitter_username, 'Enter your twitter username here if you wish to receive notification'
+    =f.label :twitter_username, t('activerecord.attributes.user.twitter_username')
     %br/
     =f.text_field :twitter_username
     %br/
-    For this to work, you'll need to follow
-    %a{:href => 'http://twitter.com/activegeohasher', :target => '_blank'}activegeohasher
-    on twitter.
+    =t('.for_this_to_work', :activegeohasher => link_to('activegeohasher', 'http://twitter.com/activegeohasher', :popup => true))
 
   %p
-    =f.submit 'Update profile'
-    or
-    = link_to('Cancel', subscribe_path)
+    =f.submit t('.update_profile')
+    =t('common.or')
+    = link_to(t('common.cancel'), subscribe_path)
 

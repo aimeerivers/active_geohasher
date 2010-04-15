@@ -1,7 +1,7 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-'en-GB':
+'en':
   miles: miles
   kms: kilometres
 
@@ -15,10 +15,14 @@
   anthill: Anthill
   geocaching: Nearby geocaches
 
+  common:
+    or: or
+    cancel: Cancel
+
   locale:
-    'en-GB': English (UK)
+    en: English (UK)
     'en-US': English (USA)
-    'eo-EO': Esperanto
+    eo: Esperanto
     language_set_to: "Language set to {{language}}."
 
   home:
@@ -49,7 +53,33 @@
     custom_links: Custom links
     globalhashes: Globalhashes
 
+  profiles:
+    edit:
+      your_profile: Your profile
+      email_notification: Email notification
+      twitter_notification: Twitter notification
+      use_ctrl_or_command_to_select_multiple_links: Use Ctrl or Cmd to select multiple links.
+      for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on twitter."
+      update_profile: Update profile
+
+    update:
+      updated_successfully: Your profile was updated successfully.
+
   footer:
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?
     source_code: source code
+
+  activerecord:
+    models:
+      user: user
+
+    attributes:
+      user:
+        identifier: Identifying url
+        name: Name
+        email: Email
+        preferred_distance_units: Measure distances in
+        receive_email: Receive emails
+        preferred_links: Links you want in your emails
+        twitter_username: Enter your twitter username here if you wish to receive notification

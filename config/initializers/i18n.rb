@@ -1,2 +1,2 @@
-I18n.default_locale = :'en-GB'
-AVAILABLE_LOCALES = ['en-GB', 'en-US', 'eo-EO']
+I18n.default_locale = :en
+AVAILABLE_LOCALES = ['en', 'en-US', 'eo']

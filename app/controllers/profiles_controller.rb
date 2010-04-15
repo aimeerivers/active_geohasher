@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
     if @user.update_attributes(params[:user])
       @user.preferred_links = (params[:preferred_links] || []).join(',')
       @user.save
-      flash[:success] = "Your profile was updated succesfully."
+      flash[:success] = t('profiles.update.updated_successfully')
       redirect_to edit_profile_path
     else
       render :edit

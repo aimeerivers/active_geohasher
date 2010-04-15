@@ -1,4 +1,4 @@
-'eo-EO':
+eo:
   miles: mejloj
   kms: kilometroj
 
@@ -12,10 +12,14 @@
   anthill: Anthill
   geocaching: Proksimaj geokaŝoj
 
+  common:
+    or: aŭ
+    cancel: Nuligi
+
   locale:
-    'en-GB': la angla (brita)
+    en: la angla (brita)
     'en-US': la angla (Usona)
-    'eo-EO': esperanto
+    eo: esperanto
     language_set_to: "Lingvo ŝanĝiĝis al {{language}}."
 
   home:
@@ -43,10 +47,36 @@
     your_profile: Via profilo
     your_home_location: Via hejm lokalo
     your_subscriptions: Viaj abonoj
-    custom_links: Personaj ligiloj
+    custom_links: Personaj ligoj
     globalhashes: Tutmondajhaŝoj
+
+  profiles:
+    edit:
+      your_profile: Via profilo
+      email_notification: Retmesaĝ-avizo
+      twitter_notification: Twitter-avizo
+      use_ctrl_or_command_to_select_multiple_links: Uzu Ctrl aŭ Cmd por elekti multajn ligojn
+      for_this_to_work: "Por ĉi tio labori, vi bezonos sekvi {{activegeohasher}} sur twitter."
+      update_profile: Ĝisdatigi profilo
+
+    update:
+      updated_successfully: Via profilo estis sukcese ĝisdatigita.
 
   footer:
     privacy_policy: privateco-politiko
     what_is_geohashing: kio estas geohaŝado?
     source_code: fontkodo
+
+  activerecord:
+    models:
+      user: uzanto
+
+    attributes:
+      user:
+        identifier: URL de identaĵo
+        name: Nomo
+        email: Retadreso
+        preferred_distance_units: Mezuru distancoj en
+        receive_email: Ricevi retpoŝto
+        preferred_links: Ligoj, kiujn vi volas en viaj retmesaĝoj
+        twitter_username: Eniru vian twitter-salutnomon ĉi tien, se vi deziras ricevi avizon
