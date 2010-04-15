@@ -9,5 +9,4 @@
   %li{:class => controller.request.path == custom_links_path ? 'active' : ''}
     =link_to(t('navigation.custom_links'), custom_links_path)
   %li{:class => controller.request.path == globalhashes_path ? 'active' : ''}
-    =link_to('Globalhashes', globalhashes_path)
-
+    =link_to(t('navigation.globalhashes'), globalhashes_path)

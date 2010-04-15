@@ -47,6 +47,7 @@
     your_home_location: Your home location
     your_subscriptions: Your subscriptions
     custom_links: Custom links
+    globalhashes: Globalhashes
 
   footer:
     privacy_policy: privacy policy
