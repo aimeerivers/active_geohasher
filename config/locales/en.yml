@@ -70,12 +70,30 @@
       save_location: Save location
       location_saved: Your location has been saved.
 
+    subscribe:
+      your_subscriptions: Your subscriptions
+      you_are_not_subscribed_to_any_graticules: "You are not subscribed to any graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
+      set_your_home_location: set your home location
+
   subscriptions:
     new:
       subscribe_to_a_graticule: Subscribe to a graticule
       subscribe: Subscribe
       successfully_subscribed_to_graticule: Successfully subscribed to graticule.
       could_not_subscribe_to_graticule: Could not subscribe to the graticule, please check and try again.
+
+  graticules:
+    show:
+      awaiting_graticule_name: "[Awaiting graticule name]"
+      xkcd_geohashing_wiki: xkcd geohashing wiki
+      peeron_map_lookup_tool: peeron map lookup tool
+      anthill_visualisation_tool: anthill visualisation tool
+      google_earth_feed: google earth feed
+      unsubscribe: unsubscribe
+
+    latest_geohashes:
+      latest_geohashes: Latest geohashes
+      check_back_later: Check back later for geohashes in this graticule.
 
   footer:
     privacy_policy: privacy policy

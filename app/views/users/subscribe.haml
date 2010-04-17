@@ -3,11 +3,10 @@
 %br/
 %hr/
 
-%h2 Your subscriptions
+%h2= t('.your_subscriptions')
 - if @subscriptions.empty?
-  .notice
-    You are not subscribed to any graticules. Enter your coordinates above, or
-    = link_to('set your home location', location_path)
+  .notice= t('.you_are_not_subscribed_to_any_graticules', :set_location => link_to(t('.set_your_home_location'), location_path))
+
 - @subscriptions.each do |subscription|
   = render :partial => 'graticules/show', :locals => {:graticule => subscription.graticule, :subscription => subscription}
 

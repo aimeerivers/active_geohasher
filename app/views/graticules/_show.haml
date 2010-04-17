@@ -1,19 +1,17 @@
 .graticule.span-23{:id => dom_id(graticule)}
   .span-5.first
-    %span.coordinates= "#{graticule.latitude}, #{graticule.longitude}"
+    %span.coordinates= graticule.latitude_longitude_display
 
   .span-7
-    %h3.name= link_to(graticule.name || '[Awaiting graticule name]', pretty_graticule_path(graticule.latitude, graticule.longitude))
+    %h3.name= link_to((graticule.name || t('.awaiting_graticule_name')), pretty_graticule_path(graticule.latitude, graticule.longitude))
     %ul.links
-      %li= link_to('xkcd geohashing wiki', graticule.wiki_link)
-      %li= link_to('peeron map lookup tool', graticule.peeron_link)
-      %li= link_to('anthill visualisation tool', graticule.anthill_link(current_user))
-      %li= link_to('google earth feed', graticule_path(graticule, :format => :kml))
+      %li= link_to(t('.xkcd_geohashing_wiki'), graticule.wiki_link)
+      %li= link_to(t('.peeron_map_lookup_tool'), graticule.peeron_link)
+      %li= link_to(t('.anthill_visualisation_tool'), graticule.anthill_link(current_user))
+      %li= link_to(t('.google_earth_feed'), graticule_path(graticule, :format => :kml))
 
   .span-7
     = render :partial => 'graticules/latest_geohashes', :locals => {:graticule => graticule}
 
   .span-4.last{:style => "text-align:right;"}
-    = link_to('unsubscribe', subscription_path(subscription), :method => :delete)
-    
-
+    = link_to(t('.unsubscribe'), subscription_path(subscription), :method => :delete)

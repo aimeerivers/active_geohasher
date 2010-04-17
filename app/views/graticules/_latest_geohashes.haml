@@ -1,8 +1,8 @@
 .latest_geohashes
-  %h3 Latest geohashes
+  %h3= t('.latest_geohashes')
   - geohashes = graticule.geohashes.latest
   - if geohashes.empty?
-    %p Check back later for geohashes in this graticule.
+    %p= t('.check_back_later')
 
   - geohashes.each do |geohash|
     %h4= friendly_date(geohash.date)
