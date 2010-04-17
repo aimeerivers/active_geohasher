@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   helper_method :current_user, :logged_in?
-  before_filter :set_locale
+  before_filter :set_locale, :remember_gets
   
   def current_user
     return nil if !logged_in?
@@ -26,6 +26,14 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale = session[:locale]
+  end
+
+  def last_get
+    session[:last_get]
+  end
+
+  def remember_gets
+    session[:last_get] = request.path if request.get?
   end
   
 end

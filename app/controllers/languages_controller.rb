@@ -1,4 +1,5 @@
 class LanguagesController < ApplicationController
+  skip_before_filter :remember_gets
 
   def set
     if AVAILABLE_LOCALES.include?(params[:locale])
@@ -8,7 +9,7 @@ class LanguagesController < ApplicationController
       flash[:error] = "Sorry, that language is not currently available."
     end
 
-    redirect_to :back
+    redirect_to last_get || root_path
   rescue ActionController::RedirectBackError
     redirect_to root_path
   end
