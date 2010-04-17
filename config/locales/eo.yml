@@ -15,6 +15,10 @@ eo:
   common:
     or: aŭ
     cancel: Nuligi
+    go_north: Iri norde
+    go_south: Iri sude
+    go_east: Iri oriente
+    go_west: Iri okcidente
 
   locale:
     en: la angla (brita)
@@ -81,12 +85,24 @@ eo:
 
   graticules:
     show:
-      awaiting_graticule_name: "[Atendante la gratikulo-nomon]"
+      awaiting_graticule_name: "[Atendante gratikulo-nomon]"
       xkcd_geohashing_wiki: xkcd geohaŝa vikio
       peeron_map_lookup_tool: peeron mapo-konsultilo
       anthill_visualisation_tool: anthill bildigilo
       google_earth_feed: fluo por google earth
       unsubscribe: malaboni
+      graticule_map: Graticulo mapo
+      useful_links: Utilaj ligiloj
+      social_media_links: Ligiloj de socia komunikilo
+      twitter: "Twitter: {{tag}}"
+      flickr: "Flickr: {{tag}}"
+      youtube: "YouTube: {{tag}}"
+      live_from_twitter: Aktuala de Twitter
+      latest_tweets_will_show_up_here: "Plej novaj pepaĵoj kun la etikedo {{tag}} aperos ĉi tie."
+      tweets_tagged: pepaĵoj kun la etikedo
+      pictures_from_flickr: Bildoj de Flickr
+      look_on_flickr: "Traserĉi {{link}} sur Flickr."
+      photos_and_videos_tagged: "bildoj kaj videoj kun la etikedo {{tag}}"
 
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj

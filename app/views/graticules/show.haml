@@ -2,38 +2,39 @@
   .span-16.first
     %h2= @graticule.display_name
 
-    %h3 Useful links
+    %h3= t('.useful_links')
 
     %p.graticule_link
-      = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => 'Wiki')
-      = link_to('xkcd geohashing wiki', @graticule.wiki_link)
+      = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => t('.xkcd_geohashing_wiki'))
+      = link_to(t('.xkcd_geohashing_wiki'), @graticule.wiki_link)
 
     %p.graticule_link
-      = image_tag('peeron.png', :size => '60x60', :alt => 'Peeron')
-      = link_to('peeron map lookup tool', @graticule.peeron_link)
+      = image_tag('peeron.png', :size => '60x60', :alt => t('.peeron_map_lookup_tool'))
+      = link_to(t('.peeron_map_lookup_tool'), @graticule.peeron_link)
 
     %p.graticule_link
-      = image_tag('anthill.png', :size => '60x60', :alt => 'Anthill')
-      = link_to('anthill lookup tool', @graticule.anthill_link)
+      = image_tag('anthill.png', :size => '60x60', :alt => t('.anthill_visualisation_tool'))
+      = link_to(t('.anthill_visualisation_tool'), @graticule.anthill_link)
 
     %p.graticule_link
-      = image_tag('google_earth.jpg', :size => '60x60', :alt => 'Google Earth')
-      = link_to('google earth feed', graticule_path(@graticule, :format => :kml))
+      = image_tag('google_earth.jpg', :size => '60x60', :alt => t('.google_earth_feed'))
+      = link_to(t('.google_earth_feed'), graticule_path(@graticule, :format => :kml))
 
     %br/
-    %h3 Social media links
-
+    %h3= t('.social_media_links')
+    - tag = @graticule.tag
+    
     %p.graticule_link
       = image_tag('twitter.png', :size => '60x60', :alt => 'Twitter')
-      = link_to("twitter: ##{@graticule.tag}", @graticule.twitter_hashtag_link)
+      = link_to(t('.twitter', :tag => '#' + tag), @graticule.twitter_hashtag_link)
 
     %p.graticule_link
       = image_tag('flickr.png', :size => '60x60', :alt => 'Flickr')
-      = link_to("flickr: #{@graticule.tag}", @graticule.flickr_link)
+      = link_to(t('.flickr', :tag => tag), @graticule.flickr_link)
 
     %p.graticule_link
-      = image_tag('youtube.png', :size => '60x60', :alt => 'Youtube')
-      = link_to("youtube: #{@graticule.tag}", @graticule.youtube_link)
+      = image_tag('youtube.png', :size => '60x60', :alt => 'YouTube')
+      = link_to(t('.youtube', :tag => tag), @graticule.youtube_link)
 
   .span-8.last
     - if logged_in?
@@ -47,7 +48,7 @@
     = render :partial => 'nsew'
 
     .google_map_container
-      = image_tag(@graticule.google_map_with_latest_geohashes(request), :alt => @graticule.name || "Graticule map", :size => "300x400", :class => 'google_map')
+      = image_tag(@graticule.google_map_with_latest_geohashes(request), :alt => @graticule.name || t('.graticule_map'), :size => "300x400", :class => 'google_map')
 
     %br/
 
@@ -55,20 +56,17 @@
 
 
 .span-24
-  %h3 Live from twitter
-  %p
-    Latest tweets tagged
-    = '#' + @graticule.tag
-    will show up here.
+  %h3= t('.live_from_twitter')
+  %p= t('.latest_tweets_will_show_up_here', :tag => '#' + tag)
   %script{:src => "http://widgets.twimg.com/j/2/widget.js", :type => "text/javascript"}
   :javascript
     new TWTR.Widget({
       version: 2,
       type: 'search',
-      search: '##{@graticule.tag}',
+      search: '##{tag}',
       interval: 6000,
-      title: 'tweets tagged',
-      subject: '##{@graticule.tag}',
+      title: '#{t(".tweets_tagged")}',
+      subject: '##{tag}',
       width: 'auto',
       height: 200,
       theme: {
@@ -87,10 +85,7 @@
     }).render().start();
   %br/
 
-  %h3 Pictures from flickr
+  %h3= t('.pictures_from_flickr')
   .flickr_photos
     %script{:type => 'text/javascript', :src => "http://www.flickr.com/badge_code_v2.gne?show_name=1&count=8&display=latest&size=t&layout=h&source=all_tag&tag=#{@graticule.tag}&user=89953410%40N00"}
-    %p
-      Look for
-      %a{:href => "http://www.flickr.com/photos/tags/#{@graticule.tag}"}photos or videos tagged with #{@graticule.tag}
-      on Flickr
+    %p= t('.look_on_flickr', :link => link_to(t('.photos_and_videos_tagged', :tag => tag), "http://www.flickr.com/photos/tags/#{@graticule.tag}"))

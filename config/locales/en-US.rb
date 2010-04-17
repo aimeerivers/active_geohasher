@@ -12,4 +12,7 @@ hash[:'en-US']['kms'] =
 hash[:'en-US']['home']['features']['see_distance_from_home_location'] =
   'See distance from your home location in miles or kilometers'
 
+hash[:'en-US']['graticules']['show']['anthill_visualisation_tool'] =
+  'anthill visualization tool'
+
 hash

@@ -18,6 +18,10 @@
   common:
     or: or
     cancel: Cancel
+    go_north: Go North
+    go_south: Go South
+    go_east: Go East
+    go_west: Go West
 
   locale:
     en: English (UK)
@@ -90,6 +94,18 @@
       anthill_visualisation_tool: anthill visualisation tool
       google_earth_feed: google earth feed
       unsubscribe: unsubscribe
+      graticule_map: Graticule map
+      useful_links: Useful links
+      social_media_links: Social media links
+      twitter: "Twitter: {{tag}}"
+      flickr: "Flickr: {{tag}}"
+      youtube: "YouTube: {{tag}}"
+      live_from_twitter: Live from Twitter
+      latest_tweets_will_show_up_here: "Latest tweets tagged {{tag}} will show up here."
+      tweets_tagged: tweets tagged
+      pictures_from_flickr: Pictures from Flickr
+      look_on_flickr: "Look for {{link}} on Flickr."
+      photos_and_videos_tagged: "photos and videos tagged {{tag}}"
 
     latest_geohashes:
       latest_geohashes: Latest geohashes
