@@ -22,6 +22,7 @@
     go_south: Go South
     go_east: Go East
     go_west: Go West
+    distance: "{{number}} {{units}}"
 
   locale:
     en: English (UK)
@@ -115,6 +116,17 @@
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?
     source_code: source code
+
+  notifier:
+    upcoming_geohashes:
+      hi_name: "Hi {{name}}"
+      here_are_your_upcoming_geohash_locations: Here are your upcoming geohash locations, brought to you by Active geohasher.
+      distance_away: "{{distance}} away"
+      globalhash: Globalhash
+      links: Links
+      custom_links: Custom links
+      please_note_that_distances_are_calculated_as_straight_lines: Please note that distances are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out! 
+      happy_geohashing: Happy geohashing!
 
   activerecord:
     models:

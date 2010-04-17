@@ -57,7 +57,7 @@ class User < ActiveRecord::Base
   
   def distance_to(lat, lng)
     return '' if !location_set?
-    "#{home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => preferred_distance_units.to_sym).round(1)} #{I18n.t(preferred_distance_units)}"
+    I18n.t('common.distance', :number => home_location.distance_to(Geokit::LatLng.new(lat, lng), :units => preferred_distance_units.to_sym).round(1), :units => I18n.t(preferred_distance_units))
   end
 
   def new_geohashes_since(start_time)

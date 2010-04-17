@@ -27,3 +27,14 @@ eo:
         odd: "devas esti nepara"
         even: "devas esti para"
         record_invalid: "La validumado malsukcesis: {{errors}}"
+
+  date:
+    formats:
+      default: "%e/%m/%Y"
+      short: "%a %d %b"
+      long: "%A, %d %B %Y"
+    day_names: [dimanĉo, lundo, mardo, merkredo, ĵaŭdo, vendredo, sabato]
+    abbr_day_names: [dim, lun, mar, mer, ĵaŭ, ven, sab]
+    month_names: [~, januaro, februaro, marto, aprilo, majo, junio, julio, aŭgusto, septembro, oktobro, novembro, decembro]
+    abbr_month_names: [~, jan, feb, mar, apr, maj, jun, jul, aŭg, sep, okt, nov, dec]
+    order: [ :day, :month, :year ]

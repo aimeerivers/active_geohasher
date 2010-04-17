@@ -19,6 +19,7 @@ eo:
     go_south: Iri sude
     go_east: Iri oriente
     go_west: Iri okcidente
+    distance: "{{number}} {{units}}"
 
   locale:
     en: la angla (brita)
@@ -78,8 +79,8 @@ eo:
 
   subscriptions:
     new:
-      subscribe_to_a_graticule: Abonu al unu gratikulo
-      subscribe: Abonu
+      subscribe_to_a_graticule: Aboni al unu gratikulo
+      subscribe: Aboni
       successfully_subscribed_to_graticule: Vi estas sukcese abonita al la gratikulo.
       could_not_subscribe_to_graticule: Ne povus aboni vin al la gratikulo, bonvolu kontrolu kaj reprovu.
 
@@ -107,10 +108,22 @@ eo:
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj
       check_back_later: Rekontrolu poste por geohaŝoj en ĉi tio gratikulo.
+
   footer:
     privacy_policy: privateco-politiko
     what_is_geohashing: kio estas geohaŝado?
     source_code: fontkodo
+
+  notifier:
+    upcoming_geohashes:
+      hi_name: "Hola {{name}}"
+      here_are_your_upcoming_geohash_locations: Jen viaj okazontaj geohaŝ-lokaloj, kondukitaj al vi de Active geohasher.
+      distance_away: "for de {{distance}}"
+      globalhash: Tutmondahaŝo
+      links: Ligiloj
+      custom_links: Personaj ligiloj
+      please_note_that_distances_are_calculated_as_straight_lines: Bonvolu atenti ke la malproksimecoj estas kalkulitaj kiel rektaj linioj; la malproksimeco per vojo eble estas pli longa. Google povas doni al vi direktojn - uzu la ligilojn!
+      happy_geohashing: Feliĉa geohaŝado!
 
   activerecord:
     models:

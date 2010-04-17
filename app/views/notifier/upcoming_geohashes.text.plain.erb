@@ -1,29 +1,29 @@
-Hi <%= @user.name %>
+<%= t('.hi_name', :name => @user.name) %>
 
-Here are your upcoming geohash locations, brought to you by Active geohasher.
+<%= t('.here_are_your_upcoming_geohash_locations') %>
 
 <% if @user.location_set? -%>
   <% show_locations = true -%>
 <% end -%>
 
 <% @user.new_geohashes_since(@start_time).each do |date, geohashes| -%>
-<%= date.strftime('%A, %d %B %Y') %>
-<% date.strftime('%A, %d %B %Y').length.times do -%><%= '-' %><% end -%>
+<%= l(date, :format => :long) %>
+<% l(date, :format => :long).length.times do -%><%= '-' %><% end -%>
 
   <% geohashes.each do |geohash| -%>
 
   <%= geohash.graticule_display_name %>
-  <%= geohash.place_name_display %> (<%= geohash.latitude_longitude_display %>) <%= "#{@user.distance_to(geohash.lat, geohash.lng)} away" if show_locations %>
+  <%= geohash.place_name_display %> (<%= geohash.latitude_longitude_display %>) <%= t('.distance_away', :distance => @user.distance_to(geohash.lat, geohash.lng)) if show_locations %>
   <% end -%>
   <% if (globalhash = Globalhash.find_by_date(date)) -%>
 
-  Globalhash
-  <%= globalhash.place_name_display %> (<%= globalhash.latitude_longitude_display %>) <%= "#{@user.distance_to(globalhash.lat, globalhash.lng)} away" if show_locations %>
+  <%= t('.globalhash') %>
+  <%= globalhash.place_name_display %> (<%= globalhash.latitude_longitude_display %>) <%= t('.distance_away', :distance => @user.distance_to(globalhash.lat, globalhash.lng)) if show_locations %>
   <% end -%>
 
 
 <% end -%>
 
-Happy geohashing!
+<%= t('.happy_geohashing') %>
 http://activegeohasher.com
 

@@ -2,6 +2,7 @@ class Notifier < ActionMailer::Base
   include ApplicationHelper
 
   def upcoming_geohashes(user, start_time)
+    I18n.locale = user.preferred_locale
     subject    "Geohashing adventures [#{geohashing_dates(user, start_time)}]"
     recipients user.email
     from       'activegeohasher@googlemail.com'
@@ -13,7 +14,7 @@ class Notifier < ActionMailer::Base
   private
 
   def geohashing_dates(user, start_time)
-    user.new_geohashes_since(start_time).keys.map{|date| short_date(date)}.join(', ')
+    user.new_geohashes_since(start_time).keys.map{|date| I18n.l(date, :format => :short)}.join(', ')
   end
 
 end
