@@ -70,6 +70,13 @@
       save_location: Save location
       location_saved: Your location has been saved.
 
+  subscriptions:
+    new:
+      subscribe_to_a_graticule: Subscribe to a graticule
+      subscribe: Subscribe
+      successfully_subscribed_to_graticule: Successfully subscribed to graticule.
+      could_not_subscribe_to_graticule: Could not subscribe to the graticule, please check and try again.
+
   footer:
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?
@@ -90,3 +97,7 @@
         twitter_username: Enter your twitter username here if you wish to receive notification
         lat: Latitude
         lng: Longitude
+
+      subscription:
+        latitude: Latitude
+        longitude: Longitude

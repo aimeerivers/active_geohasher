@@ -20,8 +20,9 @@ class User < ActiveRecord::Base
   end
   
   def subscribe_to_graticule(graticule)
-    return if graticule.nil?
+    return false if graticule.nil?
     graticules << graticule unless subscribed_to_graticule?(graticule)
+    true
   end
   
   def unsubscribe_from_graticule(graticule)

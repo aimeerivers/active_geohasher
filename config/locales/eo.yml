@@ -67,6 +67,13 @@ eo:
       save_location: Konservi lokalo
       location_saved: Via lokalo estis konservita.
 
+  subscriptions:
+    new:
+      subscribe_to_a_graticule: Abonu al unu gratikulo
+      subscribe: Abonu
+      successfully_subscribed_to_graticule: Vi estas sukcese abonita al la gratikulo.
+      could_not_subscribe_to_graticule: Ne povus aboni vin al la gratikulo, bonvolu kontrolu kaj reprovu.
+
   footer:
     privacy_policy: privateco-politiko
     what_is_geohashing: kio estas geohaŝado?
@@ -87,3 +94,7 @@ eo:
         twitter_username: Eniru vian twitter-salutnomon ĉi tien, se vi deziras ricevi avizon
         lat: Latitudo
         lng: Longitudo
+
+      subscription:
+        latitude: Latitudo
+        longitude: Longitudo
