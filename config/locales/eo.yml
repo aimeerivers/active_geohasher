@@ -29,7 +29,7 @@ eo:
     features:
       subscribe_to_graticules: Aboni al gratikuloj
       receive_free_daily_geohashing_email: Ricevu ĉiutagan liberan retmesaĝon geohaŝadan
-      see_distance_from_home_location: Vidu malproksimecon de via hejm-loko en mejloj aŭ kilometroj
+      see_distance_from_home_location: Vidu malproksimecon de via hejm lokalo en mejloj aŭ kilometroj
       with_useful_links: Kun utilaj ligiloj al peeron, la geohaŝa vikio, mapoj Google kaj vojo-kalkuloj
       google_earth_feeds: Aŭtomate ĝisdatigante Google Earth fluoj por viaj gratikuloj
       open_source: Ĝi estas malfermita kodo!
@@ -56,11 +56,16 @@ eo:
       email_notification: Retmesaĝ-avizo
       twitter_notification: Twitter-avizo
       use_ctrl_or_command_to_select_multiple_links: Uzu Ctrl aŭ Cmd por elekti multajn ligilojn
-      for_this_to_work: "Por ĉi tio labori, vi bezonos sekvi {{activegeohasher}} sur twitter."
+      for_this_to_work: "Por ĉi tio funkcii, vi bezonos sekvi {{activegeohasher}} sur twitter."
       update_profile: Ĝisdatigi profilo
-
-    update:
       updated_successfully: Via profilo estis sukcese ĝisdatigita.
+
+  users:
+    location:
+      choose_your_location: Elektu vian lokalon
+      if_the_map_does_not_work: "Se la mapo ne funkcias por vi, eniru vian latitudon kaj longitudon ĉi tien."
+      save_location: Konservi lokalo
+      location_saved: Via lokalo estis konservita.
 
   footer:
     privacy_policy: privateco-politiko
@@ -80,3 +85,5 @@ eo:
         receive_email: Ricevi retpoŝto
         preferred_links: Ligiloj, kiujn vi volas ricevi en viaj retmesaĝoj
         twitter_username: Eniru vian twitter-salutnomon ĉi tien, se vi deziras ricevi avizon
+        lat: Latitudo
+        lng: Longitudo

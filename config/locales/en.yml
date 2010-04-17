@@ -61,9 +61,14 @@
       use_ctrl_or_command_to_select_multiple_links: Use Ctrl or Cmd to select multiple links.
       for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on twitter."
       update_profile: Update profile
-
-    update:
       updated_successfully: Your profile was updated successfully.
+
+  users:
+    location:
+      choose_your_location: Choose your location
+      if_the_map_does_not_work: "If the map doesn't work for you, feel free to enter your latitude and longitude here."
+      save_location: Save location
+      location_saved: Your location has been saved.
 
   footer:
     privacy_policy: privacy policy
@@ -83,3 +88,5 @@
         receive_email: Receive emails
         preferred_links: Links you want in your emails
         twitter_username: Enter your twitter username here if you wish to receive notification
+        lat: Latitude
+        lng: Longitude

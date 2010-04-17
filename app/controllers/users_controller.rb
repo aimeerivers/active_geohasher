@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.js { render :update_location }
       format.html do
-        flash[:success] = "Your location has been saved."
+        flash[:success] = t('users.location.location_saved')
         redirect_to location_path
       end
     end

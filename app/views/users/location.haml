@@ -1,5 +1,5 @@
 - content_for(:javascript) do
-  %script{:src => "http://maps.google.com/maps?file=api&v=2&key=#{GOOGLE_MAPS_API_KEY[request.host]}&sensor=true", :type => "text/javascript"}
+  %script{:src => "http://maps.google.com/maps?file=api&v=2&hl=#{I18n.locale}&key=#{GOOGLE_MAPS_API_KEY[request.host]}&sensor=true", :type => "text/javascript"}
   
   :javascript
     var map;
@@ -29,20 +29,18 @@
 
 - @body_attributes = {:onload => 'initialize();', :onunload => 'GUnload();'}
 
-%h2 Choose your location
+%h2= t('.choose_your_location')
 #map_canvas.span-24
   
 - form_for current_user, :url => update_location_path, :method => :put do |f|
-  %p If the map doesn't work for you, feel free to enter your latitude and longitude here.
+  %p= t('.if_the_map_does_not_work')
   
-  = f.label :lat, 'Latitude'
+  = f.label :lat, t('activerecord.attributes.user.lat')
   = f.text_field :lat, :style => "width: 200px;"
   
-  = f.label :lng, 'Longitude'
+  = f.label :lng, t('activerecord.attributes.user.lng')
   = f.text_field :lng, :style => "width: 200px;"
   
-  = f.submit('Save location', :id => 'save_location_button')
-  or
-  = link_to('Cancel', subscribe_path)
-
-
+  = f.submit(t('.save_location'), :id => 'save_location_button')
+  =t('common.or')
+  = link_to(t('common.cancel'), subscribe_path)
