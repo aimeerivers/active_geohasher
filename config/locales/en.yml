@@ -126,6 +126,7 @@
         name: Name
         email: Email
         preferred_distance_units: Measure distances in
+        preferred_locale: Language
         receive_email: Receive emails
         preferred_links: Links you want in your emails
         twitter_username: Enter your twitter username here if you wish to receive notification

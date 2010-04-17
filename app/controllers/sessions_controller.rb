@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
 
     rpx_data = JSON.parse(response_data)
     session[:current_user_id] = User.find_or_create_with_rpx(rpx_data['profile']).id
+    I18n.locale = session[:locale] = current_user.preferred_locale
     if !current_user.location_set?
       redirect_to location_path
     else

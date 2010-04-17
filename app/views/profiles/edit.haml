@@ -19,6 +19,11 @@
     =f.text_field :email
 
   %p
+    =f.label :preferred_locale, t('activerecord.attributes.user.preferred_locale')
+    %br/
+    =f.select(:preferred_locale, AVAILABLE_LOCALES.map{|locale| [I18n.t('locale.' + locale), locale]})
+
+  %p
     =f.label :preferred_distance_units, t('activerecord.attributes.user.preferred_distance_units')
     %br/
     =f.select(:preferred_distance_units, User::DISTANCE_UNITS.map{|unit| [I18n.t(unit), unit]})

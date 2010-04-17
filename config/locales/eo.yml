@@ -122,6 +122,7 @@ eo:
         name: Nomo
         email: Retadreso
         preferred_distance_units: Mezuru distancoj en
+        preferred_locale: Lingvo
         receive_email: Ricevi retpoŝto
         preferred_links: Ligiloj, kiujn vi volas ricevi en viaj retmesaĝoj
         twitter_username: Eniru vian twitter-salutnomon ĉi tien, se vi deziras ricevi avizon

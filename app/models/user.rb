@@ -11,9 +11,12 @@ class User < ActiveRecord::Base
   
   DISTANCE_UNITS = ['miles', 'kms']
   preference :distance_units, :string, :default => 'miles'
+  preference :locale, :string, :default => 'en'
 
   AVAILABLE_LINKS = ['ag', 'wiki', 'google', 'bing', 'osm', 'directions', 'peeron', 'anthill', 'geocaching']
   preference :links, :string, :default => "ag,wiki,google,bing,osm,directions,peeron,anthill"
+
+  attr_protected :preferred_locale
   
   def location_set?
     !(lat.nil? || lng.nil? || lat == 0 || lng == 0)
@@ -62,6 +65,12 @@ class User < ActiveRecord::Base
       graticule.geohashes.new_since(start_time)
     end.flatten.group_by(&:date)
   end
+
+  def set_preferred_locale(locale)
+    return unless AVAILABLE_LOCALES.include?(locale)
+    self.preferred_locale = locale
+    self.save
+  end
   
   def self.create_with_rpx(rpx_data)
     User.create!({
@@ -72,7 +81,11 @@ class User < ActiveRecord::Base
   end
   
   def self.find_or_create_with_rpx(rpx_data)
-    User.find_by_identifier(rpx_data['identifier']) || User.create_with_rpx(rpx_data)
+    user = User.find_by_identifier(rpx_data['identifier'])
+    return user unless user.nil?
+    user = User.create_with_rpx(rpx_data)
+    user.set_preferred_locale(I18n.locale.to_s)
+    user
   end
   
 end
