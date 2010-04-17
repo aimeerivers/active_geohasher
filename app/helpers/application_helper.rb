@@ -4,6 +4,10 @@ module ApplicationHelper
   def sign_in_link
     link_to t('authentication.sign_in'), "https://#{ENV['RPX_REALM']}.rpxnow.com/openid/v2/signin?token_url=#{rpx_url}", :class => 'rpxnow', :onclick => 'return false;'
   end
+
+  def friendly_date(date)
+    date.strftime('%A, %d %B %Y')
+  end
   
 end
 
