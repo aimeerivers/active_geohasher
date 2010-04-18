@@ -103,7 +103,7 @@ eo:
       tweets_tagged: pepaĵoj kun la etikedo
       pictures_from_flickr: Bildoj de Flickr
       look_on_flickr: "Traserĉi {{link}} sur Flickr."
-      photos_and_videos_tagged: "bildoj kaj videoj kun la etikedo {{tag}}"
+      photos_and_videos_tagged: "bildoj kaj filmetoj kun la etikedo {{tag}}"
 
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj
