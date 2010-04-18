@@ -5,9 +5,9 @@
   .span-7
     %h3.name= link_to((graticule.name || t('.awaiting_graticule_name')), pretty_graticule_path(graticule.latitude, graticule.longitude))
     %ul.links
-      %li= link_to(t('.xkcd_geohashing_wiki'), graticule.wiki_link)
-      %li= link_to(t('.peeron_map_lookup_tool'), graticule.peeron_link)
-      %li= link_to(t('.anthill_visualisation_tool'), graticule.anthill_link(current_user))
+      %li= link_to(t('wiki'), graticule.wiki_link)
+      %li= link_to(t('peeron'), graticule.peeron_link)
+      %li= link_to(t('anthill'), graticule.anthill_link(current_user))
       %li= link_to(t('.google_earth_feed'), graticule_path(graticule, :format => :kml))
 
   .span-7
