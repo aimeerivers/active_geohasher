@@ -14,7 +14,7 @@ class Geohash < ActiveRecord::Base
   end
 
   def google_maps_label
-    "Geohash on #{date.strftime('%Y-%m-%d')} in #{graticule_latitude_longitude_display}: #{place_name_display}"
+    I18n.t('geohashes.show.geohash_on_date_in_location', :date => I18n.l(date, :format => :default), :location => place_name_display)
   end
   
   def peeron_link

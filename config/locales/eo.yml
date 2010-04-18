@@ -127,6 +127,12 @@ eo:
       satellite_view: Satelita vido
 
   globalhashes:
+    index:
+      recent_and_upcoming_globalhash_locations: Lastatempaj kaj okazontaj tutmondahaŝ-lokaloj
+      globalhash_explanation: Tutmondahaŝo estas la geohaŝ-algoritmo turniĝinta al la tuta mondo. Se la globalhash estas preskaŭ-vi, estas tre decidiga okazo kaj vi simple devas iri tien!
+      see_link_for_more_information: "Vidi {{link}} por pli da informoj."
+      globalhash_on_date_in_location: "Tutmondahaŝo por {{date}} en {{location}}"
+
     show:
       globalhash_on_date: "Tutmondahaŝo por {{date}}"
       world_view: Tutmonda vido

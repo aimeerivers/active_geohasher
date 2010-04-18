@@ -1,19 +1,15 @@
-%h2 Recent and upcoming globalhash locations
+%h2= t('.recent_and_upcoming_globalhash_locations')
 
-%p
-  A globalhash is the geohashing algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!
+%p= t('.globalhash_explanation')
 
-%p
-  See
-  %a{:href => 'http://geohashing.org/Globalhash'}http://geohashing.org/Globalhash
-  for more information.
+%p= t('.see_link_for_more_information', :link => link_to('http://geohashing.org/Globalhash', 'http://geohashing.org/Globalhash', :popup => true))
 
 - @globalhashes.each do |globalhash|
   %hr/
-  %h3= friendly_date(globalhash.date)
+  %h3= l(globalhash.date, :format => :long)
   .span-24
     .span-9.first
-      = image_tag(globalhash.google_map(request, 0), :alt => "Globalhash on #{friendly_date(globalhash.date)} in #{globalhash.place_name_display}", :size => "300x200", :class => 'google_map')
+      = link_to(image_tag(globalhash.google_map(request, 0), :alt => t('.globalhash_on_date_in_location', :date => l(globalhash.date, :format => :long), :location => globalhash.place_name_display), :size => "300x200", :class => 'google_map'), pretty_globalhash_path(globalhash.date))
       %p
         = globalhash.latitude_longitude_display
         %br/
@@ -22,15 +18,13 @@
     .span-15.last
       
       %p.globalhash_link
-        = image_tag('google_maps.png', :size => '60x60', :alt => 'Google maps')
-        = link_to('google maps', globalhash.google_link)
+        = image_tag('google_maps.png', :size => '60x60', :alt => t('google'))
+        = link_to(t('google'), globalhash.google_link)
 
       %p.globalhash_link
-        = image_tag('bing.png', :size => '60x60', :alt => 'Bing')
-        = link_to('bing maps', globalhash.bing_link)
+        = image_tag('bing.png', :size => '60x60', :alt => t('bing'))
+        = link_to(t('bing'), globalhash.bing_link)
 
       %p.globalhash_link
-        = image_tag('osm_logo_60.png', :size => '60x60', :alt => 'Open street map')
-        = link_to('open street map', globalhash.osm_link)
-
-
+        = image_tag('osm_logo_60.png', :size => '60x60', :alt => t('osm'))
+        = link_to(t('osm'), globalhash.osm_link)

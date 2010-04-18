@@ -7,7 +7,7 @@ class Globalhash < ActiveRecord::Base
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
 
   def google_maps_label
-    "Globalhash for #{date.strftime('%Y-%m-%d')}: #{place_name_display}"
+    I18n.t('globalhashes.index.globalhash_on_date_in_location', :date => I18n.l(date, :format => :default), :location => place_name_display)
   end
   
   def self.find_or_create(date)

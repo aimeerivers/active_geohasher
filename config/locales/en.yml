@@ -127,6 +127,12 @@
       satellite_view: Satellite view
 
   globalhashes:
+    index:
+      recent_and_upcoming_globalhash_locations: Recent and upcoming globalhash locations
+      globalhash_explanation: A globalhash is the geohashing algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!
+      see_link_for_more_information: "See {{link}} for more information."
+      globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
+
     show:
       globalhash_on_date: "Globalhash on {{date}}"
       world_view: World view
