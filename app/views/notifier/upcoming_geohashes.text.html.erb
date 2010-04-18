@@ -38,7 +38,7 @@
       <% end -%>
       <% if custom_links.any? -%>
         <li>
-        <%= t('.custom_links') %>
+        <%= t('common.custom_links') %>
         <% custom_links.each do |custom_link| -%>
           <%= " | " + link_to(custom_link.name, custom_link.magic_url({:latitude => geohash.lat, :longitude => geohash.lng})) %>
         <% end -%>
@@ -70,7 +70,7 @@
       <% end -%>
       <% if custom_links.any? -%>
         <li>
-        <%= t('.custom_links') %>
+        <%= t('common.custom_links') %>
         <% custom_links.each do |custom_link| -%>
           <%= " | " + link_to(custom_link.name, custom_link.magic_url({:latitude => globalhash.lat, :longitude => globalhash.lng})) %>
         <% end -%>

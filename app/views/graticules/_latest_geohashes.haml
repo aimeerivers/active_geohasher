@@ -5,7 +5,7 @@
     %p= t('.check_back_later')
 
   - geohashes.each do |geohash|
-    %h4= friendly_date(geohash.date)
+    %h4= l(geohash.date, :format => :long)
     %p
       = link_to(geohash.place_name_display, pretty_geohash_path(geohash.date, geohash.graticule_latitude, geohash.graticule_longitude))
       %br/

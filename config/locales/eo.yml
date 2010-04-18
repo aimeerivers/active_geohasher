@@ -20,6 +20,9 @@ eo:
     go_east: Iri oriente
     go_west: Iri okcidente
     distance: "{{number}} {{units}}"
+    unknown_location: "[Nekonita lokalo]"
+    useful_links: Utilaj ligiloj
+    custom_links: Personaj ligiloj
 
   locale:
     en: la angla (brita)
@@ -34,7 +37,7 @@ eo:
     features:
       subscribe_to_graticules: Aboni al gratikuloj
       receive_free_daily_geohashing_email: Ricevu ĉiutagan liberan retmesaĝon geohaŝadan
-      see_distance_from_home_location: Vidu malproksimecon de via hejm-lokalo en mejloj aŭ kilometroj
+      see_distance_from_home_location: Vidu distanco de via hejm-lokalo en mejloj aŭ kilometroj
       with_useful_links: Kun utilaj ligiloj al peeron, la geohaŝa vikio, mapoj Google kaj vojo-kalkuloj
       google_earth_feeds: Aŭtomate ĝisdatigante Google Earth fluoj por viaj gratikuloj
       open_source: Ĝi estas malfermita kodo!
@@ -87,13 +90,9 @@ eo:
   graticules:
     show:
       awaiting_graticule_name: "[Atendante gratikulo-nomon]"
-      xkcd_geohashing_wiki: xkcd geohaŝa vikio
-      peeron_map_lookup_tool: peeron mapo-konsultilo
-      anthill_visualisation_tool: anthill bildigilo
-      google_earth_feed: fluo por google earth
+      google_earth_feed: fluo por Google earth
       unsubscribe: malaboni
       graticule_map: Graticulo mapo
-      useful_links: Utilaj ligiloj
       social_media_links: Ligiloj de socia komunikilo
       twitter: "Twitter: {{tag}}"
       flickr: "Flickr: {{tag}}"
@@ -108,6 +107,24 @@ eo:
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj
       check_back_later: Rekontrolu poste por geohaŝoj en ĉi tio gratikulo.
+  
+  geohashes:
+    show:
+      geohash_on_date_in_location: "Geohaŝo por {{date}} en {{location}}"
+      poster_for_this_geohash_event: Afiŝo por ĉi tio geohaŝh-evento
+      details: Detaloj
+      location: "Lokalo:"
+      date: "Dato:"
+      graticule: "Gratikulo:"
+      coordinates: "Koordinatoj:"
+      distance: "Distanco:"
+      distance_from_your_home_location: "{{distance}} for de via hejm-lokalo"
+      how_the_geohash_is_calculated: Kiel la geohaŝo estas kalkulita
+      geohash_in_location: "Geohaŝo en {{location}}"
+      city_view: Urba vido
+      street_view: Strata vido
+      hybrid_view: Hybrida vido
+      satellite_view: Satelita vido
 
   footer:
     privacy_policy: privateco-politiko
@@ -121,8 +138,7 @@ eo:
       distance_away: "for de {{distance}}"
       globalhash: Tutmondahaŝo
       links: Ligiloj
-      custom_links: Personaj ligiloj
-      please_note_that_distances_are_calculated_as_straight_lines: Bonvolu atenti ke la malproksimecoj estas kalkulitaj kiel rektaj linioj; la malproksimeco per vojo eble estas pli longa. Google povas doni al vi direktojn - uzu la ligilojn!
+      please_note_that_distances_are_calculated_as_straight_lines: Bonvolu atenti ke la distanco estas kalkulitaj kiel rektaj linioj; la malproksimeco per vojo eble estas pli longa. Google povas doni al vi direktojn - uzu la ligilojn!
       happy_geohashing: Feliĉa geohaŝado!
 
   activerecord:

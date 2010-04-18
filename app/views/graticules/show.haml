@@ -2,19 +2,19 @@
   .span-16.first
     %h2= @graticule.display_name
 
-    %h3= t('.useful_links')
+    %h3= t('common.useful_links')
 
     %p.graticule_link
-      = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => t('.xkcd_geohashing_wiki'))
-      = link_to(t('.xkcd_geohashing_wiki'), @graticule.wiki_link)
+      = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => t('wiki'))
+      = link_to(t('wiki'), @graticule.wiki_link)
 
     %p.graticule_link
-      = image_tag('peeron.png', :size => '60x60', :alt => t('.peeron_map_lookup_tool'))
-      = link_to(t('.peeron_map_lookup_tool'), @graticule.peeron_link)
+      = image_tag('peeron.png', :size => '60x60', :alt => t('peeron'))
+      = link_to(t('peeron'), @graticule.peeron_link)
 
     %p.graticule_link
-      = image_tag('anthill.png', :size => '60x60', :alt => t('.anthill_visualisation_tool'))
-      = link_to(t('.anthill_visualisation_tool'), @graticule.anthill_link)
+      = image_tag('anthill.png', :size => '60x60', :alt => t('anthill'))
+      = link_to(t('anthill'), @graticule.anthill_link)
 
     %p.graticule_link
       = image_tag('google_earth.jpg', :size => '60x60', :alt => t('.google_earth_feed'))

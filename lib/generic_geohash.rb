@@ -17,7 +17,7 @@ module GenericGeohash
   end
 
   def place_name_display
-    return '[unknown location]' if place_name.blank?
+    return I18n.t('common.unknown_location') if place_name.blank?
     place_name
   end
 
