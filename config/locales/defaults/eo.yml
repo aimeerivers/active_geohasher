@@ -38,3 +38,9 @@ eo:
     month_names: [~, januaro, februaro, marto, aprilo, majo, junio, julio, aŭgusto, septembro, oktobro, novembro, decembro]
     abbr_month_names: [~, jan, feb, mar, apr, maj, jun, jul, aŭg, sep, okt, nov, dec]
     order: [ :day, :month, :year ]
+
+  number:
+    format:
+      precision: 3
+      delimiter: '.'
+      separator: ','
