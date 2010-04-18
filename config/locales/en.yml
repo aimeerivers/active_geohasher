@@ -126,6 +126,13 @@
       hybrid_view: Hybrid view
       satellite_view: Satellite view
 
+  globalhashes:
+    show:
+      globalhash_on_date: "Globalhash on {{date}}"
+      world_view: World view
+      country_view: Country view
+      area_view: Area view
+
   footer:
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?

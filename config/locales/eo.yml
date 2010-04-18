@@ -4,10 +4,10 @@ eo:
 
   ag: Active geohasher
   wiki: Geohaŝa vikio
-  google: mapoj (Google)
-  bing: mapoj (Bing)
+  google: Mapoj (Google)
+  bing: Mapoj (Bing)
   osm: Open Street Map
-  directions: direktoj (Google)
+  directions: Direktoj (Google)
   peeron: Peeron
   anthill: Anthill
   geocaching: Proksimaj geokaŝoj
@@ -125,6 +125,13 @@ eo:
       street_view: Strata vido
       hybrid_view: Hybrida vido
       satellite_view: Satelita vido
+
+  globalhashes:
+    show:
+      globalhash_on_date: "Tutmondahaŝo por {{date}}"
+      world_view: Tutmonda vido
+      country_view: Landa vido
+      area_view: Areala view
 
   footer:
     privacy_policy: privateco-politiko
