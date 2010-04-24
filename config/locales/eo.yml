@@ -177,6 +177,7 @@ eo:
 
   notifier:
     upcoming_geohashes:
+      geohashing_adventures: Geohaŝa-aventuroj
       hi_name: "Hola {{name}}"
       here_are_your_upcoming_geohash_locations: Jen viaj okazontaj geohaŝ-lokaloj, kondukitaj al vi de Active geohasher.
       distance_away: "for de {{distance}}"

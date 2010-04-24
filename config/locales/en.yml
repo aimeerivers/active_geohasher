@@ -177,6 +177,7 @@
 
   notifier:
     upcoming_geohashes:
+      geohashing_adventures: Geohashing adventures
       hi_name: "Hi {{name}}"
       here_are_your_upcoming_geohash_locations: Here are your upcoming geohash locations, brought to you by Active geohasher.
       distance_away: "{{distance}} away"
