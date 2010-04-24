@@ -65,7 +65,7 @@ eo:
       twitter_notification: Twitter-avizo
       use_ctrl_or_command_to_select_multiple_links: Uzu Ctrl aŭ Cmd por elekti multajn ligilojn
       for_this_to_work: "Por ĉi tio funkcii, vi bezonos sekvi {{activegeohasher}} sur twitter."
-      update_profile: Ĝisdatigi profilo
+      update_profile: Ĝisdatigi profilon
       updated_successfully: Via profilo estis sukcese ĝisdatigita.
 
   users:
@@ -139,6 +139,28 @@ eo:
       country_view: Landa vido
       area_view: Areala view
 
+  custom_links:
+    index:
+      add_links_here: Aldonu ligilojn ĉi tie, kaj ili aperos en viaj retmesaĝoj por ĉiu geohaŝo.
+      use_latitude_and_longitude_placeholders: "Uzu {{latitude}} kaj {{longitude}} anstataŭ la aktualaj valoroj. Jen iuj ekzemploj kiujn vi povus uzi:"
+      add: Aldoni
+      edit: redakti
+      delete: forigi
+      is_invalid: "ne estas valida (penu kun http://)"
+      you_cannot_edit_or_delete: Vi ne povas redakti aŭ forigi tiun personan ligilon.
+
+    new:
+      saved_successfully: Persona ligilo sukcese konservita.
+
+    edit:
+      edit_custom_link: Redakti personan ligilon
+      update_custom_link: Ĝisdatigi personan ligilon
+      updated_successfully: Persona ligilo sukcese ĝisdatigita.
+
+    delete:
+      are_you_sure_you_wish_to_delete: Ĉu vi certas, ke vi deziras forigi ĉi tiun personan ligilon?
+      deleted_successfully: Persona ligilo sukcese forigita.
+
   footer:
     privacy_policy: privateco-politiko
     what_is_geohashing: kio estas geohaŝado?
@@ -157,6 +179,8 @@ eo:
   activerecord:
     models:
       user: uzanto
+      subscription: abono
+      'custom link': persona ligilo
 
     attributes:
       user:
@@ -174,3 +198,7 @@ eo:
       subscription:
         latitude: Latitudo
         longitude: Longitudo
+
+      custom_link:
+        name: Nomo
+        url: URL

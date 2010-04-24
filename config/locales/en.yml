@@ -139,6 +139,28 @@
       country_view: Country view
       area_view: Area view
 
+  custom_links:
+    index:
+      add_links_here: Add links here and they will will be provided in your email for each geohash.
+      use_latitude_and_longitude_placeholders: "Use {{latitude}} and {{longitude}} as placeholders to be replaced with the relevant values. Here are some example links you could use:"
+      add: Add
+      edit: edit
+      delete: delete
+      is_invalid: "is invalid (try with http://)"
+      you_cannot_edit_or_delete: You cannot edit or delete that custom link.
+
+    new:
+      saved_successfully: Custom link saved successfully.
+
+    edit:
+      edit_custom_link: Edit custom link
+      update_custom_link: Update custom link
+      updated_successfully: Custom link updated successfully.
+
+    delete:
+      are_you_sure_you_wish_to_delete: Are you sure you wish to delete this custom link?
+      deleted_successfully: Custom link deleted successfully.
+
   footer:
     privacy_policy: privacy policy
     what_is_geohashing: what is geohashing?
@@ -157,6 +179,8 @@
   activerecord:
     models:
       user: user
+      subscription: subscription
+      'custom link': custom link
 
     attributes:
       user:
@@ -174,3 +198,7 @@
       subscription:
         latitude: Latitude
         longitude: Longitude
+
+      custom_link:
+        name: Name
+        url: URL

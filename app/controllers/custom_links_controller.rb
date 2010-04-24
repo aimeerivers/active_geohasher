@@ -10,7 +10,7 @@ class CustomLinksController < ApplicationController
     @new_custom_link = CustomLink.new(params[:custom_link])
     @new_custom_link.user = current_user
     if @new_custom_link.save
-      flash[:success] = "Custom link saved successfully."
+      flash[:success] = t('custom_links.new.saved_successfully')
       redirect_to custom_links_path
     else
       render :action => :index
@@ -22,7 +22,7 @@ class CustomLinksController < ApplicationController
 
   def update
     if @custom_link.update_attributes(params[:custom_link])
-      flash[:success] = "Custom link updated successfully."
+      flash[:success] = t('custom_links.edit.updated_successfully')
       redirect_to custom_links_path
     else
       render :action => :edit
@@ -32,7 +32,7 @@ class CustomLinksController < ApplicationController
   def destroy
     @custom_link = CustomLink.find(params[:id])
     @custom_link.destroy
-    flash[:success] = "Custom link successfully deleted."
+    flash[:success] = t('custom_links.delete.deleted_successfully')
     redirect_to custom_links_path
   end
   
@@ -41,7 +41,7 @@ class CustomLinksController < ApplicationController
   def ensure_ownership_of_custom_link
     @custom_link = CustomLink.find(params[:id])
     if @custom_link.user != current_user
-      flash[:error] = "You cannot edit or delete that custom link."
+      flash[:error] = t('custom_links.index.you_cannot_edit_or_delete')
       redirect_to custom_links_path
     end
   end

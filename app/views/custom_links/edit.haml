@@ -1,19 +1,19 @@
-%h2 Edit custom link
+%h2= t('.edit_custom_link')
 
 - form_for(@custom_link) do |f|
   = f.error_messages
 
   %p
-    = f.label(:name)
+    = f.label :name, t('activerecord.attributes.custom_link.name')
     %br/
     = f.text_field(:name)
 
   %p
-    = f.label(:url, 'URL')
+    = f.label :url, t('activerecord.attributes.custom_link.url')
     %br/
     = f.text_field(:url)
 
   %p
-    = f.submit('Update custom link')
-    or
-    = link_to('Cancel', custom_links_path)
+    = f.submit(t('.update_custom_link'))
+    =t('common.or')
+    = link_to(t('common.cancel'), custom_links_path)

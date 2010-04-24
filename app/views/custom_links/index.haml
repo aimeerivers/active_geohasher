@@ -1,14 +1,7 @@
-%h2 Custom links
+%h2= t('common.custom_links')
 
-%p Add links here and they will will be provided in your email for each geohash.
-%p
-  Use
-  %code
-    [LATITUDE]
-  and
-  %code
-    [LONGITUDE]
-  as placeholders to be replaced with the relevant values. Here are some example links you could use: 
+%p= t('.add_links_here')
+%p= t('.use_latitude_and_longitude_placeholders', :latitude => '<code>[LATITUDE]</code>', :longitude => '<code>[LONGITUDE]</code>')
 %ul
   %li
     %code http://kart.finn.no/?lat=[LATITUDE]&lng=[LONGITUDE]
@@ -21,18 +14,18 @@
   = f.error_messages
   %table#custom_links
     %tr
-      %th Name
-      %th URL
+      %th= t('activerecord.attributes.custom_link.name')
+      %th= t('activerecord.attributes.custom_link.url')
     %tr#new_custom_link_row
       %td.span-5.first= f.text_field(:name, :style => 'width: 150px;')
       %td.span-15= f.text_field(:url, :style => 'width: 550px;')
-      %td.span-4.last= f.submit('Add')
+      %td.span-4.last= f.submit(t('.add'))
 
     - current_user.custom_links.newest_first.each do |custom_link|
       %tr
         %td= h(custom_link.name)
         %td= truncate(h(custom_link.url), :length => 120)
         %td
-          = link_to('edit', edit_custom_link_path(custom_link))
+          = link_to(t('.edit'), edit_custom_link_path(custom_link))
           |
-          = link_to('delete', custom_link_path(custom_link), :method => 'delete', :confirm => "Are you sure you wish to delete this custom link?")
+          = link_to(t('.delete'), custom_link_path(custom_link), :method => 'delete', :confirm => t('custom_links.delete.are_you_sure_you_wish_to_delete'))
