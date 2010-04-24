@@ -16,7 +16,7 @@ class GeohashesController < ApplicationController
         end
       end
     rescue
-      flash[:error] = "Geohash not found, or there was a problem looking it up."
+      flash[:error] = t('geohashes.show.not_found')
       redirect_to root_path
     end
   end

@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
   
   def login_required
     if !logged_in?
-      flash[:error] = 'Please sign in first'
+      flash[:error] = t('authentication.please_sign_in_first')
       redirect_to root_path
     end
   end

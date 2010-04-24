@@ -11,9 +11,9 @@ class GlobalhashesController < ApplicationController
       else
         @globalhash = Globalhash.find(params[:id].to_i(36))
       end
-      raise 'Globashash not found' if @globalhash.nil?
+      raise 'Globalhash not found' if @globalhash.nil?
     rescue
-      flash[:error] = "Globalhash not found, or there was a problem looking it up."
+      flash[:error] = t('globalhashes.show.not_found')
       redirect_to root_path
     end
   end

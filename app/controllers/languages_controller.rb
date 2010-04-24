@@ -7,7 +7,7 @@ class LanguagesController < ApplicationController
       current_user.set_preferred_locale(params[:locale]) if logged_in?
       flash[:success] = t('locale.language_set_to', :language => t("locale.#{params[:locale]}"))
     else
-      flash[:error] = "Sorry, that language is not currently available."
+      flash[:error] = t('locale.not_available')
     end
 
     redirect_to last_get || root_path

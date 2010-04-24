@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
       redirect_to subscribe_path
     end
   rescue
-    flash[:error] = "FAIL!! Something went wrong and you could not be signed in, sorry."
+    flash[:error] = t('authentication.sign_in_failed')
     redirect_to root_path
   end
   

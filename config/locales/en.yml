@@ -29,6 +29,7 @@
     'en-US': English (USA)
     eo: Esperanto
     language_set_to: "Language set to {{language}}."
+    not_available: Sorry, that language is not currently available.
 
   home:
     welcome_to_active_geohasher: Welcome to Active geohasher
@@ -50,6 +51,8 @@
     sign_in_with: "{{sign_in}} using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
     welcome: "Hey {{name}}!"
     sign_out: Sign out
+    please_sign_in_first: Please sign in first.
+    sign_in_failed: Sorry, something went wrong and you could not be signed in.
 
   navigation:
     your_profile: Your profile
@@ -87,6 +90,9 @@
       successfully_subscribed_to_graticule: Successfully subscribed to graticule.
       could_not_subscribe_to_graticule: Could not subscribe to the graticule, please check and try again.
 
+    unsubscribe:
+      successfully_unsubscribed: Successfully unsubscribed from graticule.
+
   graticules:
     show:
       awaiting_graticule_name: "[Awaiting graticule name]"
@@ -103,6 +109,7 @@
       pictures_from_flickr: Pictures from Flickr
       look_on_flickr: "Look for {{link}} on Flickr."
       photos_and_videos_tagged: "photos and videos tagged {{tag}}"
+      not_found: Sorry, the graticule was not found.
 
     latest_geohashes:
       latest_geohashes: Latest geohashes
@@ -125,6 +132,7 @@
       street_view: Street view
       hybrid_view: Hybrid view
       satellite_view: Satellite view
+      not_found: Geohash not found, or there was a problem looking it up.
 
   globalhashes:
     index:
@@ -138,6 +146,7 @@
       world_view: World view
       country_view: Country view
       area_view: Area view
+      not_found: Globalhash not found, or there was a problem looking it up.
 
   custom_links:
     index:

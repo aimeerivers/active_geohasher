@@ -8,7 +8,7 @@ class GraticulesController < ApplicationController
     end
 
     if @graticule.nil?
-      flash[:error] = 'Sorry, the graticule was not found'
+      flash[:error] = t('graticules.show.not_found')
       redirect_to root_path
       return
     end

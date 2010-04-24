@@ -14,7 +14,7 @@ class SubscriptionsController < ApplicationController
   def destroy
     subscription = Subscription.find(params[:id])
     current_user.unsubscribe_from_graticule(subscription.graticule)
-    flash[:success] = "Successfully unsubscribed from graticule."
+    flash[:success] = t('subscriptions.unsubscribe.successfully_unsubscribed')
     redirect_to subscribe_path
   end
 end

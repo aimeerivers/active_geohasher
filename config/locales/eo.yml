@@ -29,6 +29,7 @@ eo:
     'en-US': la angla (Usona)
     eo: esperanto
     language_set_to: "Lingvo ŝanĝiĝis al {{language}}."
+    not_available: Bedaŭras, tiu lingvo ne estas disponebla.
 
   home:
     welcome_to_active_geohasher: Bonvenigu al Active geohasher
@@ -50,6 +51,8 @@ eo:
     sign_in_with: "{{sign_in}} kun Google, Yahoo, Flickr, Twitter, Facebook, aŭ OpenID. Estas senkosta!"
     welcome: "Hola {{name}}!"
     sign_out: Elsaluti
+    please_sign_in_first: Bonvolu unue ensaluti.
+    sign_in_failed: Bedaŭras, io malfunkciis, kaj vi ne povus esti ensalutita.
 
   navigation:
     your_profile: Via profilo
@@ -85,7 +88,10 @@ eo:
       subscribe_to_a_graticule: Aboni al unu gratikulo
       subscribe: Aboni
       successfully_subscribed_to_graticule: Vi estas sukcese abonita al la gratikulo.
-      could_not_subscribe_to_graticule: Ne povus aboni vin al la gratikulo, bonvolu kontrolu kaj reprovu.
+      could_not_subscribe_to_graticule: Ne povus aboni vin al la gratikulo, bonvolu kontroli kaj reprovi.
+
+    unsubscribe:
+      successfully_unsubscribed: Vi estis sukcese malabonita el la gratikulo.
 
   graticules:
     show:
@@ -103,6 +109,7 @@ eo:
       pictures_from_flickr: Bildoj de Flickr
       look_on_flickr: "Traserĉi {{link}} sur Flickr."
       photos_and_videos_tagged: "bildoj kaj filmetoj kun la etikedo {{tag}}"
+      not_found: Bedaŭras, la gratikulo ne estis trovita.
 
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj
@@ -125,6 +132,7 @@ eo:
       street_view: Strata vido
       hybrid_view: Hybrida vido
       satellite_view: Satelita vido
+      not_found: Estis problemo trovanta la geohaŝon.
 
   globalhashes:
     index:
@@ -138,6 +146,7 @@ eo:
       world_view: Tutmonda vido
       country_view: Landa vido
       area_view: Areala view
+      not_found: Estis problemo trovanta la tutmondohaŝon.
 
   custom_links:
     index:
