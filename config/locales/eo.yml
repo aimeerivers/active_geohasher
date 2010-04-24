@@ -134,6 +134,19 @@ eo:
       satellite_view: Satelita vido
       not_found: Estis problemo trovanta la geohaŝon.
 
+      poster:
+        xkcd_geohashing: xkcd geohaŝado
+        the_internet_was_here: La interreto estis ĉi tie!
+        some_geohashers: "Specife, iuj geohaŝistoj\nestis ĉe la koordinatoj"
+        on_date: "je {{date}}"
+        geohashing_is_an_adventure_game: Geohaŝado estas aventuro-ludo.
+        an_algorithm_generates_random_coordinates: Algoritmo generas ĉiutage hazarda kunordigas, kaj homoj provas iri tien por malkovri novajn lokojn, trovi novajn homojn kaj fari amuzon.
+        to_find_out_more: "Por pli scii, aŭ enali al la amuzon, vizitu {{link}}"
+        how_this_geohash_location_was_calculated: Kiel ĉi tiu geohaŝ-lokalo estis kalkulita
+        now_that_you_have_seen_this_poster: "Nun ke vi vidis ĉi tiu afiŝo, ni amus aŭdi de vi."
+        the_place_to_talk: La loko por diskuto pri ĉi tiu aparta ekspedicio estas
+        come_and_say_hello: Venu diri saluton kaj diru al ni, kiel vi trovis la afiŝon!
+
   globalhashes:
     index:
       recent_and_upcoming_globalhash_locations: Lastatempaj kaj okazontaj tutmondahaŝ-lokaloj

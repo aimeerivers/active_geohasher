@@ -134,6 +134,19 @@
       satellite_view: Satellite view
       not_found: Geohash not found, or there was a problem looking it up.
 
+      poster:
+        xkcd_geohashing: xkcd geohashing
+        the_internet_was_here: The internet was here!
+        some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
+        on_date: "on {{date}}"
+        geohashing_is_an_adventure_game: Geohashing is an adventure game.
+        an_algorithm_generates_random_coordinates: An algorithm generates random coordinates daily, and people try to get there to see new places, meet new people, and have fun doing it.
+        to_find_out_more: "To find out more or join in the fun yourself, visit {{link}}"
+        how_this_geohash_location_was_calculated: How this geohash location was calculated
+        now_that_you_have_seen_this_poster: "Now that you've seen this poster, we'd love to hear from you."
+        the_place_to_talk: The place to talk about this particular expedition is at
+        come_and_say_hello: Come and say hello and tell us how you came to find the poster!
+
   globalhashes:
     index:
       recent_and_upcoming_globalhash_locations: Recent and upcoming globalhash locations
