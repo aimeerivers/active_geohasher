@@ -1,4 +1,4 @@
-'en':
+en:
   miles: miles
   kms: kilometres
 
@@ -30,6 +30,8 @@
     en: English (UK)
     'en-US': English (USA)
     eo: Esperanto
+    es: Spanish
+    de: German
     language_set_to: "Language set to {{language}}."
     not_available: Sorry, that language is not currently available.
 
