@@ -24,6 +24,7 @@
     useful_links: Useful links
     custom_links: Custom links
     privacy_policy: Privacy policy
+    what_is_geohashing: What is geohashing?
 
   locale:
     en: English (UK)
@@ -45,7 +46,7 @@
       open_source: "It's open source!"
       contributions_welcome: Contributions welcome!
 
-    latest_on_twitter: Latest on twitter
+    latest_on_twitter: Latest on Twitter
 
     privacy:
       what_data_do_you_collect_about_me:
@@ -67,8 +68,20 @@
 
       why_do_you_want_my_facebook_details:
         question: Why do you want my Facebook details? Will you spam my friends?
-        answer: "Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your twitter account or Facebook status. See {{link}} if you want to know more."
+        answer: "Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it Twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your Twitter account or Facebook status. See {{link}} if you want to know more."
         how_rpx_works: How RPX works
+
+    what_is_geohashing:
+      geohashing_is_best_described: Geohashing is best described as a random adventure generator.
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the opening value of the Dow Jones and combines it with the current date to produce geographic points in every latitude and longitude all over the world. The coordinates could land anywhere: maybe in a forest, in the middle of the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
+      an_algorithm: An algorithm
+      at_your_home: at your home
+      your_workplace: your workplace
+      the_aim_of_the_game: "The aim of the game is to reach one of the geohash points for the day (maybe with the aid of GPS equipment), take photographs for evidence, meet other people, play games, do what ever you feel like. Ideally leave some kind of {{non_permanent_marker}} for others to find."
+      non_permanent_marker: non-permanent marker
+      there_are_several_achievements: "There are several {{achievements}} that you can earn depending on difficulty or activities you carry out at the geohash point. But the main point is to enjoy yourself, get out into the fresh air, go somewhere you might have no reason to go otherwise and share your adventures with the rest of us!"
+      achievements: achievements
+      for_more_information: "For more information visit {{link}}"
 
   authentication:
     sign_in: Sign in
@@ -91,7 +104,7 @@
       email_notification: Email notification
       twitter_notification: Twitter notification
       use_ctrl_or_command_to_select_multiple_links: Use Ctrl or Cmd to select multiple links.
-      for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on twitter."
+      for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on Twitter."
       update_profile: Update profile
       updated_successfully: Your profile was updated successfully.
 
@@ -208,7 +221,6 @@
       deleted_successfully: Custom link deleted successfully.
 
   footer:
-    what_is_geohashing: What is geohashing?
     source_code: Source code
 
   notifier:
@@ -237,7 +249,7 @@
         preferred_locale: Language
         receive_email: Receive emails
         preferred_links: Links you want in your emails
-        twitter_username: Enter your twitter username here if you wish to receive notification
+        twitter_username: Enter your Twitter username here if you wish to receive notification
         lat: Latitude
         lng: Longitude
 

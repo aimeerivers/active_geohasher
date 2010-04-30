@@ -1,27 +1,11 @@
-%h2 What is geohashing?
+%h2= t('common.what_is_geohashing')
 
-%p
-  Geohashing is best described as a
-  %em random adventure generator.
+%p= t('.geohashing_is_best_described')
 
-%p
-  %a{:href => 'http://geohashing.org/Algorithm'}An algorithm
-  takes the opening value of the Dow Jones and combines it with the current date to produce geographic points in every latitude and longitude all over the world. The coordinates could land anywhere: maybe in a forest, in the middle of the sea, or in a big city. Maybe even
-  %a{:href => 'http://geohashing.org/Couch_Potato_Geohash'}at your home
-  or
-  %a{:href => 'http://geohashing.org/Cubicle_geohash_achievement'}your workplace!
-  But it's completely random, and it's different every day.
+%p= t('.an_algorithm_takes_the_dow_jones', :an_algorithm => link_to(t('.an_algorithm'), 'http://geohashing.org/Algorithm', :popup => true), :at_your_home => link_to(t('.at_your_home'), 'http://geohashing.org/Couch_Potato_Geohash', :popup => true), :your_workplace => link_to(t('.your_workplace'), 'http://geohashing.org/Cubicle_geohash_achievement', :popup => true))
 
-%p
-  The aim of the game is to reach one of the geohash points for the day (maybe with the aid of GPS equipment), take photographs for evidence, meet other people, play games, do what ever you feel like. Ideally leave some kind of
-  %a{:href => 'http://geohashing.org/Marker'}non-permanent marker
-  for others to find.
+%p= t('.the_aim_of_the_game', :non_permanent_marker => link_to(t('.non_permanent_marker'), 'http://geohashing.org/Marker', :popup => true))
 
-%p
-  There are several
-  %a{:href => 'http://geohashing.org/Achievements'}achievements
-  that you can earn depending on difficulty or activities you carry out at the geohash point. But the main point is to enjoy yourself, get out into the fresh air, go somewhere you might have no reason to go otherwise and share your adventures with the rest of us!
+%p= t('.there_are_several_achievements', :achievements => link_to(t('.achievements'), 'http://geohashing.org/Achievements', :popup => true))
 
-%p
-  For more information visit
-  %a{:href => 'http://geohashing.org'}geohashing.org
+%p= t('.for_more_information', :link => link_to('geohashing.org', 'http://geohashing.org', :popup => true))

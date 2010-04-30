@@ -24,6 +24,7 @@ eo:
     useful_links: Utilaj ligiloj
     custom_links: Personaj ligiloj
     privacy_policy: Privateco-politiko
+    what_is_geohashing: Kio estas geohaŝado?
 
   locale:
     en: la angla (brita)
@@ -69,6 +70,18 @@ eo:
         question: Kial vi demandas miajn detalojn de Facebook? Ĉu vi spamos miajn amikojn?
         answer: "Difinite ne. La aŭtentikigo RPX estas simple rimedo de konfirmi kiu vi estas el fidita tria-partio. Ĝi povas esti Twitter, Facebook, Google, Yahoo aŭ iu ajn provizado de OpenID. Ni havos nenian scion el viaj amikoj, kaj ni ne estos kapabla al ĝisdatigi vian Twitter aŭ Facebook statuson. Vidu {{link}} se vi volas pli scii."
         how_rpx_works: Kiel funkcias RPX?
+
+    what_is_geohashing:
+      geohashing_is_best_described: Geohaŝado estas plej bone tas priskribita kiel generatoro de hazardaj aventuroj.
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} prenas la malfermiĝado-valoron de la Dow Jones kaj kombina ĝin kun la aktuala dato por produkti geografiajn punktojn en ĉiu latitudo kaj longitudo tra la tuta mondo. La koordinatoj povas esti ie: en arbaro, en la mezo de la maro, aŭ en granda urbo. Eble {{at_your_home}} aŭ {{your_workplace}}! Estas komplete hazarde, kaj gi estas ĉiutage alia."
+      an_algorithm: Algoritmo
+      at_your_home: hejme via
+      your_workplace: en via loko de laboro
+      the_aim_of_the_game: "La celo de la ludo estas atingi unu el la geohaŝo-lokaloj por la tago (eble kun la helpo de GPS ekipaĵon), preni fotografaĵojn por pruvo, trovi aliaj homoj, ludi ludojn, fari kio iam vi amas. Ideale, forlasu {{non_permanent_marker}}, kion aliaj povus trovi."
+      non_permanent_marker: nekonstantan markon
+      there_are_several_achievements: "Estas pluraj {{achievements}}, kiujn vi povas gajni dependante de malfacilaĵo aŭ aktivecoj, kiujn vi faras al la geohaŝo-lokalo. Sed la ĉefa punkto estas por ĝui vin, eliri en la freŝan aeron, iri ien vi povus havi nenian alian kialon iri, kaj partopreni viajn aventurojn kun la cetero el ni!"
+      achievements: atingoj
+      for_more_information: "Por pli da informoj, vizitu {{link}}"
 
   authentication:
     sign_in: Ensaluti
@@ -208,7 +221,6 @@ eo:
       deleted_successfully: Persona ligilo sukcese forigita.
 
   footer:
-    what_is_geohashing: Kio estas geohaŝado?
     source_code: Fontkodo
 
   notifier:
