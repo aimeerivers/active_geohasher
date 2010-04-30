@@ -4,6 +4,7 @@
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}
     = stylesheet_link_tag 'blueprint/screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'main.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'buttons.css', :media => 'screen, projection'
     = stylesheet_link_tag 'blueprint/print.css', :media => 'print'
     /
       [if lt IE 8]>
@@ -30,7 +31,7 @@
         .span-8.last{:style => "text-align:right;"}
           = render :partial => 'layouts/authentication'
           - if !logged_in?
-            = link_to(image_tag('what_is_geohashing.png', :alt => "What is geohashing?", :size => '300x50'), what_is_geohashing_path)
+            = link_to(t('common.what_is_geohashing'), what_is_geohashing_path, :class => 'button orange')
         
       - if flash[:success]
         .flash.success.span-24= flash[:success]

@@ -147,6 +147,9 @@
       look_on_flickr: "Look for {{link}} on Flickr."
       photos_and_videos_tagged: "photos and videos tagged {{tag}}"
       not_found: Sorry, the graticule was not found.
+      buttons:
+        subscribe: Subscribe to this graticule
+        unsubscribe: Unsubscribe
 
     latest_geohashes:
       latest_geohashes: Latest geohashes

@@ -38,12 +38,12 @@
 
   .span-8.last
     - if logged_in?
-      .subscription_buttons
+      .subscription_buttons{:style => 'margin-bottom: 1em;'}
         - if current_user.subscribed_to_graticule?(@graticule)
           - subscription = Subscription.find_by_user_id_and_graticule_id(current_user, @graticule)
-          = link_to(image_tag('graticule_unsubscribe.png'), subscription_path(subscription), :method => :delete)
+          = link_to(t('.buttons.unsubscribe'), subscription_path(subscription), :method => :delete, :class => 'button white')
         - else
-          = link_to(image_tag('graticule_subscribe.png'), subscriptions_path(:latitude => @graticule.latitude, :longitude => @graticule.longitude), :method => :post)
+          = link_to(t('.buttons.subscribe'), subscriptions_path(:latitude => @graticule.latitude, :longitude => @graticule.longitude), :method => :post, :class => 'button green')
 
     = render :partial => 'nsew'
 
