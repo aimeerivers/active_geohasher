@@ -23,6 +23,7 @@ eo:
     unknown_location: "[Nekonita lokalo]"
     useful_links: Utilaj ligiloj
     custom_links: Personaj ligiloj
+    privacy_policy: Privateco-politiko
 
   locale:
     en: la angla (brita)
@@ -44,7 +45,30 @@ eo:
       open_source: Ĝi estas malfermita kodo!
       contributions_welcome: Kontribuoj bonvenigas!
 
-    latest_on_twitter: Novaĵo sur twitter
+    latest_on_twitter: Novaĵo sur Twitter
+
+    privacy:
+      what_data_do_you_collect_about_me:
+        question: Kian datenon vi kolektas pri mi?
+        answer: Ni konservas vian nomon, retadreson kaj URLn de  identaĵo por aŭtentikigo. Se vi precizigos lokalon, ni ŝparos tion por doni vin relativaj distancoj al geohaŝoj. Ni konservos la gratikulojn, al kiuj vi abonas por provizi al vi utila servo.
+
+      can_i_view_and_change_the_data_you_hold:
+        question: Ĉu mi povas rigardi kaj ŝanĝi la datenojn, kiujn vi tenas pri mi?
+        answer: "Vi povas. Se vi estas ensalutita, klaku sur vian nomon, aŭ visitu {{link}} por vidi la datenon, ke ni havas. Vi povas ŝanĝi vian nomon kaj retadreson. Vi povas vidi vian URLn de identaĵo sed vi ne povas ŝanĝi ĝin, ĉar ĝi estas bezonata por aŭtentikaĵo. Vi povas ĉiam ŝanĝi viajn abonojn kaj vian hejm-lokalon."
+        edit_profile: redakti profilo
+
+      will_i_get_unwanted_email:
+        question: Ĉu mi ricevos nevolitajn retmesaĝojn?
+        answer: "Vi ricevos nur retmesaĝojn kiuj vi elektas ricevi, pri gratikuloj al kiuj vi abonis. Vi povas malaboni el gratikuloj iam ajn. Vi povas ankaŭ redakti vian profilon kaj malmarkas 'Ricevi retpoŝto' por rapida ĉesi ricevi retmesaĝojn."
+
+      will_you_share_my_information:
+        question: Ĉu vi partoprenos miajn informojn kun aliaj?
+        answer: Absolute ne. Neniam ni ilin partoprenos.
+
+      why_do_you_want_my_facebook_details:
+        question: Kial vi demandas miajn detalojn de Facebook? Ĉu vi spamos miajn amikojn?
+        answer: "Difinite ne. La aŭtentikigo RPX estas simple rimedo de konfirmi kiu vi estas el fidita tria-partio. Ĝi povas esti Twitter, Facebook, Google, Yahoo aŭ iu ajn provizado de OpenID. Ni havos nenian scion el viaj amikoj, kaj ni ne estos kapabla al ĝisdatigi vian Twitter aŭ Facebook statuson. Vidu {{link}} se vi volas pli scii."
+        how_rpx_works: Kiel funkcias RPX?
 
   authentication:
     sign_in: Ensaluti
@@ -67,7 +91,7 @@ eo:
       email_notification: Retmesaĝ-avizo
       twitter_notification: Twitter-avizo
       use_ctrl_or_command_to_select_multiple_links: Uzu Ctrl aŭ Cmd por elekti multajn ligilojn
-      for_this_to_work: "Por ĉi tio funkcii, vi bezonos sekvi {{activegeohasher}} sur twitter."
+      for_this_to_work: "Por ĉi tio funkcii, vi bezonos sekvi {{activegeohasher}} sur Twitter."
       update_profile: Ĝisdatigi profilon
       updated_successfully: Via profilo estis sukcese ĝisdatigita.
 
@@ -184,9 +208,8 @@ eo:
       deleted_successfully: Persona ligilo sukcese forigita.
 
   footer:
-    privacy_policy: privateco-politiko
-    what_is_geohashing: kio estas geohaŝado?
-    source_code: fontkodo
+    what_is_geohashing: Kio estas geohaŝado?
+    source_code: Fontkodo
 
   notifier:
     upcoming_geohashes:
@@ -214,7 +237,7 @@ eo:
         preferred_locale: Lingvo
         receive_email: Ricevi retpoŝto
         preferred_links: Ligiloj, kiujn vi volas ricevi en viaj retmesaĝoj
-        twitter_username: Eniru vian twitter-salutnomon ĉi tien, se vi deziras ricevi avizon
+        twitter_username: Eniru vian Twitter-salutnomon ĉi tien, se vi deziras ricevi avizon
         lat: Latitudo
         lng: Longitudo
 

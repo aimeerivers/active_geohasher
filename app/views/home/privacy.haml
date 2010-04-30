@@ -1,22 +1,16 @@
-%h2 Privacy policy
+%h2= t('common.privacy_policy')
 
-%h3 What data do you collect about me?
-%p We store your name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules to which you subscribe in order to provide you with a useful service.
+%h3= t('.what_data_do_you_collect_about_me.question')
+%p= t('.what_data_do_you_collect_about_me.answer')
 
-%h3 Can I view and change the data you hold about me?
-%p
-  You can. If you are logged in and click on your name, or if you visit
-  =link_to('edit profile', edit_profile_path)
-  you will see the data we have. You can change your name and email address. You can see your identifying URL but you cannot change it because it is needed for authentication. You can change your subscriptions or home location at any time.
+%h3= t('.can_i_view_and_change_the_data_you_hold.question')
+%p= t('.can_i_view_and_change_the_data_you_hold.answer', :link => link_to(t('.can_i_view_and_change_the_data_you_hold.edit_profile'), edit_profile_path))
   
-%h3 Will I get unwanted email?
-%p You will only receive email that you have chosen to receive, about graticules to which you have subscribed. You can unsubscribe from graticules at any time, or you can edit your profile and uncheck 'Receive email' for a quick way to stop receiving email.
+%h3= t('.will_i_get_unwanted_email.question')
+%p= t('.will_i_get_unwanted_email.answer')
+  
+%h3= t('.will_you_share_my_information.question')
+%p= t('.will_you_share_my_information.answer')
 
-%h3 Will you share my information with anyone else?
-%p No. Absolutely not, and we never will.
-
-%h3 Why do you want my Facebook details? Will you spam my friends?
-%p
-  Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your twitter account or Facebook status. See
-  %a{:href => 'https://rpxnow.com/how_it_works'}How RPX works
-  if you want to know more.
+%h3= t('.why_do_you_want_my_facebook_details.question')
+%p= t('.why_do_you_want_my_facebook_details.answer', :link => link_to(t('.why_do_you_want_my_facebook_details.how_rpx_works'), 'https://rpxnow.com/how_it_works', :popup => true))

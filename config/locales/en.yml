@@ -23,6 +23,7 @@
     unknown_location: "[Unknown location]"
     useful_links: Useful links
     custom_links: Custom links
+    privacy_policy: Privacy policy
 
   locale:
     en: English (UK)
@@ -45,6 +46,29 @@
       contributions_welcome: Contributions welcome!
 
     latest_on_twitter: Latest on twitter
+
+    privacy:
+      what_data_do_you_collect_about_me:
+        question: What data do you collect about me?
+        answer: We store your name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules to which you subscribe in order to provide you with a useful service.
+
+      can_i_view_and_change_the_data_you_hold:
+        question: Can I view and change the data you hold about me?
+        answer: "You can. If you are logged in and click on your name, or if you visit {{link}} you will see the data we have. You can change your name and email address. You can see your identifying URL but you cannot change it because it is needed for authentication. You can change your subscriptions or home location at any time."
+        edit_profile: edit profile
+
+      will_i_get_unwanted_email:
+        question: Will I get unwanted email?
+        answer: "You will only receive email that you have chosen to receive, about graticules to which you have subscribed. You can unsubscribe from graticules at any time, or you can edit your profile and uncheck 'Receive email' for a quick way to stop receiving email."
+
+      will_you_share_my_information:
+        question: Will you share my information with anyone else?
+        answer: No. Absolutely not, and we never will.
+
+      why_do_you_want_my_facebook_details:
+        question: Why do you want my Facebook details? Will you spam my friends?
+        answer: "Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your twitter account or Facebook status. See {{link}} if you want to know more."
+        how_rpx_works: How RPX works
 
   authentication:
     sign_in: Sign in
@@ -184,9 +208,8 @@
       deleted_successfully: Custom link deleted successfully.
 
   footer:
-    privacy_policy: privacy policy
-    what_is_geohashing: what is geohashing?
-    source_code: source code
+    what_is_geohashing: What is geohashing?
+    source_code: Source code
 
   notifier:
     upcoming_geohashes:
