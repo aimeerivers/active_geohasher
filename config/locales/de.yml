@@ -15,13 +15,13 @@ de:
   common:
     or: oder
     cancel: abbrechen
-    go_north: weiter nördlich
-    go_south: weiter südlich
-    go_east: weiter östlich
+    go_north: weiter nÃ¶rdlich
+    go_south: weiter sÃ¼dlich
+    go_east: weiter Ã¶stlich
     go_west: weiter westlich
     distance: "{{number}} {{units}}"
     unknown_location: "[unbekannter Ort]"
-    useful_links: nützliche Links
+    useful_links: nÃ¼tzliche Links
     custom_links: benutzerdefinierte Links
     privacy_policy: Datenschutz
     what_is_geohashing: Was ist Geohashing?
@@ -37,55 +37,55 @@ de:
 
   home:
     welcome_to_active_geohasher: Wilkommen bei Active Geohasher
-    resources_for_geohashers: Hilfsquellen für Geohasher
+    resources_for_geohashers: Hilfsquellen fÃ¼r Geohasher
 
     features:
       subscribe_to_graticules: Planquadrat abonnieren
-      receive_free_daily_geohashing_email: Tägliche Geohashing-Mail abonnieren
+      receive_free_daily_geohashing_email: TÃ¤gliche Geohashing-Mail abonnieren
       see_distance_from_home_location: siehe Entfernung von deinem Heimatort in Kilometern oder Meilen
-      with_useful_links: mit nützlichen Links zu Peeron, der Geohashing wiki, Google Maps und Routenberechnungen
-      google_earth_feeds: aktualisiert automatisch Google Earth Feeds für deine Planquadrate
+      with_useful_links: mit nÃ¼tzlichen Links zu Peeron, der Geohashing wiki, Google Maps und Routenberechnungen
+      google_earth_feeds: aktualisiert automatisch Google Earth Feeds fÃ¼r deine Planquadrate
       open_source: "Komplett Open Source!"
-      contributions_welcome: Beiträge immer wilkommen!
+      contributions_welcome: BeitrÃ¤ge immer wilkommen!
 
     latest_on_twitter: das neueste im Twitter-Feed
 
     privacy:
       what_data_do_you_collect_about_me:
-        question: Welche Daten sammelt ihr über mich?
-        answer: Wir speichern deinen Namen, Emailadresse und identifizierende URL-Adresse für die Authentifizierung. Wenn du einen Heimatort angibst, speichern wir ihn damit wir dir relative Entfernungen zu Geohashs angeben können. Wir speichern Planquadrate, die du abonniert hast damit du den bestmöglichen Service erhälst.
+        question: Welche Daten sammelt ihr Ã¼ber mich?
+        answer: Wir speichern deinen Namen, Emailadresse und identifizierende URL-Adresse fÃ¼r die Authentifizierung. Wenn du einen Heimatort angibst, speichern wir ihn damit wir dir relative Entfernungen zu Geohashs angeben kÃ¶nnen. Wir speichern Planquadrate, die du abonniert hast damit du den bestmÃ¶glichen Service erhÃ¤lst.
 
       can_i_view_and_change_the_data_you_hold:
-        question: Kann ich meine eigenen Daten ansehen und ändern?
-        answer: "Auf jeden Fall. Wenn du eingeloggt bist und auf deinen Namen oder auf {{link}} klickst, kannst du begutachten was wir über dich gespeichert haben. Du kannst deinen Namen ändern und auch deine Emailadresse. Du kannst die identifizierende URL-Adresse sehen aber du kannst diese nicht ändern, da sie für die Authentifizierung notwendig ist. Du kannst jederzeit deine Abonnements und deinen Heimatort ändern."
+        question: Kann ich meine eigenen Daten ansehen und Ã¤ndern?
+        answer: "Auf jeden Fall. Wenn du eingeloggt bist und auf deinen Namen oder auf {{link}} klickst, kannst du begutachten was wir Ã¼ber dich gespeichert haben. Du kannst deinen Namen Ã¤ndern und auch deine Emailadresse. Du kannst die identifizierende URL-Adresse sehen aber du kannst diese nicht Ã¤ndern, da sie fÃ¼r die Authentifizierung notwendig ist. Du kannst jederzeit deine Abonnements und deinen Heimatort Ã¤ndern."
         edit_profile: Profil aktualisieren
 
       will_i_get_unwanted_email:
         question: Werde ich ungewollte Emails bekommen?
-        answer: "Du bekommst nur solche Emails, die du angefordert hast. Du wirst nur über Planquadrate Emails bekommen, die du abonniert hast. Du kannst jederzeit Email-Abos für bestimmte Planquadrate kündigen. Noch schneller geht's wenn du in deinem Profil bei 'Emails bekommen' das Häkchen entfernst um deine Abos zu beenden."
+        answer: "Du bekommst nur solche Emails, die du angefordert hast. Du wirst nur Ã¼ber Planquadrate Emails bekommen, die du abonniert hast. Du kannst jederzeit Email-Abos fÃ¼r bestimmte Planquadrate kÃ¼ndigen. Noch schneller geht's wenn du in deinem Profil bei 'Emails bekommen' das HÃ¤kchen entfernst um deine Abos zu beenden."
 
       will_you_share_my_information:
         question: Werden meine Daten an Dritte weitergegeben?
-        answer: Nein, das werden wir nie tun. Alle Daten werden ausschließlich dazu verwendet, um dir ein optimales Benutzererlebnis zu ermöglichen.   
+        answer: Nein, das werden wir nie tun. Alle Daten werden ausschlieÃŸlich dazu verwendet, um dir ein optimales Benutzererlebnis zu ermÃ¶glichen.   
 
       why_do_you_want_my_facebook_details:
         question: Warum wollt ihr meine Facebook-Zugangsdaten? Werden ihr meine Freunde spammen?
-        answer: "Auf keinen Fall. Die RPX-Authentifizierung ist einfach eine Art der Verifikation deiner Identität durch einen bewährten Drittanbieter, sei es Twitter, Facebook, Google, Yahoo oder ein OpenID-Provider. Wir können nichts über deine Freunde in Erfahrung bringen und sind nicht in der Lage, in deinem Twitter oder Facebook zu posten. Falls Du mehr darüber wissen möchtest, schau nach {{link}} http://wiki.xkcd.com/geohashing/Algorithmus."
+        answer: "Auf keinen Fall. Die RPX-Authentifizierung ist einfach eine Art der Verifikation deiner IdentitÃ¤t durch einen bewÃ¤hrten Drittanbieter, sei es Twitter, Facebook, Google, Yahoo oder ein OpenID-Provider. Wir kÃ¶nnen nichts Ã¼ber deine Freunde in Erfahrung bringen und sind nicht in der Lage, in deinem Twitter oder Facebook zu posten. Falls Du mehr darÃ¼ber wissen mÃ¶chtest, schau nach {{link}}."
         how_rpx_works: wie RPX funktioniert
 
     what_is_geohashing:
-      geohashing_is_best_described: Geohashing kann man am besten als ein zufällig generiertes, elektronisches Abenteuerspiel bezeichnen.
-      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} nimmt den Eröffnungskurs des Dow Jones Aktienkurses und berechnet zusammen mit dem aktuellen Datum um in jedem Planquadrat der Erde geographische Koordinaten zu erstellen. Theoretisch könnten diese überall landen: vielleicht in einem Wald, mitten im Meer oder einer Großstadt. Vielleicht sogar {{at_your_home}} oder {{your_workplace}}! Aber dies ist total zufällig und ändert sich jeden Tag."
+      geohashing_is_best_described: Geohashing kann man am besten als ein zufÃ¤llig generiertes, elektronisches Abenteuerspiel bezeichnen.
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} nimmt den ErÃ¶ffnungskurs des Dow Jones Aktienkurses und berechnet zusammen mit dem aktuellen Datum um in jedem Planquadrat der Erde geographische Koordinaten zu erstellen. Theoretisch kÃ¶nnten diese Ã¼berall landen: vielleicht in einem Wald, mitten im Meer oder einer GroÃŸstadt. Vielleicht sogar {{at_your_home}} oder {{your_workplace}}! Aber dies ist total zufÃ¤llig und Ã¤ndert sich jeden Tag."
       an_algorithm: Ein Algorithmus
       at_your_home: an deinem Heimatort
       your_workplace: an deinem Arbeitsplatz
-      the_aim_of_the_game: "Das Ziel dieses Spiels ist eines der Geohash-Koordinaten zu erreichen (vielleicht mit Hilfe eines GPS-Geräts), als Nachweis Fotos zu machen, andere Leute zu treffen, spiele zu spielen, oder was auch immer du möchtest. Hinterlasse möglichst irgendeine {{non_permanent_marker}}, die andere finden können."
+      the_aim_of_the_game: "Das Ziel dieses Spiels ist eines der Geohash-Koordinaten zu erreichen (vielleicht mit Hilfe eines GPS-GerÃ¤ts), als Nachweis Fotos zu machen, andere Leute zu treffen, spiele zu spielen, oder was auch immer du mÃ¶chtest. Hinterlasse mÃ¶glichst irgendeine {{non_permanent_marker}}, die andere finden kÃ¶nnen."
       non_permanent_marker: nicht-permanente Markierung
-      there_are_several_achievements: "Es gibt mehrere {{achievements}}, die du aufgrund von Schwierigkeitsgrad oder am Geohash-Ort ausgeführte Aktivitäten verdienen kannst. Aber der ganze Sinn und Zweck ist daß du Spaß hast, an die frische Luft kommst, irgendwo hingehst wo du sonst keinen Grund hättest hinzugehen und deine Abenteuer mit uns teilst!"
+      there_are_several_achievements: "Es gibt mehrere {{achievements}}, die du aufgrund von Schwierigkeitsgrad oder am Geohash-Ort ausgefÃ¼hrte AktivitÃ¤ten verdienen kannst. Aber der ganze Sinn und Zweck ist daÃŸ du SpaÃŸ hast, an die frische Luft kommst, irgendwo hingehst wo du sonst keinen Grund hÃ¤ttest hinzugehen und deine Abenteuer mit uns teilst!"
       achievements: Leistungen
       for_more_information: "um mehr zu erfahren, klick auf  den folgenden {{link}}"
   
-authentication:
+  authentication:
     sign_in: Anmelden
     sign_in_with: "{{sign_in}} mit deinem Google-Konto, Yahoo, Flickr, Twitter, Facebook, oder OpenID. Alles gratis!"
     welcome: "Hallo {{name}}!"
@@ -105,15 +105,15 @@ authentication:
       your_profile: Dein Benutzerprofil
       email_notification: Emailbenachrichtigung
       twitter_notification: Twitter-Benachrichtigung
-      use_ctrl_or_command_to_select_multiple_links: Benutze die Strg- oder Cmd-Taste um mehrere Links auszuwählen.
-      for_this_to_work: "Damit dies funktioniert, mußt du {{activegeohasher}} auf Twitter folgen."
+      use_ctrl_or_command_to_select_multiple_links: Benutze die Strg- oder Cmd-Taste um mehrere Links auszuwÃ¤hlen.
+      for_this_to_work: "Damit dies funktioniert, muÃŸt du {{activegeohasher}} auf Twitter folgen."
       update_profile: Benutzerprofil aktualisieren
       updated_successfully: Dein Benutzerprofil wurder erfolgreich aktualisiert.
 
   users:
     location:
-      choose_your_location: Wähle deinen Heimatort
-      if_the_map_does_not_work: "Falls die Karte bei dir nicht funktioniert, kannst du hier gerne deine eigene Breiten- und Längengrade eingeben."
+      choose_your_location: WÃ¤hle deinen Heimatort
+      if_the_map_does_not_work: "Falls die Karte bei dir nicht funktioniert, kannst du hier gerne deine eigene Breiten- und LÃ¤ngengrade eingeben."
       save_location: Heimatort speichern
       location_saved: Dein Heimatort wurde gespeichert.
 
