@@ -33,11 +33,11 @@
     eo: Esperanto
     es: Spanish
     de: German
-    language_set_to: "Language set to {{language}}."
+    language_set_to: "Language set t' {{language}}."
     not_available: Sorry, that language is not currently available.
 
   home:
-    welcome_to_active_geohasher: Welcome to Active geohasher
+    welcome_to_active_geohasher: "Ahoy t' Active geohasher"
     resources_for_geohashers: Resources for geohashers
 
     features:
