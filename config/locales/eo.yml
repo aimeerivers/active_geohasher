@@ -72,7 +72,7 @@ eo:
         how_rpx_works: Kiel funkcias RPX?
 
     what_is_geohashing:
-      geohashing_is_best_described: Geohaŝado estas plej bone tas priskribita kiel generatoro de hazardaj aventuroj.
+      geohashing_is_best_described: Geohaŝado estas plej bone priskribita kiel generatoro de hazardaj aventuroj.
       an_algorithm_takes_the_dow_jones: "{{an_algorithm}} prenas la malfermiĝado-valoron de la Dow Jones kaj kombina ĝin kun la aktuala dato por produkti geografiajn punktojn en ĉiu latitudo kaj longitudo tra la tuta mondo. La koordinatoj povas esti ie: en arbaro, en la mezo de la maro, aŭ en granda urbo. Eble {{at_your_home}} aŭ {{your_workplace}}! Estas komplete hazarde, kaj gi estas ĉiutage alia."
       an_algorithm: Algoritmo
       at_your_home: hejme via
