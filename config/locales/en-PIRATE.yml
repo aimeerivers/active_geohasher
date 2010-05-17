@@ -3,28 +3,28 @@
   kms: kilometres
 
   ag: Active geohasher
-  wiki: Geohashing wiki
-  google: Google maps
-  bing: Bing maps
-  osm: Open Street Map
-  directions: Google directions
+  wiki: "Geohashin' wiki"
+  google: Google charts
+  bing: Bing charts
+  osm: Open Street Chart fer Landlubbers
+  directions: Google course plotter
   peeron: Peeron
   anthill: Anthill
-  geocaching: Nearby geocaches
+  geocaching: Nearby geotreasure
 
   common:
     or: or
-    cancel: Cancel
-    go_north: Go North
-    go_south: Go South
-    go_east: Go East
-    go_west: Go West
+    cancel: Avast!
+    go_north: Sail North
+    go_south: Sail South
+    go_east: Sail East
+    go_west: Sail West
     distance: "{{number}} {{units}}"
-    unknown_location: "[Unknown location]"
+    unknown_location: "[Uncharted waters]"
     useful_links: Useful links
     custom_links: Custom links
     privacy_policy: Privacy policy
-    what_is_geohashing: What is geohashing?
+    what_is_geohashing: "What be geohashin'?"
 
   locale:
     en: English (UK)
@@ -34,7 +34,7 @@
     es: Spanish
     de: German
     language_set_to: "Language set t' {{language}}."
-    not_available: Sorry, that language is not currently available.
+    not_available: Sorry, that language be nay currently available.
 
   home:
     welcome_to_active_geohasher: "Ahoy t' Active geohasher"
