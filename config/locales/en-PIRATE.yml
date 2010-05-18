@@ -23,7 +23,7 @@
     unknown_location: "[Uncharted waters]"
     useful_links: Useful links
     custom_links: Custom links
-    privacy_policy: Privacy policy
+    privacy_policy: Piracy policy
     what_is_geohashing: "What be geohashin'?"
 
   locale:
@@ -33,8 +33,8 @@
     eo: Esperanto
     es: Spanish
     de: German
-    language_set_to: "Language set t' {{language}}."
-    not_available: Sorry, that language be nay currently available.
+    language_set_to: "Tongue set t' {{language}}."
+    not_available: Sorry, that tongue be nay currently available.
 
   home:
     welcome_to_active_geohasher: "Ahoy t' Active geohasher"
@@ -53,26 +53,26 @@
 
     privacy:
       what_data_do_you_collect_about_me:
-        question: What data do you collect about me?
-        answer: We store your name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules to which you subscribe in order to provide you with a useful service.
+        question: "What data be ye lootin' from me?"
+        answer: "We sto'e yer dojigger, email address and identifyin' URL fer audenticashun. If ye pinpoint some locashun we gots'ta save dat in o'da' to provide ya' wid relative distances t' yer geohashes. We gots'ta sto'e da graticules t'which ya' subscribe in o'da' te provide ya' wid some useful service."
 
       can_i_view_and_change_the_data_you_hold:
-        question: Can I view and change the data you hold about me?
-        answer: "You can. If you are logged in and click on your name, or if you visit {{link}} you will see the data we have. You can change your name and email address. You can see your identifying URL but you cannot change it because it is needed for authentication. You can change your subscriptions or home location at any time."
-        edit_profile: edit profile
+        question: "Can ah' spy an' change da data ye be keepin' fer me?"
+        answer: "You's kin. If ye be logged in an' click on yo' dojigger, o' if ye visit {{link}} ye gots'ta see wut we gots. You's kin change yer dojigger and email address. You's kin see yo' identifyin' URL but ye nay can change it cuz' it be needed fo' audenticashun. You's kin change yer subscripshuns o' crib locashun at any time."
+        edit_profile: "fiddle yer settin's"
 
       will_i_get_unwanted_email:
-        question: Will I get unwanted email?
-        answer: "You will only receive email that you have chosen to receive, about graticules to which you have subscribed. You can unsubscribe from graticules at any time, or you can edit your profile and uncheck 'Receive email' for a quick way to stop receiving email."
+        question: "Gots'ta I dig unwants'ed email?"
+        answer: "You's gots'ta only receive email dat ye gots chosen t'receive, fer dem graticules t'which ye gots subscribed. You's kin unsubscribe fum graticules at any time, o' ya' kin fiddle yer settin's and uncheck 'Receive email' fo' some quick way t'stop receivin' email."
 
       will_you_share_my_information:
-        question: Will you share my information with anyone else?
-        answer: No. Absolutely not, and we never will.
+        question: "Gots'ta ya' share mah' info'mashun wid any sucka else?"
+        answer: "Nay. 'S coo', bro. We neva' be doin' tha'"
 
       why_do_you_want_my_facebook_details:
-        question: Why do you want my Facebook details? Will you spam my friends?
-        answer: "Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it Twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your Twitter account or Facebook status. See {{link}} if you want to know more."
-        how_rpx_works: How RPX works
+        question: "Why ye be wantin' me Facescribblin' details? Gots'ta ya' spam me homeys?"
+        answer: "No way, man! De RPX audenticashun be simply some means fer verifyin' who ye be from some trusted third party site, be 'e Twitter, Facescribblin', Google, Yahoo o' some OpenID provider. Ah be baaad... We gots'ta no knowledge o' ye homeys, and we nay can be blabberin' on yer Twitta' o' Facescribblin's. See {{link}} if ye wanna know mo'e."
+        how_rpx_works: "How RPX wo'ks"
 
     what_is_geohashing:
       geohashing_is_best_described: Geohashing is best described as a random adventure generator.
@@ -95,7 +95,7 @@
     sign_in_failed: Sorry, something went wrong and you could not be signed in.
 
   navigation:
-    your_profile: Your profile
+    your_profile: "Yer settin's"
     your_home_location: Your home location
     your_subscriptions: Your subscriptions
     custom_links: Custom links
@@ -103,13 +103,13 @@
 
   profiles:
     edit:
-      your_profile: Your profile
+      your_profile: "Yer settin's"
       email_notification: Email notification
       twitter_notification: Twitter notification
       use_ctrl_or_command_to_select_multiple_links: Use Ctrl or Cmd to select multiple links.
       for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on Twitter."
-      update_profile: Update profile
-      updated_successfully: Your profile was updated successfully.
+      update_profile: "Mangle yer settin's"
+      updated_successfully: Yer prostash be downdated. Slap mah fro!
 
   users:
     location:
@@ -252,7 +252,7 @@
         name: Name
         email: Email
         preferred_distance_units: Measure distances in
-        preferred_locale: Language
+        preferred_locale: Tongue
         receive_email: Receive emails
         preferred_links: Links you want in your emails
         twitter_username: Enter your Twitter username here if you wish to receive notification
