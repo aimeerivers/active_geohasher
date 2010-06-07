@@ -29,7 +29,10 @@ eo:
   locale:
     en: la angla (brita)
     'en-US': la angla (Usona)
+    'en-PIRATE': la pirata
     eo: esperanto
+    es: la hispana
+    de: la germana
     language_set_to: "Lingvo ŝanĝiĝis al {{language}}."
     not_available: Bedaŭras, tiu lingvo ne estas disponebla.
 
@@ -154,7 +157,7 @@ eo:
     latest_geohashes:
       latest_geohashes: Plej novaj geohaŝoj
       check_back_later: Rekontrolu poste por geohaŝoj en ĉi tio gratikulo.
-  
+
   geohashes:
     show:
       geohash_on_date_in_location: "Geohaŝo por {{date}} en {{location}}"

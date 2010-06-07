@@ -1,30 +1,30 @@
-en:
-  miles: miles
-  kms: kilometres
+'en-PIRATE':
+  miles: moils
+  kms: killermeaters
 
   ag: Active geohasher
-  wiki: Geohashing wiki
-  google: Google maps
-  bing: Bing maps
-  osm: Open Street Map
-  directions: Google directions
+  wiki: "Geohashin' wiki"
+  google: Google charts
+  bing: Bing charts
+  osm: Open Street Chart fer Landlubbers
+  directions: Google course plotter
   peeron: Peeron
   anthill: Anthill
-  geocaching: Nearby geocaches
+  geocaching: Nearby geotreasure
 
   common:
     or: or
-    cancel: Cancel
-    go_north: Go North
-    go_south: Go South
-    go_east: Go East
-    go_west: Go West
+    cancel: Avast!
+    go_north: Sail North
+    go_south: Sail South
+    go_east: Sail East
+    go_west: Sail West
     distance: "{{number}} {{units}}"
-    unknown_location: "[Unknown location]"
-    useful_links: Useful links
-    custom_links: Custom links
-    privacy_policy: Privacy policy
-    what_is_geohashing: What is geohashing?
+    unknown_location: "[Uncharted waters]"
+    useful_links: Seaworthy links
+    custom_links: Custom-rigged links
+    privacy_policy: Privacy charter
+    what_is_geohashing: "What be geohashin'?"
 
   locale:
     en: English (UK)
@@ -33,28 +33,28 @@ en:
     eo: Esperanto
     es: Spanish
     de: German
-    language_set_to: "Language set to {{language}}."
-    not_available: Sorry, that language is not currently available.
+    language_set_to: "Tongue set t' {{language}}."
+    not_available: "Beggin' yer pardon, that tongue be nay aboard."
 
   home:
-    welcome_to_active_geohasher: Welcome to Active geohasher
-    resources_for_geohashers: Resources for geohashers
+    welcome_to_active_geohasher: "Welcome aboard the good ship Active Geohasher"
+    resources_for_geohashers: Booty fer geohashers
 
     features:
-      subscribe_to_graticules: Subscribe to graticules
-      receive_free_daily_geohashing_email: Receive a free daily geohashing email
-      see_distance_from_home_location: See distance from your home location in miles or kilometres
-      with_useful_links: With useful links to peeron, geohashing wiki, google maps and route calculations
-      google_earth_feeds: Automatically updating Google earth feeds for your graticules
-      open_source: "It's open source!"
-      contributions_welcome: Contributions welcome!
+      subscribe_to_graticules: Request dispatches fer graticules
+      receive_free_daily_geohashing_email: "Grab a free daily geohashin' dispatch"
+      see_distance_from_home_location: "Find t' range from yer home port in moils or killermeaters"
+      with_useful_links: "With seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
+      google_earth_feeds: "Magically updatin' Google Earth feeds fer yer graticules"
+      open_source: "It be open source, by the Powers!"
+      contributions_welcome: "Offerin's kindly looked upon!"
 
-    latest_on_twitter: Latest on Twitter
+    latest_on_twitter: Recent tidings on Twitter
 
     privacy:
       what_data_do_you_collect_about_me:
-        question: What data do you collect about me?
-        answer: We store your name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules to which you subscribe in order to provide you with a useful service.
+        question: "What scribblin's be ye collectin' about me?"
+        answer: We keeps yer name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules fer which ye request dispatches in order to provide you with a seaworthy service.
 
       can_i_view_and_change_the_data_you_hold:
         question: Can I view and change the data you hold about me?
@@ -75,7 +75,7 @@ en:
         how_rpx_works: How RPX works
 
     what_is_geohashing:
-      geohashing_is_best_described: Geohashing is best described as a random adventure generator.
+      geohashing_is_best_described: "Geohashin' is best described as a random adventure generator."
       an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the opening value of the Dow Jones and combines it with the current date to produce geographic points in every latitude and longitude all over the world. The coordinates could land anywhere: maybe in a forest, in the middle of the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
       an_algorithm: An algorithm
       at_your_home: at your home
@@ -89,10 +89,10 @@ en:
   authentication:
     sign_in: Sign in
     sign_in_with: "{{sign_in}} using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
-    welcome: "Hey {{name}}!"
+    welcome: "Ahoy {{name}}!"
     sign_out: Sign out
     please_sign_in_first: Please sign in first.
-    sign_in_failed: Sorry, something went wrong and you could not be signed in.
+    sign_in_failed: "Beggin' yer pardon, something went wrong and you could not be signed in."
 
   navigation:
     your_profile: Your profile
@@ -114,21 +114,21 @@ en:
   users:
     location:
       choose_your_location: Choose your location
-      if_the_map_does_not_work: "If the map doesn't work for you, feel free to enter your latitude and longitude here."
+      if_the_map_does_not_work: "If the chart doesn't work for you, feel free to enter your latitude and longitude here."
       save_location: Save location
       location_saved: Your location has been saved.
 
     subscribe:
-      your_subscriptions: Your subscriptions
+      your_subscriptions: Yer scroll of dispatches ordered
       you_are_not_subscribed_to_any_graticules: "You are not subscribed to any graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
       set_your_home_location: set your home location
 
   subscriptions:
     new:
-      subscribe_to_a_graticule: Subscribe to a graticule
-      subscribe: Subscribe
-      successfully_subscribed_to_graticule: Successfully subscribed to graticule.
-      could_not_subscribe_to_graticule: Could not subscribe to the graticule, please check and try again.
+      subscribe_to_a_graticule: Request dispatches fer a graticule
+      subscribe: Request dispatches
+      successfully_subscribed_to_graticule: Dispatches triumphantly ordered fer graticule.
+      could_not_subscribe_to_graticule: Could not order dispatches fer t' graticule, please check and try again.
 
     unsubscribe:
       successfully_unsubscribed: Successfully unsubscribed from graticule.
@@ -138,7 +138,7 @@ en:
       awaiting_graticule_name: "[Awaiting graticule name]"
       google_earth_feed: Google earth feed
       unsubscribe: unsubscribe
-      graticule_map: Graticule map
+      graticule_map: Graticule chart
       social_media_links: Social media links
       twitter: "Twitter: {{tag}}"
       flickr: "Flickr: {{tag}}"
@@ -149,9 +149,9 @@ en:
       pictures_from_flickr: Pictures from Flickr
       look_on_flickr: "Look for {{link}} on Flickr."
       photos_and_videos_tagged: "photos and videos tagged {{tag}}"
-      not_found: Sorry, the graticule was not found.
+      not_found: "Beggin' yer pardon, the graticule was not found."
       buttons:
-        subscribe: Subscribe to this graticule
+        subscribe: Request dispatches fer this graticule
         unsubscribe: Unsubscribe
 
     latest_geohashes:
@@ -167,8 +167,8 @@ en:
       date: "Date:"
       graticule: "Graticule:"
       coordinates: "Coordinates:"
-      distance: "Distance:"
-      distance_from_your_home_location: "{{distance}} from your home location"
+      distance: "Range:"
+      distance_from_your_home_location: "{{distance}} from yer home port"
       how_the_geohash_is_calculated: How the geohash is calculated
       geohash_in_location: "Geohash in {{location}}"
       city_view: City view
@@ -178,11 +178,11 @@ en:
       not_found: Geohash not found, or there was a problem looking it up.
 
       poster:
-        xkcd_geohashing: xkcd geohashing
+        xkcd_geohashing: "xkcd geohashin'"
         the_internet_was_here: The internet was here!
         some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
         on_date: "on {{date}}"
-        geohashing_is_an_adventure_game: Geohashing is an adventure game.
+        geohashing_is_an_adventure_game: "Geohashin' is an adventure game."
         an_algorithm_generates_random_coordinates: An algorithm generates random coordinates daily, and people try to get there to see new places, meet new people, and have fun doing it.
         to_find_out_more: "To find out more or join in the fun yourself, visit {{link}}"
         how_this_geohash_location_was_calculated: How this geohash location was calculated
@@ -193,7 +193,7 @@ en:
   globalhashes:
     index:
       recent_and_upcoming_globalhash_locations: Recent and upcoming globalhash locations
-      globalhash_explanation: A globalhash is the geohashing algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!
+      globalhash_explanation: "A globalhash is the geohashin' algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!"
       see_link_for_more_information: "See {{link}} for more information."
       globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
 
@@ -231,20 +231,20 @@ en:
 
   notifier:
     upcoming_geohashes:
-      geohashing_adventures: Geohashing adventures
+      geohashing_adventures: "Geohashin' adventures"
       hi_name: "Hi {{name}}"
       here_are_your_upcoming_geohash_locations: Here are your upcoming geohash locations, brought to you by Active geohasher.
       distance_away: "{{distance}} away"
       globalhash: Globalhash
       links: Links
-      please_note_that_distances_are_calculated_as_straight_lines: Please note that distances are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out!
-      happy_geohashing: Happy geohashing!
+      please_note_that_distances_are_calculated_as_straight_lines: Please note that ranges are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out!
+      happy_geohashing: "Happy geohashin'!"
 
   activerecord:
     models:
       user: user
       subscription: subscription
-      'custom link': custom link
+      'custom link': custom-rigged link
 
     attributes:
       user:
@@ -252,8 +252,8 @@ en:
         name: Name
         email: Email
         preferred_distance_units: Measure distances in
-        preferred_locale: Language
-        receive_email: Receive emails
+        preferred_locale: Tongue
+        receive_email: Allow dispatches
         preferred_links: Links you want in your emails
         twitter_username: Enter your Twitter username here if you wish to receive notification
         lat: Latitude
