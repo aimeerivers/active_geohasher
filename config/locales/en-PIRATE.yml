@@ -34,7 +34,7 @@
     es: Spanish
     de: German
     language_set_to: "Tongue set t' {{language}}."
-    not_available: Beggin' yer pardon, that tongue be nay aboard.
+    not_available: "Beggin' yer pardon, that tongue be nay aboard."
 
   home:
     welcome_to_active_geohasher: "Welcome aboard the good ship Active Geohasher"
@@ -42,18 +42,18 @@
 
     features:
       subscribe_to_graticules: Request dispatches fer graticules
-      receive_free_daily_geohashing_email: Grab a free daily geohashin' dispatch
-      see_distance_from_home_location: Find t' range from yer home port in moils or killermeaters
-      with_useful_links: With seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation
-      google_earth_feeds: Magically updatin' Google Earth feeds fer yer graticules
+      receive_free_daily_geohashing_email: "Grab a free daily geohashin' dispatch"
+      see_distance_from_home_location: "Find t' range from yer home port in moils or killermeaters"
+      with_useful_links: "With seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
+      google_earth_feeds: "Magically updatin' Google Earth feeds fer yer graticules"
       open_source: "It be open source, by the Powers!"
-      contributions_welcome: Offerin's kindly looked upon!
+      contributions_welcome: "Offerin's kindly looked upon!"
 
     latest_on_twitter: Recent tidings on Twitter
 
     privacy:
       what_data_do_you_collect_about_me:
-        question: What scribblin's be ye collectin' about me?
+        question: "What scribblin's be ye collectin' about me?"
         answer: We keeps yer name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules fer which ye request dispatches in order to provide you with a seaworthy service.
 
       can_i_view_and_change_the_data_you_hold:
@@ -75,7 +75,7 @@
         how_rpx_works: How RPX works
 
     what_is_geohashing:
-      geohashing_is_best_described: Geohashin' is best described as a random adventure generator.
+      geohashing_is_best_described: "Geohashin' is best described as a random adventure generator."
       an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the opening value of the Dow Jones and combines it with the current date to produce geographic points in every latitude and longitude all over the world. The coordinates could land anywhere: maybe in a forest, in the middle of the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
       an_algorithm: An algorithm
       at_your_home: at your home
@@ -92,7 +92,7 @@
     welcome: "Ahoy {{name}}!"
     sign_out: Sign out
     please_sign_in_first: Please sign in first.
-    sign_in_failed: Beggin' yer pardon, something went wrong and you could not be signed in.
+    sign_in_failed: "Beggin' yer pardon, something went wrong and you could not be signed in."
 
   navigation:
     your_profile: Your profile
@@ -149,7 +149,7 @@
       pictures_from_flickr: Pictures from Flickr
       look_on_flickr: "Look for {{link}} on Flickr."
       photos_and_videos_tagged: "photos and videos tagged {{tag}}"
-      not_found: Beggin' yer pardon, the graticule was not found.
+      not_found: "Beggin' yer pardon, the graticule was not found."
       buttons:
         subscribe: Request dispatches fer this graticule
         unsubscribe: Unsubscribe
@@ -178,11 +178,11 @@
       not_found: Geohash not found, or there was a problem looking it up.
 
       poster:
-        xkcd_geohashing: xkcd geohashin'
+        xkcd_geohashing: "xkcd geohashin'"
         the_internet_was_here: The internet was here!
         some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
         on_date: "on {{date}}"
-        geohashing_is_an_adventure_game: Geohashin' is an adventure game.
+        geohashing_is_an_adventure_game: "Geohashin' is an adventure game."
         an_algorithm_generates_random_coordinates: An algorithm generates random coordinates daily, and people try to get there to see new places, meet new people, and have fun doing it.
         to_find_out_more: "To find out more or join in the fun yourself, visit {{link}}"
         how_this_geohash_location_was_calculated: How this geohash location was calculated
@@ -193,7 +193,7 @@
   globalhashes:
     index:
       recent_and_upcoming_globalhash_locations: Recent and upcoming globalhash locations
-      globalhash_explanation: A globalhash is the geohashin' algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!
+      globalhash_explanation: "A globalhash is the geohashin' algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!"
       see_link_for_more_information: "See {{link}} for more information."
       globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
 
@@ -231,20 +231,20 @@
 
   notifier:
     upcoming_geohashes:
-      geohashing_adventures: Geohashin' adventures
+      geohashing_adventures: "Geohashin' adventures"
       hi_name: "Hi {{name}}"
       here_are_your_upcoming_geohash_locations: Here are your upcoming geohash locations, brought to you by Active geohasher.
       distance_away: "{{distance}} away"
       globalhash: Globalhash
       links: Links
       please_note_that_distances_are_calculated_as_straight_lines: Please note that ranges are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out!
-      happy_geohashing: Happy geohashin'!
+      happy_geohashing: "Happy geohashin'!"
 
   activerecord:
     models:
       user: user
       subscription: subscription
-      'custom link': custom link
+      'custom link': custom-rigged link
 
     attributes:
       user:
