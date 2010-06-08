@@ -34,7 +34,7 @@
     es: Spanish
     de: German
     language_set_to: "Tongue set t' {{language}}."
-    not_available: "Beggin' yer pardon, that tongue be nay aboard."
+    not_available: "Beggin' yer pardon, that thar tongue be nay used aboard this ship."
 
   home:
     welcome_to_active_geohasher: "Welcome aboard the good ship Active Geohasher"
@@ -43,99 +43,99 @@
     features:
       subscribe_to_graticules: Request dispatches fer graticules
       receive_free_daily_geohashing_email: "Grab a free daily geohashin' dispatch"
-      see_distance_from_home_location: "Find t' range from yer home port in moils or killermeaters"
-      with_useful_links: "With seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
+      see_distance_from_home_location: "Find the range from yer home port in moils or killermeaters"
+      with_useful_links: "Wi' seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
       google_earth_feeds: "Magically updatin' Google Earth feeds fer yer graticules"
-      open_source: "It be open source, by the Powers!"
+      open_source: "'Tis open source, by the Powers!"
       contributions_welcome: "Offerin's kindly looked upon!"
 
-    latest_on_twitter: Recent tidings on Twitter
+    latest_on_twitter: Timely tidings on Twitter
 
     privacy:
       what_data_do_you_collect_about_me:
         question: "What scribblin's be ye collectin' about me?"
-        answer: We keeps yer name, email address and identifying URL for authentication. If you pinpoint a location we will save that in order to provide you with relative distances to geohashes. We will store the graticules fer which ye request dispatches in order to provide you with a seaworthy service.
+        answer: "We keeps yer name, address fer dispatches and identifyin' URL fer authentication. If ye pinpoint a location we will save that in order t' provide ye wi' relative distances t' geohashes. We will store the graticules fer which ye request dispatches in order t' provide ye wi' a seaworthy service."
 
       can_i_view_and_change_the_data_you_hold:
-        question: Can I view and change the data you hold about me?
-        answer: "You can. If you are logged in and click on your name, or if you visit {{link}} you will see the data we have. You can change your name and email address. You can see your identifying URL but you cannot change it because it is needed for authentication. You can change your subscriptions or home location at any time."
+        question: "Can I view and change the scribblin's ye be holdin' about me?"
+        answer: "Yarr. If ye be logged in and click on yer name, or if ye visit {{link}} ye'll see the scribblin's we have. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye cannot change it, for 'tis needed fer authentication. Ye can change yer subscriptions or home location at any time."
         edit_profile: edit profile
 
       will_i_get_unwanted_email:
-        question: Will I get unwanted email?
-        answer: "You will only receive email that you have chosen to receive, about graticules to which you have subscribed. You can unsubscribe from graticules at any time, or you can edit your profile and uncheck 'Receive email' for a quick way to stop receiving email."
+        question: "Will I suffer a tide o' unwanted dispatches?"
+        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules t' which ye've subscribed. Ye can unsubscribe from graticules at any time, or ye can edit yer profile and uncheck 'Receive dispatches' fer a quick way t' stop receivin' dispatches."
 
       will_you_share_my_information:
-        question: Will you share my information with anyone else?
+        question: "Will ye share my information wi' anyone else, ye scurvy dogs?"
         answer: No. Absolutely not, and we never will.
 
       why_do_you_want_my_facebook_details:
-        question: Why do you want my Facebook details? Will you spam my friends?
-        answer: "Definitely not. The RPX authentication is simply a means of verifying who you are from a trusted third party site, be it Twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge of your friends, and we will not be able to post to your Twitter account or Facebook status. See {{link}} if you want to know more."
+        question: Why do ye want my Facebook details? Will ye spam my friends, ye scallywags?
+        answer: "Definitely not. The RPX authentication be simply a means o' verifyin' who ye be from a trusted third party site, be it Twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge o' yer friends, and we will not be able t' post t' yer Twitter account or Facebook status. See {{link}} if ye want t' know more."
         how_rpx_works: How RPX works
 
     what_is_geohashing:
-      geohashing_is_best_described: "Geohashin' is best described as a random adventure generator."
-      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the opening value of the Dow Jones and combines it with the current date to produce geographic points in every latitude and longitude all over the world. The coordinates could land anywhere: maybe in a forest, in the middle of the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
+      geohashing_is_best_described: "Geohashin' be best described as a random adventure generator."
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the openin' value o' the Dow Jones and combines it wi' the current date t' produce geographic points in every latitude and longitude all o'er the world. The coordinates could land anywhere: mayhap in a forest, in the middle o' the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
       an_algorithm: An algorithm
-      at_your_home: at your home
-      your_workplace: your workplace
-      the_aim_of_the_game: "The aim of the game is to reach one of the geohash points for the day (maybe with the aid of GPS equipment), take photographs for evidence, meet other people, play games, do what ever you feel like. Ideally leave some kind of {{non_permanent_marker}} for others to find."
+      at_your_home: at yer home
+      your_workplace: yer workplace
+      the_aim_of_the_game: "The aim o' the game be t' reach one o' the geohash points fer the day (mayhap wi' the aid o' GPS equipment), take photographs fer evidence, meet other people, play games, do what ever ye feel like. Ideally leave some kind o' {{non_permanent_marker}} fer others t' find."
       non_permanent_marker: non-permanent marker
-      there_are_several_achievements: "There are several {{achievements}} that you can earn depending on difficulty or activities you carry out at the geohash point. But the main point is to enjoy yourself, get out into the fresh air, go somewhere you might have no reason to go otherwise and share your adventures with the rest of us!"
+      there_are_several_achievements: "Thar be several {{achievements}} that ye can earn dependin' on difficulty or activities ye carry out at the geohash point. But the main point be t' enjoy yourself, get out into the fresh air, go somewhere ye might have no reason t' go otherwise and share yer adventures wi' the rest o' us!"
       achievements: achievements
-      for_more_information: "For more information visit {{link}}"
+      for_more_information: "Fer more information visit {{link}}"
 
   authentication:
     sign_in: Sign in
-    sign_in_with: "{{sign_in}} using your Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
+    sign_in_with: "{{sign_in}} usin' yer Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
     welcome: "Ahoy {{name}}!"
     sign_out: Sign out
     please_sign_in_first: Please sign in first.
-    sign_in_failed: "Beggin' yer pardon, something went wrong and you could not be signed in."
+    sign_in_failed: "Beggin' yer pardon, somethin' went wrong and ye could not be signed in."
 
   navigation:
-    your_profile: Your profile
-    your_home_location: Your home location
-    your_subscriptions: Your subscriptions
+    your_profile: Yer profile
+    your_home_location: Yer home location
+    your_subscriptions: Yer subscriptions
     custom_links: Custom links
     globalhashes: Globalhashes
 
   profiles:
     edit:
-      your_profile: Your profile
-      email_notification: Email notification
-      twitter_notification: Twitter notification
-      use_ctrl_or_command_to_select_multiple_links: Use Ctrl or Cmd to select multiple links.
-      for_this_to_work: "For this to work, you'll need to follow {{activegeohasher}} on Twitter."
+      your_profile: Yer profile
+      email_notification: Tidings by dispatch
+      twitter_notification: Tidings by Twitter
+      use_ctrl_or_command_to_select_multiple_links: "Use Ctrl or Cmd t' select multiple links."
+      for_this_to_work: "Fer this t' work, ye'll need t' follow {{activegeohasher}} on Twitter."
       update_profile: Update profile
-      updated_successfully: Your profile was updated successfully.
+      updated_successfully: Yer profile wer updated victoriously.
 
   users:
     location:
-      choose_your_location: Choose your location
-      if_the_map_does_not_work: "If the chart doesn't work for you, feel free to enter your latitude and longitude here."
+      choose_your_location: Choose yer location
+      if_the_map_does_not_work: "If the chart doesn't work fer ye, feel free t' enter yer latitude and longitude here."
       save_location: Save location
-      location_saved: Your location has been saved.
+      location_saved: Yer location has been saved.
 
     subscribe:
-      your_subscriptions: Yer scroll of dispatches ordered
-      you_are_not_subscribed_to_any_graticules: "You are not subscribed to any graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
-      set_your_home_location: set your home location
+      your_subscriptions: "Yer scroll o' dispatches ordered"
+      you_are_not_subscribed_to_any_graticules: "Ye ain't subscribed t' no graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
+      set_your_home_location: set yer home location
 
   subscriptions:
     new:
       subscribe_to_a_graticule: Request dispatches fer a graticule
       subscribe: Request dispatches
-      successfully_subscribed_to_graticule: Dispatches triumphantly ordered fer graticule.
-      could_not_subscribe_to_graticule: Could not order dispatches fer t' graticule, please check and try again.
+      successfully_subscribed_to_graticule: Dispatches victoriously ordered fer graticule.
+      could_not_subscribe_to_graticule: Could not order dispatches fer the graticule, please check and try again.
 
     unsubscribe:
-      successfully_unsubscribed: Successfully unsubscribed from graticule.
+      successfully_unsubscribed: Victoriously unsubscribed from graticule.
 
   graticules:
     show:
-      awaiting_graticule_name: "[Awaiting graticule name]"
+      awaiting_graticule_name: "[Awaitin' graticule name]"
       google_earth_feed: Google earth feed
       unsubscribe: unsubscribe
       graticule_map: Graticule chart
@@ -147,7 +147,7 @@
       latest_tweets_will_show_up_here: "Latest tweets tagged {{tag}} will show up here."
       tweets_tagged: tweets tagged
       pictures_from_flickr: Pictures from Flickr
-      look_on_flickr: "Look for {{link}} on Flickr."
+      look_on_flickr: "Look fer {{link}} on Flickr."
       photos_and_videos_tagged: "photos and videos tagged {{tag}}"
       not_found: "Beggin' yer pardon, the graticule was not found."
       buttons:
@@ -156,12 +156,12 @@
 
     latest_geohashes:
       latest_geohashes: Latest geohashes
-      check_back_later: Check back later for geohashes in this graticule.
+      check_back_later: Check back later fer geohashes in this graticule.
 
   geohashes:
     show:
       geohash_on_date_in_location: "Geohash on {{date}} in {{location}}"
-      poster_for_this_geohash_event: Poster for this geohash event
+      poster_for_this_geohash_event: Poster fer this geohash event
       details: Details
       location: "Location:"
       date: "Date:"
@@ -169,32 +169,32 @@
       coordinates: "Coordinates:"
       distance: "Range:"
       distance_from_your_home_location: "{{distance}} from yer home port"
-      how_the_geohash_is_calculated: How the geohash is calculated
+      how_the_geohash_is_calculated: How the geohash be calculated
       geohash_in_location: "Geohash in {{location}}"
       city_view: City view
       street_view: Street view
       hybrid_view: Hybrid view
       satellite_view: Satellite view
-      not_found: Geohash not found, or there was a problem looking it up.
+      not_found: "Geohash not found, else thar's bin a problem lookin' it up."
 
       poster:
         xkcd_geohashing: "xkcd geohashin'"
         the_internet_was_here: The internet was here!
         some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
         on_date: "on {{date}}"
-        geohashing_is_an_adventure_game: "Geohashin' is an adventure game."
-        an_algorithm_generates_random_coordinates: An algorithm generates random coordinates daily, and people try to get there to see new places, meet new people, and have fun doing it.
-        to_find_out_more: "To find out more or join in the fun yourself, visit {{link}}"
+        geohashing_is_an_adventure_game: "Geohashin' be an adventure game."
+        an_algorithm_generates_random_coordinates: "An algorithm do generate random coordinates daily, and people try t' get thar t' see new places, meet new people, and have fun doin' it."
+        to_find_out_more: "T' find out more or join in the fun yourself, visit {{link}}"
         how_this_geohash_location_was_calculated: How this geohash location was calculated
-        now_that_you_have_seen_this_poster: "Now that you've seen this poster, we'd love to hear from you."
-        the_place_to_talk: The place to talk about this particular expedition is at
-        come_and_say_hello: Come and say hello and tell us how you came to find the poster!
+        now_that_you_have_seen_this_poster: "Now that ye've seen this poster, we'd love t' hear from ye."
+        the_place_to_talk: "The place t' parly about this particular expedition be at"
+        come_and_say_hello: "Come and say hello and tell us how ye came t' find the poster!"
 
   globalhashes:
     index:
-      recent_and_upcoming_globalhash_locations: Recent and upcoming globalhash locations
-      globalhash_explanation: "A globalhash is the geohashin' algorithm applied to the whole world. If the globalhash is near you, it is a very momentous occasion and you simply must go to it!"
-      see_link_for_more_information: "See {{link}} for more information."
+      recent_and_upcoming_globalhash_locations: "Recent and upcomin' globalhash locations"
+      globalhash_explanation: "A globalhash be the geohashin' algorithm applied t' the whole world. If the globalhash be near ye, 'tis indeed a momentous occasion and ye simply must set sail fer it!"
+      see_link_for_more_information: "See {{link}} fer more information."
       globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
 
     show:
@@ -202,29 +202,29 @@
       world_view: World view
       country_view: Country view
       area_view: Area view
-      not_found: Globalhash not found, or there was a problem looking it up.
+      not_found: "Globalhash not found, else thar's bin a problem lookin' it up."
 
   custom_links:
     index:
-      add_links_here: Add links here and they will will be provided in your email for each geohash.
-      use_latitude_and_longitude_placeholders: "Use {{latitude}} and {{longitude}} as placeholders to be replaced with the relevant values. Here are some example links you could use:"
+      add_links_here: Add links here and they will will be provided in yer dispatch fer each geohash.
+      use_latitude_and_longitude_placeholders: "Use {{latitude}} and {{longitude}} as placeholders t' be replaced wi' the relevant values. Here be some example links ye could use:"
       add: Add
       edit: edit
       delete: delete
-      is_invalid: "is invalid (try with http://)"
-      you_cannot_edit_or_delete: You cannot edit or delete that custom link.
+      is_invalid: "be invalid (try wi' http://)"
+      you_cannot_edit_or_delete: Ye cannot edit or delete that custom link.
 
     new:
-      saved_successfully: Custom link saved successfully.
+      saved_successfully: Custom link saved victoriously.
 
     edit:
       edit_custom_link: Edit custom link
       update_custom_link: Update custom link
-      updated_successfully: Custom link updated successfully.
+      updated_successfully: Custom link updated victoriously.
 
     delete:
-      are_you_sure_you_wish_to_delete: Are you sure you wish to delete this custom link?
-      deleted_successfully: Custom link deleted successfully.
+      are_you_sure_you_wish_to_delete: "Be ye sure ye wish t' delete this custom link?"
+      deleted_successfully: Custom link deleted victoriously.
 
   footer:
     source_code: Source code
@@ -233,11 +233,11 @@
     upcoming_geohashes:
       geohashing_adventures: "Geohashin' adventures"
       hi_name: "Hi {{name}}"
-      here_are_your_upcoming_geohash_locations: Here are your upcoming geohash locations, brought to you by Active geohasher.
+      here_are_your_upcoming_geohash_locations: "Here be yer upcomin' geohash locations, brought t' ye by Active geohasher."
       distance_away: "{{distance}} away"
       globalhash: Globalhash
       links: Links
-      please_note_that_distances_are_calculated_as_straight_lines: Please note that ranges are calculated as straight lines; the distance by road may well be longer. Google can give you directions - use the links to find out!
+      please_note_that_distances_are_calculated_as_straight_lines: "Please note that we be calculatin' ranges as straight lines; the distance by road may well be longer. Google can give ye directions - use the links t' find out!"
       happy_geohashing: "Happy geohashin'!"
 
   activerecord:
@@ -248,14 +248,14 @@
 
     attributes:
       user:
-        identifier: Identifying url
+        identifier: "Identifyin' url"
         name: Name
-        email: Email
+        email: Address fer dispatches
         preferred_distance_units: Measure distances in
         preferred_locale: Tongue
         receive_email: Allow dispatches
-        preferred_links: Links you want in your emails
-        twitter_username: Enter your Twitter username here if you wish to receive notification
+        preferred_links: "Links ye'd like in yer emails"
+        twitter_username: "Enter yer Twitter username here if ye wish t' receive notification"
         lat: Latitude
         lng: Longitude
 
