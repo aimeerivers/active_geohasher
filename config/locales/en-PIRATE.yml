@@ -75,16 +75,16 @@
         how_rpx_works: "How RPX be workin'"
 
     what_is_geohashing:
-      geohashing_is_best_described: "Geohashin' be best described as a random adventure generator."
-      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} takes the openin' value o' the Dow Jones and combines it wi' the current date t' produce geographic points in every latitude and longitude all o'er the world. The coordinates could land anywhere: mayhap in a forest, in the middle o' the sea, or in a big city. Maybe even {{at_your_home}} or {{your_workplace}}! But it's completely random, and it's different every day."
-      an_algorithm: An algorithm
-      at_your_home: at yer home
-      your_workplace: yer workplace
-      the_aim_of_the_game: "The aim o' the game be t' reach one o' the geohash points fer the day (mayhap wi' the aid o' GPS equipment), take photographs fer evidence, meet other people, play games, do what ever ye feel like. Ideally leave some kind o' {{non_permanent_marker}} fer others t' find."
-      non_permanent_marker: non-permanent marker
-      there_are_several_achievements: "Thar be several {{achievements}} that ye can earn dependin' on difficulty or activities ye carry out at the geohash point. But the main point be t' enjoy yourself, get out into the fresh air, go somewhere ye might have no reason t' go otherwise and share yer adventures wi' the rest o' us!"
-      achievements: achievements
-      for_more_information: "Fer more information visit {{link}}"
+      geohashing_is_best_described: "Geohashin' be best described as a random voyage generator."
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} be takin' the openin' value o' the Dow Jones treasure index and mixin' it wi' the date o' the day (by Gregorian reckonin') t' calculate geographic positions in every latitude 'n longitude all o'er the Seven Seas. The 'X' could mark the spot anywhere on yer charts: mayhap in a forest, in the midst o' the sea, or in a big dark city full o' landlubbers. P'raps even {{at_your_home}} or {{your_workplace}}! Mark you though, it be goodly random, and 'tis different every day.  (Mark ye well: don't be confusin' Dow Jones wi' Davy Jones!)"
+      an_algorithm: An algae-thythm
+      at_your_home: at yer home port
+      your_workplace: yer place o' wark
+      the_aim_of_the_game: "The aim o' the game be t' reach one o' the geohash points fer the day (p'raps wi' the aid o' GPS tackle), take photographs fer evidence, meet wi' unknown crew, sport wi' games, down bottles o' grog, sing a hearty song or two, do whate'er ye feel. Ideally leave some kind o' {{non_permanent_marker}} fer others t' find."
+      non_permanent_marker: "fleetin' mark"
+      there_are_several_achievements: "Thar be a number o' {{achievements}} that ye can earn dependin' on burdensomeness or japes 'n swashbucklin' ventures ye carry out at the geohash position, arr! But the purpose be t' enjoy yerself, breathe the fresh air o' the high seas, sail somewhere ye might ne'er have reason t' go otherwise, 'n share yer adventures wi' the rest o' us, me hearty!"
+      achievements: medals
+      for_more_information: "Fer more writin' sail away to {{link}}"
 
   authentication:
     sign_in: Sign in
@@ -183,7 +183,7 @@
         some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
         on_date: "on {{date}}"
         geohashing_is_an_adventure_game: "Geohashin' be an adventure game."
-        an_algorithm_generates_random_coordinates: "An algorithm do generate random coordinates daily, and people try t' get thar t' see new places, meet new people, and have fun doin' it."
+        an_algorithm_generates_random_coordinates: "An algae-thythm be generatin' random coordinates daily, and people be tryin' t' get thar t' see new places, meet new people, and have fun doin' it."
         to_find_out_more: "T' find out more or join in the fun yourself, visit {{link}}"
         how_this_geohash_location_was_calculated: How this geohash position was calculated
         now_that_you_have_seen_this_poster: "Now that ye've seen this poster, we'd love t' hear from ye."
@@ -193,7 +193,7 @@
   globalhashes:
     index:
       recent_and_upcoming_globalhash_locations: "Recent and upcomin' globalhash positions"
-      globalhash_explanation: "A globalhash be the geohashin' algorithm applied t' the whole world. If the globalhash be near ye, 'tis indeed a momentous occasion and ye simply must set sail fer it!"
+      globalhash_explanation: "A globalhash be the geohashin' algae-thythm applied t' the whole world. If the globalhash be near ye, 'tis indeed a momentous occasion and ye simply must set sail fer it!"
       see_link_for_more_information: "See {{link}} fer more information."
       globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
 
