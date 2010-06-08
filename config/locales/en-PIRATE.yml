@@ -37,7 +37,7 @@
     not_available: "Beggin' yer pardon, that thar tongue be nay used aboard this ship."
 
   home:
-    welcome_to_active_geohasher: "Welcome aboard the good ship Active Geohasher"
+    welcome_to_active_geohasher: "Ahoy! Welcome aboard the good ship Active Geohasher"
     resources_for_geohashers: Booty fer geohashers
 
     features:
@@ -47,32 +47,32 @@
       with_useful_links: "Wi' seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
       google_earth_feeds: "Magically updatin' Google Earth feeds fer yer graticules"
       open_source: "'Tis open source, by the Powers!"
-      contributions_welcome: "Offerin's kindly looked upon!"
+      contributions_welcome: "Offerin's o' doubloons (or even pieces o' eight) kindly looked upon!"
 
-    latest_on_twitter: Timely tidings on Twitter
+    latest_on_twitter: Recent tidings on Twitter
 
     privacy:
       what_data_do_you_collect_about_me:
         question: "What scribblin's be ye collectin' about me?"
-        answer: "We keeps yer name, address fer dispatches and identifyin' URL fer authentication. If ye pinpoint a location we will save that in order t' provide ye wi' relative distances t' geohashes. We will store the graticules fer which ye request dispatches in order t' provide ye wi' a seaworthy service."
+        answer: "We stows yer name, address fer dispatches 'n identifyin' URL fer authentication. If ye pinpoint a position we'll stow that in order t' provide ye wi' relative ranges t' geohashes. We'll stow a chart o' the graticules fer which ye request dispatches in order t' provide ye wi' a shipshape service."
 
       can_i_view_and_change_the_data_you_hold:
-        question: "Can I view and change the scribblin's ye be holdin' about me?"
-        answer: "Yarr. If ye be logged in and click on yer name, or if ye visit {{link}} ye'll see the scribblin's we have. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye cannot change it, for 'tis needed fer authentication. Ye can change yer subscriptions or home location at any time."
-        edit_profile: edit profile
+        question: "Can I spy and change the scribblin's ye be stowin' about me?"
+        answer: "Yarr. If ye be logged in 'n ye click on yer name, or if ye visit {{link}} ye'll spy the scribblin's in our hold. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye can nay change it, for 'tis needed fer authentication. Ye can change yer subscriptions or home port whene'er it takes yer fancy."
+        edit_profile: vary yer profile
 
       will_i_get_unwanted_email:
-        question: "Will I suffer a tide o' unwanted dispatches?"
-        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules t' which ye've subscribed. Ye can unsubscribe from graticules at any time, or ye can edit yer profile and uncheck 'Receive dispatches' fer a quick way t' stop receivin' dispatches."
+        question: "Shall I suffer an ill tide o' unwanted dispatches?"
+        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules t' which ye've subscribed. Ye can unsubscribe from graticules any time o' day or night, or ye can vary yer profile and scrub out 'Receive dispatches' fer a speedy way t' stop receivin' dispatches."
 
       will_you_share_my_information:
-        question: "Will ye share my information wi' anyone else, ye scurvy dogs?"
-        answer: No. Absolutely not, and we never will.
+        question: "Will ye share me secrets wi' anyone else, ye scurvy dogs?"
+        answer: "Shiver me timbers!  May we be keelhauled, swallered whole by a giant squid 'n dragged down t' Davy Jones' locker if we do."
 
       why_do_you_want_my_facebook_details:
-        question: Why do ye want my Facebook details? Will ye spam my friends, ye scallywags?
-        answer: "Definitely not. The RPX authentication be simply a means o' verifyin' who ye be from a trusted third party site, be it Twitter, Facebook, Google, Yahoo or any OpenID provider. We will have no knowledge o' yer friends, and we will not be able t' post t' yer Twitter account or Facebook status. See {{link}} if ye want t' know more."
-        how_rpx_works: How RPX works
+        question: Why do ye crave me Facebook seal? Will ye Pemmican me mateys, ye scallywags?
+        answer: "That we will not. The RPX authentication be simply a means o' usin' a trusty third crew to vouch fer ye, be it Twitter, Facebook, Google, Yahoo or any o' them new-fangled OpenID providers. We'll have no knowledge o' yer shipmates, and we'll nay be able t' scribe t' yer Twitter scroll or Facebook status. See {{link}} if ye wants t' know more."
+        how_rpx_works: "How RPX be workin'"
 
     what_is_geohashing:
       geohashing_is_best_described: "Geohashin' be best described as a random adventure generator."
@@ -96,7 +96,7 @@
 
   navigation:
     your_profile: Yer profile
-    your_home_location: Yer home location
+    your_home_location: Yer home port
     your_subscriptions: Yer subscriptions
     custom_links: Custom links
     globalhashes: Globalhashes
@@ -113,15 +113,15 @@
 
   users:
     location:
-      choose_your_location: Choose yer location
+      choose_your_location: Choose yer position
       if_the_map_does_not_work: "If the chart doesn't work fer ye, feel free t' enter yer latitude and longitude here."
-      save_location: Save location
-      location_saved: Yer location has been saved.
+      save_location: Save position
+      location_saved: Yer position has been saved.
 
     subscribe:
       your_subscriptions: "Yer scroll o' dispatches ordered"
       you_are_not_subscribed_to_any_graticules: "Ye ain't subscribed t' no graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
-      set_your_home_location: set yer home location
+      set_your_home_location: set yer home port
 
   subscriptions:
     new:
@@ -163,7 +163,7 @@
       geohash_on_date_in_location: "Geohash on {{date}} in {{location}}"
       poster_for_this_geohash_event: Poster fer this geohash event
       details: Details
-      location: "Location:"
+      location: "Position:"
       date: "Date:"
       graticule: "Graticule:"
       coordinates: "Coordinates:"
@@ -185,14 +185,14 @@
         geohashing_is_an_adventure_game: "Geohashin' be an adventure game."
         an_algorithm_generates_random_coordinates: "An algorithm do generate random coordinates daily, and people try t' get thar t' see new places, meet new people, and have fun doin' it."
         to_find_out_more: "T' find out more or join in the fun yourself, visit {{link}}"
-        how_this_geohash_location_was_calculated: How this geohash location was calculated
+        how_this_geohash_location_was_calculated: How this geohash position was calculated
         now_that_you_have_seen_this_poster: "Now that ye've seen this poster, we'd love t' hear from ye."
         the_place_to_talk: "The place t' parly about this particular expedition be at"
         come_and_say_hello: "Come and say hello and tell us how ye came t' find the poster!"
 
   globalhashes:
     index:
-      recent_and_upcoming_globalhash_locations: "Recent and upcomin' globalhash locations"
+      recent_and_upcoming_globalhash_locations: "Recent and upcomin' globalhash positions"
       globalhash_explanation: "A globalhash be the geohashin' algorithm applied t' the whole world. If the globalhash be near ye, 'tis indeed a momentous occasion and ye simply must set sail fer it!"
       see_link_for_more_information: "See {{link}} fer more information."
       globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
@@ -233,7 +233,7 @@
     upcoming_geohashes:
       geohashing_adventures: "Geohashin' adventures"
       hi_name: "Hi {{name}}"
-      here_are_your_upcoming_geohash_locations: "Here be yer upcomin' geohash locations, brought t' ye by Active geohasher."
+      here_are_your_upcoming_geohash_locations: "Here be yer upcomin' geohash positions, brought t' ye by Active geohasher."
       distance_away: "{{distance}} away"
       globalhash: Globalhash
       links: Links
