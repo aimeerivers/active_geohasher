@@ -14,15 +14,15 @@
 
   common:
     or: or
-    cancel: Avast!
+    cancel: "Avast!"
     go_north: Sail North
     go_south: Sail South
     go_east: Sail East
     go_west: Sail West
     distance: "{{number}} {{units}}"
     unknown_location: "[Uncharted waters]"
-    useful_links: Seaworthy links
-    custom_links: Custom-rigged links
+    useful_links: Seaworthy splices
+    custom_links: Custom splices
     privacy_policy: Privacy charter
     what_is_geohashing: "What be geohashin'?"
 
@@ -44,7 +44,7 @@
       subscribe_to_graticules: Request dispatches fer graticules
       receive_free_daily_geohashing_email: "Grab a free daily geohashin' dispatch"
       see_distance_from_home_location: "Find the range from yer home port in miles or Frenchy miles"
-      with_useful_links: "Wi' seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
+      with_useful_links: "Wi' seaworthy splices t' peeron, geohashin' wiki, Google Charts 'n navigation"
       google_earth_feeds: "Magically updatin' Google World feeds fer yer graticules"
       open_source: "'Tis open source, by the Powers!"
       contributions_welcome: "Offerin's o' doubloons (or even pieces o' eight) kindly looked upon!"
@@ -57,34 +57,34 @@
         answer: "We stows yer name, address fer dispatches 'n identifyin' URL fer authentication. If ye pinpoint a position we'll stow that in order t' provide ye wi' relative ranges t' geohashes. We'll stow a chart o' the graticules fer which ye request dispatches in order t' provide ye wi' a shipshape service."
 
       can_i_view_and_change_the_data_you_hold:
-        question: "Can I spy and change the scribblin's ye be stowin' about me?"
-        answer: "Yarr. If ye be logged in 'n ye click on yer name, or if ye visit {{link}} ye'll spy the scribblin's in our hold. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye can nay change it, for 'tis needed fer authentication. Ye can change yer dispatch requests or home port whene'er it takes yer fancy."
+        question: "Can I spy 'n change the scribblin's ye be stowin' about me?"
+        answer: "Yarr. If ye be logged in 'n ye click on yer name, or if ye visit {{link}} ye'll spy the scribblin's in our hold. Ye can change yer name 'n address fer dispatches. Ye can see yer identifyin' URL but ye can nay change it, for 'tis needed fer authentication. Ye can change yer dispatch requests or home port whene'er it takes yer fancy."
         edit_profile: vary yer profile
 
       will_i_get_unwanted_email:
         question: "Shall I suffer an ill tide o' unwanted dispatches?"
-        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules fer which ye've requested dispatches. Ye can belay the dispatch requests fer graticules any time o' day or night, or ye can vary yer profile and scrub out 'Receive dispatches' fer a speedy way t' stop receivin' dispatches."
+        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules fer which ye've requested dispatches. Ye can belay the dispatch requests fer graticules any time o' day or night, or ye can vary yer profile and scrub out 'Receive dispatches' fer a speedy way t' stop the flow."
 
       will_you_share_my_information:
         question: "Will ye share me secrets wi' anyone else, ye scurvy dogs?"
         answer: "Shiver me timbers!  May we be keelhauled, swallered whole by a giant squid 'n dragged down t' Davy Jones' locker if we do."
 
       why_do_you_want_my_facebook_details:
-        question: Why do ye crave me Facebook seal? Will ye Pemmican me mateys, ye scallywags?
+        question: "Why do ye crave me Facebook seal? Will ye Pemmican me mateys, ye scallywags?"
         answer: "That we will not. The RPX authentication be simply a means o' usin' a trusty third crew to vouch fer ye, be it Twitter, Facebook, Google, Yahoo or any o' them new-fangled OpenID providers. We'll have no knowledge o' yer shipmates, and we'll nay be able t' scribe t' yer Twitter scroll or Facebook status. See {{link}} if ye wants t' know more."
         how_rpx_works: "How RPX be warkin'"
 
     what_is_geohashing:
       geohashing_is_best_described: "Geohashin' be best described as a random voyage generator."
-      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} be takin' the openin' value o' the Dow Jones treasure index and mixin' it wi' the date o' the day (by Gregorian reckonin') t' calculate geographic positions in every latitude 'n longitude all o'er the Seven Seas. The 'X' could mark the spot anywhere on yer charts: mayhap in a forest, in the midst o' the sea, or in a big grubby town full o' landlubbers. P'raps even {{at_your_home}} or {{your_workplace}}! Mark you though, it be goodly random, and 'tis different every day.  (Mark ye well: don't be confusin' Dow Jones wi' Davy Jones!)"
-      an_algorithm: An algae-thythm
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} be takin' the openin' value o' the Dow Jones treasure index and mixin' it wi' the date o' the day (by Gregorian calendar) t' reckon geographic positions in every latitude 'n longitude all o'er the Seven Seas. The X could mark the spot anywhere on yer charts: mayhap in a forest, in the midst o' the sea, or in a big grubby town full o' landlubbers. P'raps even {{at_your_home}} or {{your_workplace}}! Mark you though, it be goodly random, and 'tis different every day.  (Mark ye well: don't be confusin' Dow Jones wi' Davy Jones!)"
+      an_algorithm: An algae-rhythm
       at_your_home: at yer home port
-      your_workplace: yer place o' wark
+      your_workplace: "yer place o' wark"
       the_aim_of_the_game: "The aim o' the game be t' reach one o' the geohash points fer the day (p'raps wi' the aid o' GPS tackle), take photographs fer evidence, meet wi' unknown crew, sport wi' games, down bottles o' grog, sing a hearty song or two, do whate'er ye feel. Ideally leave some kind o' {{non_permanent_marker}} fer others t' find."
       non_permanent_marker: "fleetin' mark"
       there_are_several_achievements: "Thar be a number o' {{achievements}} that ye can earn dependin' on burdensomeness or japes 'n swashbucklin' ventures ye carry out at the geohash position, arr! But the purpose be t' enjoy yerself, breathe the fresh air o' the high seas, sail somewhere ye might ne'er have reason t' go otherwise, 'n share yer adventures wi' the rest o' us, me hearty!"
       achievements: medals
-      for_more_information: "Fer more writin' sail away to {{link}}"
+      for_more_information: "Fer more learnin' sail away to {{link}}"
 
   authentication:
     sign_in: Step aboard
@@ -92,35 +92,35 @@
     welcome: "Ahoy {{name}}!"
     sign_out: Put ashore
     please_sign_in_first: Please step aboard first.
-    sign_in_failed: "Shiver me timbers! Thar were a sudden squall from t' West 'n ye could not be brought aboard."
+    sign_in_failed: "Shiver me timbers! Thar were a sudden squall from the West 'n ye could not be brought aboard on account o' the missin' gangplank."
 
   navigation:
     your_profile: Yer profile
     your_home_location: Yer home port
     your_subscriptions: Yer dispatch requests
-    custom_links: Custom-rigged links
-    globalhashes: Globalhashes
+    custom_links: Custom splices
+    globalhashes: Worldhashes
 
   profiles:
     edit:
       your_profile: Yer profile
       email_notification: Tidings by dispatch
       twitter_notification: Tidings by Twitter
-      use_ctrl_or_command_to_select_multiple_links: "Press ye Ctrl or Cmd t' be choosin' more'n one link."
+      use_ctrl_or_command_to_select_multiple_links: "Press ye Ctrl or Cmd t' be choosin' more'n one splice."
       for_this_to_work: "Fer this t' wark, ye'll need t' be followin' {{activegeohasher}} on Twitter."
-      update_profile: "Stow new profile in t' hold"
+      update_profile: "Stow new profile in the hold"
       updated_successfully: Yer profile be stowed, yarr!
 
   users:
     location:
       choose_your_location: Choose yer position
       if_the_map_does_not_work: "If the Lily-livered chart don't wark fer ye, do be scribblin' yer latitude 'n longitude here."
-      save_location: "Stow position in t' hold"
+      save_location: "Stow position in the hold"
       location_saved: Yer position be stowed.
 
     subscribe:
       your_subscriptions: "Scroll o' dispatches ye've requested"
-      you_are_not_subscribed_to_any_graticules: "Ye ain't requested dispatches fer no graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
+      you_are_not_subscribed_to_any_graticules: "Ye ain't requested dispatches fer no graticules. Enter a graticule's latitude 'n longitude above, or {{set_location}}."
       set_your_home_location: set yer home port
 
   subscriptions:
@@ -131,7 +131,7 @@
       could_not_subscribe_to_graticule: "Through some devilish mutiny, yer request fer dispatches fer the graticule has nay warked - please do be tryin' anew."
 
     unsubscribe:
-      successfully_unsubscribed: Request fer dispatches fer graticule belayed, yarr!
+      successfully_unsubscribed: Request fer dispatches fer graticule belayed, arr!
 
   graticules:
     show:
@@ -139,7 +139,7 @@
       google_earth_feed: Google World feed
       unsubscribe: belay dispatch request
       graticule_map: Graticule chart
-      social_media_links: "Links t' shipmate clubs"
+      social_media_links: "Splices t' shipmate clubs"
       twitter: "Twitter: {{tag}}"
       flickr: "Flickr: {{tag}}"
       youtube: "YouTube: {{tag}}"
@@ -156,20 +156,20 @@
 
     latest_geohashes:
       latest_geohashes: Most recent geohashes
-      check_back_later: Be ye sailin' back by a later tide fer geohashes in this graticule.
+      check_back_later: "Be sailin' back by a later tide fer geohashes in this graticule."
 
   geohashes:
     show:
-      geohash_on_date_in_location: "Geohash on {{date}} in {{location}}"
+      geohash_on_date_in_location: "Geohash on {{date}} (Gregorian) in {{location}}"
       poster_for_this_geohash_event: Poster fer this geohash event
       details: Details
       location: "Position:"
-      date: "Date by Gregorian reckonin':"
+      date: "Date by Gregorian calendar:"
       graticule: "Graticule:"
       coordinates: "Co-ordinates:"
       distance: "Range:"
       distance_from_your_home_location: "{{distance}} from yer home port"
-      how_the_geohash_is_calculated: How the geohash be calculated
+      how_the_geohash_is_calculated: How the geohash be reckoned
       geohash_in_location: "Geohash in {{location}}"
       city_view: Town view
       street_view: Street view
@@ -179,52 +179,52 @@
 
       poster:
         xkcd_geohashing: "xkcd geohashin'"
-        the_internet_was_here: The internet bin 'ere, arr!
-        some_geohashers: "In partickler, a crew o' geohashers\nwas at the geographic co-ordinates"
-        on_date: "on {{date}} (Gregorian)"
+        the_internet_was_here: "The internet bin 'ere, yarr!"
+        some_geohashers: "In partickler, a crew o' geohashers\nwere at the geographic co-ordinates"
+        on_date: "on {{date}} (Gregorian calendar)"
         geohashing_is_an_adventure_game: "Geohashin' be a swashbucklin' game."
-        an_algorithm_generates_random_coordinates: "An algae-thythm be spewin' random co-ordinates daily, 'n people be tryin' t' get thar t' spy new places, take a drop o' rum wi' new shipmates, 'n have fun in the doin' o' it."
+        an_algorithm_generates_random_coordinates: "An algae-rhythm be spewin' random co-ordinates daily, 'n people be tryin' t' get thar t' spy new places, take a drop o' rum wi' new shipmates, 'n have fun in the doin' o' it."
         to_find_out_more: "T' be learnin' more or t' join in the antics yerself, sail over t' {{link}}"
-        how_this_geohash_location_was_calculated: How this geohash position were calculated
+        how_this_geohash_location_was_calculated: How this geohash position were reckoned
         now_that_you_have_seen_this_poster: "Now that ye've spied this poster, we'd be obliged t' hear from ye."
         the_place_to_talk: "The place t' parly about this partickler expedition be at"
         come_and_say_hello: "Sail over 'n say 'Ahoy!' 'n be tellin' us how ye came t' find the poster!"
 
   globalhashes:
     index:
-      recent_and_upcoming_globalhash_locations: "Recent and upcomin' globalhash positions"
-      globalhash_explanation: "A globalhash be the geohashin' algae-thythm applied t' the whole world. If the globalhash be near ye, 'tis indeed a momentous occasion and ye simply must set sail fer it!"
-      see_link_for_more_information: "See {{link}} fer more information."
-      globalhash_on_date_in_location: "Globalhash on {{date}} in {{location}}"
+      recent_and_upcoming_globalhash_locations: "Worldhash positions, both dead ahead and eatin' wake"
+      globalhash_explanation: "A worldhash be the geohashin' algae-rhythm applied t' the four corners o' the world. Be the worldhash alongside o' ye, 'tis indeed a momentous occasion 'n ye'd be a lily-livered squiffy indeed not t' be settin' sail fer it on the next tide!"
+      see_link_for_more_information: "See {{link}} fer more scholarship."
+      globalhash_on_date_in_location: "Worldhash on {{date}} (Gregorian) in {{location}}"
 
     show:
-      globalhash_on_date: "Globalhash on {{date}}"
+      globalhash_on_date: "Worldhash on {{date}} (Gregorian)"
       world_view: World view
-      country_view: Country view
+      country_view: Kingdom view
       area_view: Area view
-      not_found: "Globalhash not found, else thar's bin a problem lookin' it up."
+      not_found: "Worldhash be nay found, else thar's bin a problem findin' it in the ship's log, arr!"
 
   custom_links:
     index:
-      add_links_here: Add links here and they will will be provided in yer dispatch fer each geohash.
-      use_latitude_and_longitude_placeholders: "Use {{latitude}} and {{longitude}} as placeholders t' be replaced wi' the relevant values. Here be some example links ye could use:"
+      add_links_here: "Add splices here 'n they will be rigged in yer dispatch fer each geohash."
+      use_latitude_and_longitude_placeholders: "Use {{latitude}} 'n {{longitude}} as placeholders t' be replaced wi' the right numbers. Here be some example splices ye could use:"
       add: Add
-      edit: edit
-      delete: delete
-      is_invalid: "be invalid (try wi' http://)"
-      you_cannot_edit_or_delete: Ye cannot edit or delete that custom link.
+      edit: vary
+      delete: scrub
+      is_invalid: "be holed below the waterline (try wi' http://)"
+      you_cannot_edit_or_delete: Ye can nay vary nor scrub that thar custom splice.
 
     new:
-      saved_successfully: Custom link saved, yarr!
+      saved_successfully: Custom splice stowed in the hold, yarr!
 
     edit:
-      edit_custom_link: Edit custom link
-      update_custom_link: Update custom link
-      updated_successfully: Custom link updated, yarr!
+      edit_custom_link: Vary custom splice
+      update_custom_link: Update custom splice
+      updated_successfully: Custom splice updated, yarr!
 
     delete:
-      are_you_sure_you_wish_to_delete: "Be ye sure ye wish t' delete this custom link?"
-      deleted_successfully: Custom link deleted, yarr!
+      are_you_sure_you_wish_to_delete: "Be ye sure ye desire t' scrub this custom splice?"
+      deleted_successfully: "Custom splice be run through on me cutlass wi' a wannion, yarr!"
 
   footer:
     source_code: Source code
@@ -232,30 +232,30 @@
   notifier:
     upcoming_geohashes:
       geohashing_adventures: "Geohashin' adventures"
-      hi_name: "Hi {{name}}"
-      here_are_your_upcoming_geohash_locations: "Here be yer upcomin' geohash positions, brought t' ye by Active geohasher."
-      distance_away: "{{distance}} away"
-      globalhash: Globalhash
-      links: Links
-      please_note_that_distances_are_calculated_as_straight_lines: "Please note that we be calculatin' ranges as straight lines; the distance by road may well be longer. Google can give ye directions - use the links t' find out!"
-      happy_geohashing: "Happy geohashin'!"
+      hi_name: "Ahoy {{name}}!"
+      here_are_your_upcoming_geohash_locations: "Here be yer geohash positions dead ahead, brought t' ye by Active geohasher."
+      distance_away: "{{distance}} hence"
+      globalhash: Worldhash
+      links: Splices
+      please_note_that_distances_are_calculated_as_straight_lines: "Observe ye well, that we be reckonin' ranges as the crow flies; the voyage by the King's highway often be many leagues farther. Google can assist ye wi' navigation charts - use the splices t' discover how!"
+      happy_geohashing: "Merry geohashin' yarr!"
 
   activerecord:
     models:
-      user: user
+      user: passenger
       subscription: request fer dispatches
-      'custom link': custom-rigged link
+      'custom link': custom splice
 
     attributes:
       user:
         identifier: "Identifyin' url"
         name: Name
         email: Address fer dispatches
-        preferred_distance_units: Measure distances in
+        preferred_distance_units: Reckon distances in
         preferred_locale: Tongue
         receive_email: Allow dispatches
-        preferred_links: "Links ye'd like in yer emails"
-        twitter_username: "Enter yer Twitter username here if ye wish t' receive notification"
+        preferred_links: "Splices ye'd like in yer dispatches"
+        twitter_username: "Be scribblin' yer Twitter username here if ye desire t' receive dispatches"
         lat: Latitude
         lng: Longitude
 
