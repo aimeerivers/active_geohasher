@@ -2,7 +2,7 @@ class LanguagesController < ApplicationController
   skip_before_filter :remember_gets
 
   def set
-    if (AVAILABLE_LOCALES + SECRET_LOCALES).include?(params[:locale])
+    if ALL_LOCALES.include?(params[:locale])
       I18n.locale = session[:locale] = params[:locale]
       current_user.set_preferred_locale(params[:locale]) if logged_in?
       flash[:success] = t('locale.language_set_to', :language => t("locale.#{params[:locale]}"))

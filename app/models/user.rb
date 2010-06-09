@@ -68,7 +68,7 @@ class User < ActiveRecord::Base
   end
 
   def set_preferred_locale(locale)
-    return unless AVAILABLE_LOCALES.include?(locale)
+    return unless ALL_LOCALES.include?(locale)
     self.preferred_locale = locale
     self.save
   end
