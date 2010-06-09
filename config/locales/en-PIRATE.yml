@@ -1,6 +1,6 @@
 'en-PIRATE':
-  miles: moils
-  kms: killermeaters
+  miles: miles
+  kms: Frenchy miles
 
   ag: Active geohasher
   wiki: "Geohashin' wiki"
@@ -43,9 +43,9 @@
     features:
       subscribe_to_graticules: Request dispatches fer graticules
       receive_free_daily_geohashing_email: "Grab a free daily geohashin' dispatch"
-      see_distance_from_home_location: "Find the range from yer home port in moils or killermeaters"
+      see_distance_from_home_location: "Find the range from yer home port in miles or Frenchy miles"
       with_useful_links: "Wi' seaworthy links t' peeron, geohashin' wiki, Google Charts 'n navigation"
-      google_earth_feeds: "Magically updatin' Google Earth feeds fer yer graticules"
+      google_earth_feeds: "Magically updatin' Google World feeds fer yer graticules"
       open_source: "'Tis open source, by the Powers!"
       contributions_welcome: "Offerin's o' doubloons (or even pieces o' eight) kindly looked upon!"
 
@@ -58,12 +58,12 @@
 
       can_i_view_and_change_the_data_you_hold:
         question: "Can I spy and change the scribblin's ye be stowin' about me?"
-        answer: "Yarr. If ye be logged in 'n ye click on yer name, or if ye visit {{link}} ye'll spy the scribblin's in our hold. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye can nay change it, for 'tis needed fer authentication. Ye can change yer subscriptions or home port whene'er it takes yer fancy."
+        answer: "Yarr. If ye be logged in 'n ye click on yer name, or if ye visit {{link}} ye'll spy the scribblin's in our hold. Ye can change yer name and address fer dispatches. Ye can see yer identifyin' URL but ye can nay change it, for 'tis needed fer authentication. Ye can change yer dispatch requests or home port whene'er it takes yer fancy."
         edit_profile: vary yer profile
 
       will_i_get_unwanted_email:
         question: "Shall I suffer an ill tide o' unwanted dispatches?"
-        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules t' which ye've subscribed. Ye can unsubscribe from graticules any time o' day or night, or ye can vary yer profile and scrub out 'Receive dispatches' fer a speedy way t' stop receivin' dispatches."
+        answer: "Ye'll only receive dispatches that ye've chosen t' receive, about graticules fer which ye've requested dispatches. Ye can belay the dispatch requests fer graticules any time o' day or night, or ye can vary yer profile and scrub out 'Receive dispatches' fer a speedy way t' stop receivin' dispatches."
 
       will_you_share_my_information:
         question: "Will ye share me secrets wi' anyone else, ye scurvy dogs?"
@@ -72,11 +72,11 @@
       why_do_you_want_my_facebook_details:
         question: Why do ye crave me Facebook seal? Will ye Pemmican me mateys, ye scallywags?
         answer: "That we will not. The RPX authentication be simply a means o' usin' a trusty third crew to vouch fer ye, be it Twitter, Facebook, Google, Yahoo or any o' them new-fangled OpenID providers. We'll have no knowledge o' yer shipmates, and we'll nay be able t' scribe t' yer Twitter scroll or Facebook status. See {{link}} if ye wants t' know more."
-        how_rpx_works: "How RPX be workin'"
+        how_rpx_works: "How RPX be warkin'"
 
     what_is_geohashing:
       geohashing_is_best_described: "Geohashin' be best described as a random voyage generator."
-      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} be takin' the openin' value o' the Dow Jones treasure index and mixin' it wi' the date o' the day (by Gregorian reckonin') t' calculate geographic positions in every latitude 'n longitude all o'er the Seven Seas. The 'X' could mark the spot anywhere on yer charts: mayhap in a forest, in the midst o' the sea, or in a big dark city full o' landlubbers. P'raps even {{at_your_home}} or {{your_workplace}}! Mark you though, it be goodly random, and 'tis different every day.  (Mark ye well: don't be confusin' Dow Jones wi' Davy Jones!)"
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} be takin' the openin' value o' the Dow Jones treasure index and mixin' it wi' the date o' the day (by Gregorian reckonin') t' calculate geographic positions in every latitude 'n longitude all o'er the Seven Seas. The 'X' could mark the spot anywhere on yer charts: mayhap in a forest, in the midst o' the sea, or in a big grubby town full o' landlubbers. P'raps even {{at_your_home}} or {{your_workplace}}! Mark you though, it be goodly random, and 'tis different every day.  (Mark ye well: don't be confusin' Dow Jones wi' Davy Jones!)"
       an_algorithm: An algae-thythm
       at_your_home: at yer home port
       your_workplace: yer place o' wark
@@ -87,18 +87,18 @@
       for_more_information: "Fer more writin' sail away to {{link}}"
 
   authentication:
-    sign_in: Sign in
-    sign_in_with: "{{sign_in}} usin' yer Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. It's free!"
+    sign_in: Step aboard
+    sign_in_with: "{{sign_in}} usin' yer Google account, Yahoo, Flickr, Twitter, Facebook, or OpenID. 'Tis free 'n gratis!"
     welcome: "Ahoy {{name}}!"
-    sign_out: Sign out
-    please_sign_in_first: Please sign in first.
-    sign_in_failed: "Beggin' yer pardon, somethin' went wrong and ye could not be signed in."
+    sign_out: Put ashore
+    please_sign_in_first: Please step aboard first.
+    sign_in_failed: "Shiver me timbers! Thar were a sudden squall from t' West 'n ye could not be brought aboard."
 
   navigation:
     your_profile: Yer profile
     your_home_location: Yer home port
-    your_subscriptions: Yer subscriptions
-    custom_links: Custom links
+    your_subscriptions: Yer dispatch requests
+    custom_links: Custom-rigged links
     globalhashes: Globalhashes
 
   profiles:
@@ -106,57 +106,57 @@
       your_profile: Yer profile
       email_notification: Tidings by dispatch
       twitter_notification: Tidings by Twitter
-      use_ctrl_or_command_to_select_multiple_links: "Use Ctrl or Cmd t' select multiple links."
-      for_this_to_work: "Fer this t' work, ye'll need t' follow {{activegeohasher}} on Twitter."
-      update_profile: Update profile
-      updated_successfully: Yer profile wer updated victoriously.
+      use_ctrl_or_command_to_select_multiple_links: "Press ye Ctrl or Cmd t' be choosin' more'n one link."
+      for_this_to_work: "Fer this t' wark, ye'll need t' be followin' {{activegeohasher}} on Twitter."
+      update_profile: "Stow new profile in t' hold"
+      updated_successfully: Yer profile be stowed, yarr!
 
   users:
     location:
       choose_your_location: Choose yer position
-      if_the_map_does_not_work: "If the chart doesn't work fer ye, feel free t' enter yer latitude and longitude here."
-      save_location: Save position
-      location_saved: Yer position has been saved.
+      if_the_map_does_not_work: "If the Lily-livered chart don't wark fer ye, do be scribblin' yer latitude 'n longitude here."
+      save_location: "Stow position in t' hold"
+      location_saved: Yer position be stowed.
 
     subscribe:
-      your_subscriptions: "Yer scroll o' dispatches ordered"
-      you_are_not_subscribed_to_any_graticules: "Ye ain't subscribed t' no graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
+      your_subscriptions: "Scroll o' dispatches ye've requested"
+      you_are_not_subscribed_to_any_graticules: "Ye ain't requested dispatches fer no graticules. Enter a graticule's latitude and longitude above, or {{set_location}}."
       set_your_home_location: set yer home port
 
   subscriptions:
     new:
       subscribe_to_a_graticule: Request dispatches fer a graticule
       subscribe: Request dispatches
-      successfully_subscribed_to_graticule: Dispatches victoriously ordered fer graticule.
-      could_not_subscribe_to_graticule: Could not order dispatches fer the graticule, please check and try again.
+      successfully_subscribed_to_graticule: Dispatches requested fer graticule, yarr!
+      could_not_subscribe_to_graticule: "Through some devilish mutiny, yer request fer dispatches fer the graticule has nay warked - please do be tryin' anew."
 
     unsubscribe:
-      successfully_unsubscribed: Victoriously unsubscribed from graticule.
+      successfully_unsubscribed: Request fer dispatches fer graticule belayed, yarr!
 
   graticules:
     show:
       awaiting_graticule_name: "[Awaitin' graticule name]"
-      google_earth_feed: Google earth feed
-      unsubscribe: unsubscribe
+      google_earth_feed: Google World feed
+      unsubscribe: belay dispatch request
       graticule_map: Graticule chart
-      social_media_links: Social media links
+      social_media_links: "Links t' shipmate clubs"
       twitter: "Twitter: {{tag}}"
       flickr: "Flickr: {{tag}}"
       youtube: "YouTube: {{tag}}"
       live_from_twitter: Live from Twitter
-      latest_tweets_will_show_up_here: "Latest tweets tagged {{tag}} will show up here."
-      tweets_tagged: tweets tagged
+      latest_tweets_will_show_up_here: "Most recent tweets branded wi' {{tag}} will manifest 'ere."
+      tweets_tagged: tweets branded
       pictures_from_flickr: Pictures from Flickr
       look_on_flickr: "Look fer {{link}} on Flickr."
-      photos_and_videos_tagged: "photos and videos tagged {{tag}}"
-      not_found: "Beggin' yer pardon, the graticule was not found."
+      photos_and_videos_tagged: "photos 'n videos branded wi' {{tag}}"
+      not_found: "Beggin' yer pardon, the graticule be nay found."
       buttons:
         subscribe: Request dispatches fer this graticule
-        unsubscribe: Unsubscribe
+        unsubscribe: Belay request
 
     latest_geohashes:
-      latest_geohashes: Latest geohashes
-      check_back_later: Check back later fer geohashes in this graticule.
+      latest_geohashes: Most recent geohashes
+      check_back_later: Be ye sailin' back by a later tide fer geohashes in this graticule.
 
   geohashes:
     show:
@@ -164,31 +164,31 @@
       poster_for_this_geohash_event: Poster fer this geohash event
       details: Details
       location: "Position:"
-      date: "Date:"
+      date: "Date by Gregorian reckonin':"
       graticule: "Graticule:"
-      coordinates: "Coordinates:"
+      coordinates: "Co-ordinates:"
       distance: "Range:"
       distance_from_your_home_location: "{{distance}} from yer home port"
       how_the_geohash_is_calculated: How the geohash be calculated
       geohash_in_location: "Geohash in {{location}}"
-      city_view: City view
+      city_view: Town view
       street_view: Street view
       hybrid_view: Hybrid view
-      satellite_view: Satellite view
-      not_found: "Geohash not found, else thar's bin a problem lookin' it up."
+      satellite_view: Albatross view
+      not_found: "Geohash be nay found, else thar's bin a mutiny durin' lookin' it up."
 
       poster:
         xkcd_geohashing: "xkcd geohashin'"
-        the_internet_was_here: The internet was here!
-        some_geohashers: "Specifically, some geohashers\nwere at the geographic coordinates"
-        on_date: "on {{date}}"
-        geohashing_is_an_adventure_game: "Geohashin' be an adventure game."
-        an_algorithm_generates_random_coordinates: "An algae-thythm be generatin' random coordinates daily, and people be tryin' t' get thar t' see new places, meet new people, and have fun doin' it."
-        to_find_out_more: "T' find out more or join in the fun yourself, visit {{link}}"
-        how_this_geohash_location_was_calculated: How this geohash position was calculated
-        now_that_you_have_seen_this_poster: "Now that ye've seen this poster, we'd love t' hear from ye."
-        the_place_to_talk: "The place t' parly about this particular expedition be at"
-        come_and_say_hello: "Come and say hello and tell us how ye came t' find the poster!"
+        the_internet_was_here: The internet bin 'ere, arr!
+        some_geohashers: "In partickler, a crew o' geohashers\nwas at the geographic co-ordinates"
+        on_date: "on {{date}} (Gregorian)"
+        geohashing_is_an_adventure_game: "Geohashin' be a swashbucklin' game."
+        an_algorithm_generates_random_coordinates: "An algae-thythm be spewin' random co-ordinates daily, 'n people be tryin' t' get thar t' spy new places, take a drop o' rum wi' new shipmates, 'n have fun in the doin' o' it."
+        to_find_out_more: "T' be learnin' more or t' join in the antics yerself, sail over t' {{link}}"
+        how_this_geohash_location_was_calculated: How this geohash position were calculated
+        now_that_you_have_seen_this_poster: "Now that ye've spied this poster, we'd be obliged t' hear from ye."
+        the_place_to_talk: "The place t' parly about this partickler expedition be at"
+        come_and_say_hello: "Sail over 'n say 'Ahoy!' 'n be tellin' us how ye came t' find the poster!"
 
   globalhashes:
     index:
@@ -215,16 +215,16 @@
       you_cannot_edit_or_delete: Ye cannot edit or delete that custom link.
 
     new:
-      saved_successfully: Custom link saved victoriously.
+      saved_successfully: Custom link saved, yarr!
 
     edit:
       edit_custom_link: Edit custom link
       update_custom_link: Update custom link
-      updated_successfully: Custom link updated victoriously.
+      updated_successfully: Custom link updated, yarr!
 
     delete:
       are_you_sure_you_wish_to_delete: "Be ye sure ye wish t' delete this custom link?"
-      deleted_successfully: Custom link deleted victoriously.
+      deleted_successfully: Custom link deleted, yarr!
 
   footer:
     source_code: Source code
@@ -243,7 +243,7 @@
   activerecord:
     models:
       user: user
-      subscription: subscription
+      subscription: request fer dispatches
       'custom link': custom-rigged link
 
     attributes:
