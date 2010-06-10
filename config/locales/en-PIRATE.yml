@@ -181,7 +181,7 @@
         xkcd_geohashing: "xkcd geohashin'"
         the_internet_was_here: "The internet bin 'ere, yarr!"
         some_geohashers: "In partickler, a crew o' geohashers\nwere at the geographic co-ordinates"
-        on_date: "on {{date}} (Gregorian calendar)"
+        on_date: "on {{date}}"
         geohashing_is_an_adventure_game: "Geohashin' be a swashbucklin' game."
         an_algorithm_generates_random_coordinates: "An algae-rhythm be spewin' random co-ordinates daily, 'n people be tryin' t' get thar t' spy new places, take a drop o' rum wi' new shipmates, 'n have fun in the doin' o' it."
         to_find_out_more: "T' be learnin' more or t' join in the antics yerself, sail over t' {{link}}"
