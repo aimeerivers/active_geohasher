@@ -211,7 +211,6 @@ eo:
       add: Aldoni
       edit: redakti
       delete: forigi
-      is_invalid: "ne estas valida (penu kun http://)"
       you_cannot_edit_or_delete: Vi ne povas redakti aŭ forigi tiun personan ligilon.
 
     new:
@@ -266,3 +265,10 @@ eo:
       custom_link:
         name: Nomo
         url: URL
+
+    errors:
+      models:
+        custom_link:
+          attributes:
+            url:
+              is_invalid: "ne estas valida (penu kun http://)"

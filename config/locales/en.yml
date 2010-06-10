@@ -211,7 +211,6 @@ en:
       add: Add
       edit: edit
       delete: delete
-      is_invalid: "is invalid (try with http://)"
       you_cannot_edit_or_delete: You cannot edit or delete that custom link.
 
     new:
@@ -266,3 +265,10 @@ en:
       custom_link:
         name: Name
         url: URL
+
+    errors:
+      models:
+        custom_link:
+          attributes:
+            url:
+              is_invalid: "is invalid (try with http://)"

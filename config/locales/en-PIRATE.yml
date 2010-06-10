@@ -211,7 +211,6 @@
       add: Add
       edit: vary
       delete: scrub
-      is_invalid: "be holed below the waterline (try wi' http://)"
       you_cannot_edit_or_delete: Ye can nay vary nor scrub that thar custom splice.
 
     new:
@@ -266,3 +265,10 @@
       custom_link:
         name: Name
         url: URL
+
+    errors:
+      models:
+        custom_link:
+          attributes:
+            url:
+              is_invalid: "be holed below the waterline (try wi' http://)"

@@ -3,7 +3,7 @@ class CustomLink < ActiveRecord::Base
   belongs_to :user
 
   validates_presence_of :name
-  validates_format_of :url, :with => /^https?:\/\/.+/, :message => I18n.t('custom_links.index.is_invalid')
+  validates_format_of :url, :with => /^https?:\/\/.+/, :message => :"is_invalid"
 
   named_scope :newest_first, :order => 'created_at DESC'
 
