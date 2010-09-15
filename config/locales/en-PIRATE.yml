@@ -282,3 +282,8 @@ We 'opes ne'er t' be seein' yer again in these parts, but 'appen yer do return, 
 
 ARRR!"
       home_page: "this rope 'ere"
+
+    '500':
+      title: Something went wrong
+      text: "We're very sorry, but something went wrong there. Please try going back to {{link}}."
+      home_page: 'the home page'

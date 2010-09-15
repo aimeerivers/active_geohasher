@@ -1,0 +1,5 @@
+- I18n.locale = session[:locale]
+
+%h2= t('.title')
+
+%p= t('.text', :link => link_to(t('.home_page'), root_path))

@@ -272,3 +272,8 @@ eo:
       title: Paĝo ne estis trovita
       text: "Bedaŭrinde la paĝo ke vi petis ne estis trovita. Bonvole provu reiri al {{link}}."
       home_page: 'la hejm-paĝo'
+
+    '500':
+      title: Something went wrong
+      text: "Ni tre bedaŭras que io iĝis malĝusta. Bonvole provu reiri al {{link}}."
+      home_page: 'la hejm-paĝo'
