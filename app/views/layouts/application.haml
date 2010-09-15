@@ -6,6 +6,7 @@
     = stylesheet_link_tag 'main.css', :media => 'screen, projection'
     = stylesheet_link_tag 'buttons.css', :media => 'screen, projection'
     = stylesheet_link_tag 'blueprint/print.css', :media => 'print'
+    = stylesheet_link_tag  "locales/#{I18n.locale}.css", :media => 'screen'
     /
       [if lt IE 8]>
       = stylesheet_link_tag 'blueprint/ie.css', :media => 'screen, projection'
