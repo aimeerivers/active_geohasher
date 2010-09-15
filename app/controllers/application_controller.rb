@@ -35,5 +35,12 @@ class ApplicationController < ActionController::Base
   def remember_gets
     session[:last_get] = request.path if request.get?
   end
+
+  protected
+
+  def render_optional_error_file(status_code)
+    status = interpret_status(status_code)
+    render :template => "errors/#{status[0,3]}.html.haml", :status => status, :layout => 'application.haml'
+  end
   
 end
