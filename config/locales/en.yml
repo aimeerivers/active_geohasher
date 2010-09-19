@@ -272,3 +272,14 @@ en:
           attributes:
             url:
               is_invalid: "is invalid (try with http://)"
+
+  errors:
+    '404':
+      title: Page not found
+      text: "Sorry, the page you requested was not found. Please try going back to {{link}}."
+      home_page: 'the home page'
+
+    '500':
+      title: Something went wrong
+      text: "We're very sorry, but something went wrong there. Please try going back to {{link}}."
+      home_page: 'the home page'

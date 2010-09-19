@@ -272,3 +272,24 @@
           attributes:
             url:
               is_invalid: "be holed below the waterline (try wi' http://)"
+
+  errors:
+    '404':
+      title: Avast, matey!
+      text: "Yer request be sunk in the briny deep!  Shiver me timbers, 'tis the terrible and much-afear'd ERROR O' THE TWENTY SCORE 'N FOUR!</p><p>
+
+To put it crosswise: yer ship be dashed upon the rocks where ye thought to find a safe harbour; yer compass led ye astray, and the navigator ought t' be keelhauled!</p><p>
+
+'Tis possible, we'll allow, that thar's bin a dastardly mutiny in our crew, causin' all manner o' frayed ropes t' rot away 'n fall off o' the cleats.  That bein' the case, fear ye not, every man Jack o' them'll get the cat fer this!</p><p>
+
+Leastwise, ye'll need t' be weighin' anchor 'n makin' sail back t' the main tradin' routes where thar's a fair wind abeam.  If I were you, I'd be haulin' on {{link}}.</p><p>
+
+We 'opes ne'er t' be seein' yer again in these parts, but 'appen yer do return, be a shipmate 'n bring a barrel o' rum!  This grog be foul...</p><p>
+
+ARRR!"
+      home_page: "this rope 'ere"
+
+    '500':
+      title: Something went wrong
+      text: "We're very sorry, but something went wrong there. Please try going back to {{link}}."
+      home_page: 'the home page'
