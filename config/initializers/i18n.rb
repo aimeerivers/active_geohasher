@@ -1,4 +1,4 @@
-I18n.default_locale = :'en-PIRATE'
+I18n.default_locale = :en
 AVAILABLE_LOCALES = ['en', 'en-US', 'en-PIRATE', 'eo']
 SECRET_LOCALES = []
 ALL_LOCALES = AVAILABLE_LOCALES + SECRET_LOCALES
