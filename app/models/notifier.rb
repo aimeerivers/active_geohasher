@@ -20,6 +20,7 @@ class Notifier < ActionMailer::Base
   def confirmation_of_email_delivery(number_sent)
     subject "Delivered #{number_sent} geohashing emails"
     recipients ENV['OWNER_EMAIL']
+    from 'activegeohasher@googlemail.com'
     sent_on Time.now
     body :number_sent => number_sent
   end
