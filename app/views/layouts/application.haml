@@ -23,8 +23,8 @@
     .container
       .span-24.header_area
         .span-16
-          = image_tag('geohashing_logo.gif', :class => 'header_logo')
-          %h1.header_text Active geohasher
+          = link_to(image_tag('geohashing_logo.gif', :class => 'header_logo'), root_path)
+          %h1.header_text= link_to('Active geohasher', root_path)
           %p.flags
             - AVAILABLE_LOCALES.each do |locale|
               = link_to(image_tag("flags/#{locale}.png", :class => I18n.locale.to_s == locale ? 'active' : '', :alt => t("locale.#{locale}"), :title => t("locale.#{locale}")), language_path(locale))
