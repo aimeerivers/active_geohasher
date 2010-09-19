@@ -17,5 +17,11 @@ class Notifier < ActionMailer::Base
     user.new_geohashes_since(start_time).keys.map{|date| I18n.l(date, :format => :short)}.join(', ')
   end
 
-end
+  def confirmation_of_email_delivery(number_sent)
+    subject "Delivered #{number_sent} geohashing emails"
+    recipients ENV['OWNER_EMAIL']
+    sent_on Time.now
+    body :number_sent => number_sent
+  end
 
+end
