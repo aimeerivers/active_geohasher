@@ -59,7 +59,7 @@ namespace :geohashing do
     number_sent = 0
     User.receiving_email.each do |user|
       next if user.graticules.size == 0
-      ActionMailer::Base.username = "activegeohasher#{number_sent / 150}@gmail.com"
+      ActionMailer::Base.smtp_settings[:user_name] = "activegeohasher#{number_sent / 150}@gmail.com"
       puts "Delivering email to #{user.name}"
       Notifier.deliver_upcoming_geohashes(user, start_time)
       number_sent += 1
