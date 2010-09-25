@@ -136,6 +136,7 @@ eo:
   graticules:
     show:
       awaiting_graticule_name: "[Atendante gratikulo-nomon]"
+      rss_feed: RSS-fluo
       google_earth_feed: fluo por Google earth
       unsubscribe: malaboni
       graticule_map: Graticulo mapo

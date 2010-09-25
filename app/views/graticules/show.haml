@@ -5,6 +5,10 @@
     %h3= t('common.useful_links')
 
     %p.graticule_link
+      = image_tag('rss.jpg', :size => '60x60', :alt => t('.rss_feed'))
+      = link_to(t('.rss_feed'), formatted_pretty_graticule_url(@graticule.latitude, @graticule.longitude, :rss))
+
+    %p.graticule_link
       = image_tag('geohashing_wiki_logo_60.png', :size => '60x60', :alt => t('wiki'))
       = link_to(t('wiki'), @graticule.wiki_link)
 

@@ -136,6 +136,7 @@ en:
   graticules:
     show:
       awaiting_graticule_name: "[Awaiting graticule name]"
+      rss_feed: RSS feed
       google_earth_feed: Google earth feed
       unsubscribe: unsubscribe
       graticule_map: Graticule map

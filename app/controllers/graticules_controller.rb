@@ -15,6 +15,7 @@ class GraticulesController < ApplicationController
 
     respond_to do |format|
       format.kml { render :layout => false }
+      format.rss { render :layout => false }
       format.html
     end
   end

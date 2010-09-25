@@ -136,6 +136,7 @@
   graticules:
     show:
       awaiting_graticule_name: "[Awaitin' graticule name]"
+      rss_feed: RSS feed
       google_earth_feed: Google World feed
       unsubscribe: belay dispatch request
       graticule_map: Graticule chart
