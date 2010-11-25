@@ -49,23 +49,27 @@ namespace :geohashing do
         puts "* #{graticule.display_name}"
         Geohash.find_or_create(date, graticule.latitude, graticule.longitude)
       end
-      
+
       # Look up the globalhash
       puts "Looking up the globalhash for #{date.strftime('%Y-%m-%d')}"
       Globalhash.find_or_create(date)
     end
 
     # Send emails
-    number_sent = 0
-    User.receiving_email.each do |user|
-      next if user.graticules.size == 0
-      ActionMailer::Base.smtp_settings[:user_name] = "activegeohasher#{number_sent / 150}@gmail.com"
-      puts "Delivering email to #{user.name}"
-      Notifier.deliver_upcoming_geohashes(user, start_time)
-      number_sent += 1
-    end
+    begin
+      number_sent = 0
+      User.receiving_email.each do |user|
+        next if user.graticules.size == 0
+        ActionMailer::Base.smtp_settings[:user_name] = "activegeohasher#{number_sent / 150}@gmail.com"
+        puts "Delivering email to #{user.name}"
+        Notifier.deliver_upcoming_geohashes(user, start_time)
+        number_sent += 1
+      end
 
-    Notifier.deliver_confirmation_of_email_delivery(number_sent)
+      Notifier.deliver_confirmation_of_email_delivery(number_sent)
+    rescue Exception => e
+      Fail.create!(:klass => e.class, :message => e.message, :backtrace => e.backtrace)
+    end
 
     # Send twitter direct messages
     tweeter = Tweeter.new
