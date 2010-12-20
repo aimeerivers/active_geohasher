@@ -56,20 +56,22 @@ namespace :geohashing do
     end
 
     # Send emails
-    begin
-      number_sent = 0
-      User.receiving_email.each do |user|
-        next if user.graticules.size == 0
-        ActionMailer::Base.smtp_settings[:user_name] = "activegeohasher#{number_sent / 150}@gmail.com"
+    number_sent = 0
+    User.receiving_email.each do |user|
+      next if user.graticules.size == 0
+      ActionMailer::Base.smtp_settings[:user_name] = "activegeohasher#{number_sent / 150}@gmail.com"
+      begin
         puts "Delivering email to #{user.name}"
         Notifier.deliver_upcoming_geohashes(user, start_time)
         number_sent += 1
+      rescue Error => e
+        Fail.create!(:klass => e.class,
+                     :message => e.message,
+                     :backtrace => ActionMailer::Base.smtp_settings[:user_name] + ' *** ' + user.inspect + ' *** ' + e.backtrace)
       end
-
-      Notifier.deliver_confirmation_of_email_delivery(number_sent)
-    rescue Exception => e
-      Fail.create!(:klass => e.class, :message => e.message, :backtrace => e.backtrace)
     end
+
+    Notifier.deliver_confirmation_of_email_delivery(number_sent)
 
     # Send twitter direct messages
     tweeter = Tweeter.new
