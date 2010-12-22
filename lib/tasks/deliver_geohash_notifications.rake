@@ -64,7 +64,7 @@ namespace :geohashing do
         puts "Delivering email to #{user.name}"
         Notifier.deliver_upcoming_geohashes(user, start_time)
         number_sent += 1
-      rescue Error => e
+      rescue Exception => e
         Fail.create!(:klass => e.class,
                      :message => e.message,
                      :backtrace => ActionMailer::Base.smtp_settings[:user_name] + ' *** ' + user.inspect + ' *** ' + e.backtrace)
