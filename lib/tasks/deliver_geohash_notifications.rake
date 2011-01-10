@@ -70,7 +70,7 @@ namespace :geohashing do
       rescue Exception => e
         Fail.create!(:klass => e.class,
                      :message => e.message,
-                     :backtrace => ActionMailer::Base.smtp_settings[:user_name] + ' *** ' + user.inspect + ' *** ' + e.backtrace)
+                     :backtrace => ActionMailer::Base.smtp_settings[:user_name] + ' *** ' + user.inspect + ' *** ' + e.backtrace.join("\n"))
       end
     end
 
