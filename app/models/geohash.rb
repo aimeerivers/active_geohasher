@@ -1,11 +1,11 @@
 class Geohash < ActiveRecord::Base
   include GenericGeohash
-  
+
   belongs_to :graticule
   belongs_to :history
 
   delegate :dow_value, :to => :history
-  
+
   named_scope :new_since, lambda {|datetime| {:conditions => ["date >= ?", datetime.utc]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
 
@@ -16,37 +16,37 @@ class Geohash < ActiveRecord::Base
   def google_maps_label
     I18n.t('geohashes.show.geohash_on_date_in_location', :date => I18n.l(date, :format => :default), :location => place_name_display)
   end
-  
+
   def peeron_link
     "http://irc.peeron.com/xkcd/map/map.html?date=#{date.strftime('%Y-%m-%d')}&lat=#{graticule.latitude}&long=#{graticule.longitude}&zoom=8"
   end
-  
+
   def wiki_link
     "http://geohashing.org/#{date.strftime('%Y-%m-%d')}_#{graticule.latitude}_#{graticule.longitude}"
   end
-  
+
   def directions_link(latitude, longitude)
     "http://maps.google.com/maps?daddr=#{self.lat},#{self.lng}&saddr=#{latitude},#{longitude}"
   end
-  
+
   def anthill_link(for_user=nil)
     graticule.anthill_link(for_user, date)
   end
-  
+
   def coordinate_calculation_image
     "http://www.astro.rug.nl/~buddel/cgi-bin/geohashingcomic/geohashingcomic.cgi?year=#{date.strftime('%Y')}&month=#{date.strftime('%m')}&day=#{date.strftime('%d')}&lat=#{graticule.latitude}.0&lon=#{graticule.longitude}.0&dowjones=#{dow_value}"
   end
-  
+
   def graticule_latitude
     return '' if graticule.nil?
     graticule.latitude
   end
-  
+
   def graticule_longitude
     return '' if graticule.nil?
     graticule.longitude
   end
-  
+
   def graticule_display_name
     return '' if graticule.nil?
     graticule.display_name
@@ -56,7 +56,7 @@ class Geohash < ActiveRecord::Base
     return '' if graticule.nil?
     graticule.latitude_longitude_display
   end
-  
+
   def description
     "#{date.strftime('%A')} #{date}: #{latitude_display}, #{longitude_display}: #{place_name_display}"
   end
@@ -67,25 +67,25 @@ class Geohash < ActiveRecord::Base
       str << "&markers=#{lat},#{lng}"
     end
   end
-  
+
   def self.find_or_create(date, latitude, longitude)
     graticule = Graticule.find_or_create_by_latitude_and_longitude(latitude, longitude)
     return nil if graticule.nil?
-    
+
     self.find_by_date_and_graticule_id(date.strftime('%Y-%m-%d'), graticule.id) || self.create_for_date_and_graticule(date, graticule)
   end
-  
+
   private
-  
+
   def self.create_for_date_and_graticule(date, graticule)
     history = History.for(date, (date >= Date.parse('2008-05-26') && graticule.w30?))
     return nil if history.nil?
-    
+
     lat = "#{graticule.latitude}.#{history.lat.to_s.split('.').last}"
     lng = "#{graticule.longitude}.#{history.lng.to_s.split('.').last}"
-    
+
     place = Geokit::Geocoders::GoogleGeocoder.reverse_geocode("#{lat}, #{lng}")
-    
+
     self.create!({
       :date => date,
       :graticule => graticule,
@@ -95,6 +95,6 @@ class Geohash < ActiveRecord::Base
       :place_name => place.full_address
     })
   end
-  
+
 end
 
