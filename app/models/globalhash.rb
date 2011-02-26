@@ -3,7 +3,7 @@ class Globalhash < ActiveRecord::Base
 
   belongs_to :history
 
-  named_scope :new_since, lambda {|datetime| {:conditions => ["date >= ?", datetime.utc]}}
+  named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= :date AND date >= :date", {:date => datetime.utc}]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
 
   def google_maps_label

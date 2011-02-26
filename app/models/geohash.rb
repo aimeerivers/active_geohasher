@@ -6,7 +6,7 @@ class Geohash < ActiveRecord::Base
 
   delegate :dow_value, :to => :history
 
-  named_scope :new_since, lambda {|datetime| {:conditions => ["date >= ?", datetime.utc]}}
+  named_scope :new_since, lambda {|datetime| {:conditions => ["created_at >= :date AND date >= :date", {:date => datetime.utc}]}}
   named_scope :latest, lambda { { :conditions => ['date >= ?', 1.day.ago] } }
 
   def to_param
