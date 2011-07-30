@@ -1,0 +1,46 @@
+﻿en:
+  activerecord:
+    errors:
+      template:
+        header: 
+          one: "1 Fehler verhindert, daß {{model}} gespeichert werden kann"
+          other: "{{count}} Fehler verhindern, daß {{model}} gespeichert werden kann"
+        body: "Es sind in den folgenden Feldern Fehler aufgetreten:"
+      messages:
+        inclusion: "ist nicht in der Liste"
+        exclusion: "ist reserviert"
+        invalid: "is ungültig"
+        confirmation: "entspricht nicht dem Bestätigungsfeld"
+        accepted: "muß bestätigt werden"
+        empty: "darf nicht leer sein"
+        blank: "darf nicht leer sein"
+        too_long: "ist zu lang (Maximum ist {{count}} Zeichen)"
+        too_short: "ist zu kurz (Minimum ist {{count}} Zeichen)"
+        wrong_length: "hat die falsche Länge (muß {{count}} Zeichen haben)"
+        taken: "ist bereits vergeben"
+        not_a_number: "ist keine Zahl"
+        greater_than: "muß größer als {{count}} sein"
+        greater_than_or_equal_to: "muß größer oder gleich {{count}} sein"
+        equal_to: "muß genau {{count}} sein"
+        less_than: "muß kleiner als {{count}} sein"
+        less_than_or_equal_to: "muß kleiner oder gleich {{count}} sein"
+        odd: "muß ungerade sein"
+        even: "muß gerade sein"
+        record_invalid: "Überprüfung fehlgeschlagen: {{errors}}"
+
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%a %d %b"
+      long: "%A, der %d %B %Y"
+    day_names: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
+    abbr_day_names: [So, Mo, Di, Mi, Do, Fr, Sa]
+    month_names: [~, Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
+    abbr_month_names: [~, Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
+    order: [ :day, :month, :year ]
+
+  number:
+    format:
+      precision: 3
+      delimiter: '.'
+      separator: ','
