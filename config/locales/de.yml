@@ -1,0 +1,286 @@
+﻿en:
+  miles: Meilen
+  kms: Kilometer
+
+  ag: Active Geohasher
+  wiki: Geohashing-Wiki
+  google: Google Maps
+  bing: Bing Maps
+  osm: OpenStreetMap
+  directions: Google Directions
+  peeron: Peeron
+  anthill: Anthill
+  geocaching: Geocaches in der Nähe
+
+  common:
+    or: oder
+    cancel: Abbrechen
+    go_north: Nördlicher
+    go_south: Südlicher
+    go_east: Östlicher
+    go_west: Westlicher
+    distance: "{{number}} {{units}}"
+    unknown_location: "[Unbekannter Ort]"
+    useful_links: Nützliche Links
+    custom_links: Persönliche Links
+    privacy_policy: Datenschutzbestimmungen
+    what_is_geohashing: Was ist Geohashing?
+
+  locale:
+    en: Englisch (UK)
+    'en-US': Englisch (USA)
+    'en-PIRATE': Piraten-Englisch
+    eo: Esperanto
+    es: Spanisch
+    de: Deutsch
+    language_set_to: "Sprache ist: {{language}}."
+    not_available: Sorry, diese Sprache ist noch nicht verfügbar.
+
+  home:
+    welcome_to_active_geohasher: Wilkommen bei Active Geohasher
+    resources_for_geohashers: Nützliches für Geohasher
+
+    features:
+      subscribe_to_graticules: Graticules abonnieren
+      receive_free_daily_geohashing_email: Bestelle eine kostenlose tägliche Geohashing-Email
+      see_distance_from_home_location: Bestimme die Entfernung von Deinem Heimatort in Km oder Meilen
+      with_useful_links: Mit Links zu Peeron, zum Wiki, zu Google Maps und zum Routing
+      google_earth_feeds: Automatisch aktualisierte Google-Earth-Feeds für Deine Graticules
+      open_source: "Open Source!"
+      contributions_welcome: Beiträge herzlich willkommen!
+
+    latest_on_twitter: Das Neueste auf Twitter
+
+    privacy:
+      what_data_do_you_collect_about_me:
+        question: Welche Daten werden über mich gespeichert?
+        answer: Wir speichern Deinen Namen, die Emailadresse, und eine URL zur Authentifizierung. Wenn Du einen Heimatort angibst, wird dieser gespeichert, um die relativen Entfernungen zu Geohashes zu berechnen. Wir speichern auch die Graticules, die Du abonniert hast, um diesen Dienst anbieten zu können.
+
+      can_i_view_and_change_the_data_you_hold:
+        question: Kann ich die gespeicherten Daten einsehen?
+        answer: "Ja. Wenn Du eingeloggt bist und auf Deinen Namen klickst, oder wenn Du auf die Seite {{link}} gehst, siehst Du alle gespeicherten Daten. Du kannst Deinen Namen und die Emailadresse ändern. Du kannst auch die URL einsehen, die Dich identifiziert - diese kann nicht geändert werden, da sie für die Authentifizierung benötigt wird. Du kannst Deine Abonnements und den Heimatort jederzeit ändern."
+        edit_profile: Profil bearbeiten
+
+      will_i_get_unwanted_email:
+        question: Bekomme ich unangeforderte Emails? 
+        answer: "Du bekommst nur Emails über Graticules, die Du abonniert hast. Du kannst jederzeit das Abonnement einer Graticule löschen. Wenn Du gar keine Email bekommen willst, kannst Du in Deinem Profil das Kästchen 'Email erhalten' deaktivieren."
+
+      will_you_share_my_information:
+        question: Werden meine Daten an irgendwen weitergegeben?
+        answer: Nein. Nicht jetzt und nicht in Zukunft.
+
+      why_do_you_want_my_facebook_details:
+        question: Warum sollte ich meine Facebook-Daten angeben? Schickt ihr Spam an meine Freunde? 
+        answer: "Nein, absolut nicht. Die RPX-Anmeldung ist einfach eine Möglichkeit, Dich durch dritte zu Authentisieren - ob das Twitter, Facebook, Google, Yahoo oder ein anderer OpenID-Provider ist. Wir erfahren nichts über Deine Freunde, und können keine Nachrichten an Deine Twitter- oder Facebookseiten senden. Siehe {{link}} für weitere Informationen."
+        how_rpx_works: Wie RPX funktioniert.
+
+    what_is_geohashing:
+      geohashing_is_best_described: Geohashing erzeugt für Dich zufällige Abenteuer.
+      an_algorithm_takes_the_dow_jones: "{{an_algorithm}} berechnet aus dem Öffnungskurs des Dow Jones Aktienindex und dem aktuellen Datum einen zufälligen Punkt auf jedem Breitengrad und Längengrad, überall auf der Welt. Die Koordinaten können irgendwo sein - auf dem Land, im Wasser, im Wald oder mitten in der Stadt. Manchmal sogar {{at_your_home}} oder {{your_workplace}}! Das ist völlig zufällig und jeden Tag an einem anderen Ort."
+      an_algorithm: Ein Algorithmus
+      at_your_home: bei Dir zu Hause
+      your_workplace: an Deinem Arbeitsplatz
+      the_aim_of_the_game: "Das Ziel des Spiels ist es, den Geohash für diesen Tag zu erreichen (üblicherweise mit Hilfe von GPS-Geräten), Beweisfotos zu schießen, andere Leute dort zu treffen, Spiele zu spielen, und wonach Dir noch so der Sinn steht. Am besten hinterläßt Du auch eine {{non_permanent_marker}} für andere Besucher."
+      non_permanent_marker: umweltverträgliche Markierung
+      there_are_several_achievements: "Es gibt verschiedene {{achievements}}, die du im Zusammenhang mit Geohashing gewinnen kannst, z.B. für schwierige Anfahrten oder das, was Du vor Ort machst. Aber das Hauptziel ist, einfach Spaß zu haben, an die frische Luft zu kommen, und einen Ort zu besuchen, den Du sonst nie gesehen hättest - und natürlich Deine Abenteuer uns anderen mitzuteilen!""
+      achievements: Achievements oder Auszeichnungen
+      for_more_information: "Weitere Informationen unter: {{link}}"
+
+  authentication:
+    sign_in: Melde Dich an
+    sign_in_with: "{{sign_in}} mit Deinem Google-Konto, Yahoo, Flickr, Twitter, Facebook, oder OpenID. Es kostet nichts!"
+    welcome: "Hallo {{name}}!"
+    sign_out: Abmelden
+    please_sign_in_first: Bitte melde Dich erst an.
+    sign_in_failed: Sorry, die Anmeldung ist fehlgeschlagen.
+
+  navigation:
+    your_profile: Dein Profil
+    your_home_location: Dein Heimatort
+    your_subscriptions: Deine Abonnements
+    custom_links: Persönliche Links
+    globalhashes: Globalhashes
+
+  profiles:
+    edit:
+      your_profile: Dein Profil
+      email_notification: Email-Benachrichtigung
+      twitter_notification: Twitter-Benachrichtigung
+      use_ctrl_or_command_to_select_multiple_links: Benutze Strg oder Alt um mehrere Links auszuwählen.
+      for_this_to_work: "Damit dies funktioniert, mußt Du {{activegeohasher}} auf Twitter followen."
+      update_profile: Profil aktualisieren
+      updated_successfully: Dein Profil wurde erfolgreich aktualisiert.
+
+  users:
+    location:
+      choose_your_location: Wähle deinen Heimatort
+      if_the_map_does_not_work: "Wenn Die Karte bei Dir nicht funktioniert, kannst Du hier Breiten- und Längengrad eintragen."
+      save_location: Ort speichern
+      location_saved: Dein Heimatort wurde gespeichert.
+
+    subscribe:
+      your_subscriptions: Deine Abonnements.
+      you_are_not_subscribed_to_any_graticules: "Du bist bei keinen Graticules angemeldet. Gib den Breiten- und Längengrad einer Graticule an, oder {{set_location}}."
+      set_your_home_location: Deinen Heimatort
+
+  subscriptions:
+    new:
+      subscribe_to_a_graticule: Graticule abonnieren
+      subscribe: Abonnieren
+      successfully_subscribed_to_graticule: Graticule erfolgreich abonniert.
+      could_not_subscribe_to_graticule: Abonnement fehlgeschlagen. 
+
+    unsubscribe:
+      successfully_unsubscribed: Du bist jetzt von der Graticule abgemeldet.
+
+  graticules:
+    show:
+      awaiting_graticule_name: "[Name wird berechnet]"
+      rss_feed: RSS-Feed
+      google_earth_feed: Google-Earth-Feed
+      unsubscribe: Abonnement beenden
+      graticule_map: Karte der Graticule
+      social_media_links: Social-Media-Links
+      twitter: "Twitter: {{tag}}"
+      flickr: "Flickr: {{tag}}"
+      youtube: "YouTube: {{tag}}"
+      live_from_twitter: Live auf Twitter
+      latest_tweets_will_show_up_here: "Zeigt die neuesten Tweets mit dem Tag {{tag}}."
+      tweets_tagged: Tweets mit Tag
+      pictures_from_flickr: Bilder von Flickr
+      look_on_flickr: "Suche {{link}} auf Flickr."
+      photos_and_videos_tagged: "Fotos und Videos mit dem Tag {{tag}}"
+      not_found: Sorry, diese Graticule wurde nicht gefunden.
+      buttons:
+        subscribe: Diese Graticule abonnieren
+        unsubscribe: Abonnement beenden
+
+    latest_geohashes:
+      latest_geohashes: Neueste Geohashes
+      check_back_later: Bitte schau später nochmal vorbei, um eine Liste von Geohashes in dieser Graticule zu erhalten.
+
+  geohashes:
+    show:
+      geohash_on_date_in_location: "Geohash am {{date}} in {{location}}"
+      poster_for_this_geohash_event: Poster für diesen Geohash
+      details: Details
+      location: "Ort:"
+      date: "Datum:"
+      graticule: "Graticule:"
+      coordinates: "Koordinaten:"
+      distance: "Entfernung:"
+      distance_from_your_home_location: "{{distance}} von Deinem Heimatort"
+      how_the_geohash_is_calculated: Wie der Geohash berechnet wurde
+      geohash_in_location: "Geohash in {{location}}"
+      city_view: Stadtansicht
+      street_view: Straßenansicht
+      hybrid_view: Hybridansicht
+      satellite_view: Satellitenbild
+      not_found: Geohash nicht gefunden, oder die Ermittlung ist fehlgeschlagen.
+
+      poster:
+        xkcd_geohashing: xkcd Geohashing
+        the_internet_was_here: Das Internet war hier!
+        some_geohashers: "Um genau zu sein, waren Geohasher\nan den geographischen Koordinaten"
+        on_date: "am {{date}}"
+        geohashing_is_an_adventure_game: Geohashing ist ein Abenteuerspiel.
+        an_algorithm_generates_random_coordinates: Ein Algorithmus erzeugt zufällige Koordinaten, und wir versuchen sie zu erreichen, dort neue Leute zu treffen, und gemeinsam Spaß zu haben.
+        to_find_out_more: "Um mehr zu erfahren und mitzumachen, besuche {{link}}"
+        how_this_geohash_location_was_calculated: Wie dieser Geohash berechnet wurde
+        now_that_you_have_seen_this_poster: "Wir würden uns freuen, von Dir zu hören!"
+        the_place_to_talk: Du kannst uns eine Nachricht hinterlassen, auf
+        come_and_say_hello: Schau vorbei, sag hallo, und erzähl uns, wie Du das Poster gefunden hast!
+
+  globalhashes:
+    index:
+      recent_and_upcoming_globalhash_locations: Neueste und zukünftige Globalhashes
+      globalhash_explanation: Ein Globalhash ist der Geohash-Algorithmus mit der ganzen Welt als Spielfeld. Wenn der Globalhash in Deiner Nähe ist, ist es ein wirkliches Ereignis, und du mußt ihn einfach besuchen!
+      see_link_for_more_information: "Mehr Infos unter {{link}}."
+      globalhash_on_date_in_location: "Globalhash am {{date}} in {{location}}"
+
+    show:
+      globalhash_on_date: "Globalhash am {{date}}"
+      world_view: Weltansicht
+      country_view: Länderansicht
+      area_view: Gebietsansicht
+      not_found: Globalhash nicht gefunden, oder die Ermittlung ist fehlgeschlagen.
+
+  custom_links:
+    index:
+      add_links_here: Füge hier Links hinzu und sie werden Dir in Deiner Geohash-Email für jeden Geohash angezeigt.
+      use_latitude_and_longitude_placeholders: "Benutze {{latitude}} und {{longitude}} als Platzhalter, und sie werden durch die richtigen Werte ersetzt. Hier sind ein paar Beispile:"
+      add: Hinzufügen
+      edit: Bearbeiten
+      delete: Löschen
+      you_cannot_edit_or_delete: Du kannst diesen Link nicht bearbeiten oder löschen.
+
+    new:
+      saved_successfully: Persönlicher Link wurde gespeichert.
+
+    edit:
+      edit_custom_link: Persönlichen Link bearbeiten.
+      update_custom_link: Persönlichen Link aktualisieren.
+      updated_successfully: Persönlicher Link erfolgreich aktualisiert.
+
+    delete:
+      are_you_sure_you_wish_to_delete: Bist du Dir sicher, daß Du diesen Link löschen möchtest?
+      deleted_successfully: Persönlicher Link wurde gelöscht.
+
+  footer:
+    source_code: Sourcecode
+
+  notifier:
+    upcoming_geohashes:
+      geohashing_adventures: Geohashing-Abenteuer
+      hi_name: "Hi {{name}}"
+      here_are_your_upcoming_geohash_locations: Hier sind die neuesten Geohash-Koordinaten, geliefert von Active Geohasher.
+      distance_away: "Entfernung: {{distance}}"
+      globalhash: Globalhash
+      links: Links
+      please_note_that_distances_are_calculated_as_straight_lines: Bitte beachte, daß die Entfernungen als Luftlinie berechnet werden; die Fahrstrecke kann deutlich länger sein. Google kann Dir eine Route berechnen - klick auf Google Directions!
+      happy_geohashing: Viel Spaß beim Geohashen!
+
+  activerecord:
+    models:
+      user: Benutzer
+      subscription: Abonnement
+      'custom link': Persönlicher Link
+
+    attributes:
+      user:
+        identifier: Identifikations-URL
+        name: Name
+        email: Email
+        preferred_distance_units: Entfernungen in
+        preferred_locale: Sprache
+        receive_email: Emails erhalten
+        preferred_links: Links, die Du in der Email sehen willst
+        twitter_username: Gib hier Deinen Twitter-Benutzernamen an, wenn Du Benachrichtigungen erhalten möchtest
+        lat: Breitengrad
+        lng: Längengrad
+
+      subscription:
+        latitude: Breitengrad
+        longitude: Längengrad
+
+      custom_link:
+        name: Name
+        url: URL
+
+    errors:
+      models:
+        custom_link:
+          attributes:
+            url:
+              is_invalid: "ist ungültig (versuch es mit http://)"
+
+  errors:
+    '404':
+      title: Seite nicht gefunden
+      text: "Sorry, die angeforderte Seite wurde nicht gefunden. Bitte geh zurück zur {{link}}."
+      home_page: 'Hauptseite'
+
+    '500':
+      title: Da ist was schiefgelaufen.
+      text: "Sorry, irgendwas ist schief gegangen. Bitte geh zurück zur {{link}}."
+      home_page: 'Hauptseite'
